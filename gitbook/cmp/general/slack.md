@@ -2,7 +2,7 @@
 description: Add the DoiT Slack application to your Slack workspace to unfurl links to the CMP with rich previews
 ---
 
-# Slack Application
+# Slack application
 
 The DoiT International Slack application can enhance your Slack experience by automatically unfurling links to the CMP and providing metadata and rich previews for [Cloud Analytics Reports](../cloud-analytics/create-cloud-report/README.md) and [budgets](../cloud-analytics/manage-budgets.md).
 
@@ -39,6 +39,16 @@ After completing the installation process, any CMP report or budget links you se
 For example:
 
 ![A screenshot of an unfurled link in Slack](../.gitbook/assets/slack-link-unfurled.png)
+
+## Notifications
+
+If you have a [shared Slack channel](../services/consulting-support/shared-slack-channel.md) with DoiT International, you can [configure notifications](../services/consulting-support/shared-slack-channel.md#configure-your-shared-slack-channel) for that channel.
+
+From within the CMP, select the gear icon from the top navigation bar, then choose _Slack_ (under _Account settings_) from the drop-down menu. After choosing the _Slack_ menu item, the CMP will bring you to the _Slack_ settings page:
+
+![A screenshot showing the _Slack_ settings page](../.gitbook/assets/cmp-settings-slack-configure.png)
+
+From here, you can [configure the channel notifications](../services/consulting-support/shared-slack-channel.md#configure-your-shared-slack-channel).
 
 ## Permissions
 
