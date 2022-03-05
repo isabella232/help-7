@@ -1,0 +1,121 @@
+rules:
+  # TODO: Convert to json
+  # TODO: Integrate with VS Code
+
+  # Global rules
+  # ---------------------------------------------------------------------------
+
+  # https://github.com/azu/textlint-rule-no-todo
+  # no-todo: true
+
+  # textlint-rule-no-start-duplicated-conjunction
+  # no-start-duplicated-conjunction:
+  #   interval: 2
+
+  # https://github.com/textlint-rule/textlint-rule-max-comma
+  # max-comma:
+  #   max: 4
+
+  # https://github.com/nodaguti/textlint-rule-no-dead-link
+  # no-dead-link:
+  #   checkRelative: true
+  #   baseURI: null
+  #   ignore: []
+  #   preferGET: []
+  #   ignoreRedirects: false
+  #   retry: 3
+  #   userAgent: textlint-rule-no-dead-link/1.0
+  #   maxRetryTime: 10
+
+  # https://github.com/azu/textlint-rule-no-empty-section
+  # no-empty-section: true
+
+  # https://github.com/sapegin/textlint-rule-terminology
+  # terminology:
+  #   defaultTerms: true
+
+  # https://github.com/textlint-rule/textlint-rule-no-invalid-control-character
+  # '@textlint-rule/no-invalid-control-character': true
+
+  # https://github.com/textlint-rule/textlint-rule-no-unmatched-pair
+  # '@textlint-rule/no-unmatched-pair': true
+
+  # https://github.com/textlint-rule/textlint-rule-no-zero-width-spaces
+  # no-zero-width-spaces: true
+
+  # https://github.com/iwamatsu0430/textlint-rule-doubled-spaces
+  # doubled-spaces: true
+
+  # https://github.com/textlint-rule/textlint-rule-no-duplicate-abbr
+  # '@textlint-rule/no-duplicate-abbr': true
+
+  # English rules
+  # ---------------------------------------------------------------------------
+
+  # https://github.com/azu/textlint-rule-unexpanded-acronym
+  # unexpanded-acronym:
+  #   min_acronym_len: 3
+
+  # https://github.com/azu/textlint-rule-abbr-within-parentheses
+  # abbr-within-parentheses: true
+
+  # https://github.com/azu/textlint-rule-alex
+  # alex:
+  #   allow: []
+  #   noBinary: true
+  #   profanitySureness: 1
+
+  # https://github.com/azu/textlint-rule-rousseau
+  # rousseau:
+  #   showLevels: [suggestion, warning, error]
+
+  # https://github.com/nodaguti/textlint-rule-write-good
+  # write-good: true
+
+  # https://github.com/azu/textlint-rule-en-max-word-count
+  # en-max-word-count:
+  #   max: 50
+
+  # https://github.com/sapegin/textlint-rule-apostrophe
+  # apostrophe: true
+
+  # https://github.com/sapegin/textlint-rule-diacritics
+  # diacritics: true
+
+  # https://github.com/sapegin/textlint-rule-stop-words
+  # stop-words:
+  #   defaultWords: true
+  #   skip: []
+  #   words: []
+  # exclude": []
+
+  # https://github.com/textlint-rule/textlint-rule-en-capitalization
+  # en-capitalization: true
+
+  # https://github.com/io-monad/textlint-rule-common-misspellings
+  # common-misspellings:
+  #   ignore: []
+
+  # https://github.com/ta2gch/textlint-rule-spelling
+  # spelling:
+  #   language: en
+  #   skipPatterns: [JavaScript]
+  #   wordDefinitionRegexp": /[\\w']+/g
+  #   suggestCorrections": true
+
+  # https://github.com/blue-hood/textlint-rule-en-spell
+  # en-spell:
+  #   personalDictionary: []
+
+# Filters
+# ---------------------------------------------------------------------------
+
+filters:
+  # https://github.com/textlint/textlint-filter-rule-allowlist
+  allowlist:
+    allow: []
+  # https://github.com/textlint/textlint-filter-rule-comments
+  comments: true
+  # https://github.com/textlint/textlint-filter-rule-node-types
+  # node-types:
+  #   nodeTypes: []

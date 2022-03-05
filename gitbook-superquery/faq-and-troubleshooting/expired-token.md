@@ -1,0 +1,34 @@
+---
+description: Why this error occurred, and how to troubleshoot it.
+---
+
+# How to deal with an expired / revoked token
+
+### Why did I receive this error?
+
+If you see an error message that says "**Token has been expired or revoked.**", this could be for a variety of reasons:
+
+* You have recently reset / recovered your Google password.
+* You or an admin on your team has actively revoked access to superQuery from the [Apps Permissions](https://myaccount.google.com/permissions?pli=1) page.
+
+It's worth mentioning that superQuery fully relies on BigQuery's authentication process, therefore we have no control over your user token. Therefore we use the token as it is.\
+\
+Let's explore both cases mentioned above.\
+&#x20;
+
+#### You have recently reset / recovered your Google password. <a href="you-have-recently-reset--recovered-your-google-password" id="you-have-recently-reset--recovered-your-google-password"></a>
+
+In this first case, the good news is that if you simply re-authenticate with superQuery, you'll get a new token from Google and can continue using superQuery uninterrupted.
+
+To re-authenticate, just log out of superQuery and then log back in.
+
+#### Your token has been actively revoked. <a href="your-token-has-been-actively-revoked" id="your-token-has-been-actively-revoked"></a>
+
+If you don't have the ability to grant superQuery access and get a new token, then speak with your IT administrator, or the person responsible for assigning permissions to your Google Cloud.
+
+\
+If the reason for the token revocation has something to do with questions around superQuery, our IT and Security team be more than happy to speak with your team.
+
+You can share [this link](https://meetings.hubspot.com/matan-bordo) with your IT admin to set up a call.
+
+Additionally, you can read & share this short brief on superQuery Data & Security Handling.

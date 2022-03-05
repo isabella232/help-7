@@ -1,0 +1,7 @@
+.brokdb
+.vscode/settings.json
+*.log
+*.out
+*.sig
+*.tmp
+gh-pages

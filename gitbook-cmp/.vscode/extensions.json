@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "codezombiech.gitignore",
+    "davidanson.vscode-markdownlint",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "errata-ai.vale-server",
+    "esbenp.prettier-vscode",
+    "fnando.linter",
+    "foxundermoon.shell-format",
+    "golang.go",
+    "redhat.vscode-yaml",
+    "shd101wyy.markdown-preview-enhanced",
+    "streetsidesoftware.code-spell-checker",
+    "tht13.html-preview-vscode",
+    "yzhang.markdown-all-in-one"
+  ]
+}
