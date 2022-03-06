@@ -19,7 +19,7 @@ scan() {
     fi
 }
 
-# Rules
+# Patterns
 # -----------------------------------------------------------------------------
 
 # Prefer the use of `&times;`
@@ -27,37 +27,49 @@ scan() {
 
 # ASCII transliteration of the multiplication symbol (ignoring upper case words
 # which may indicate SQL syntax)
-scan '[a-z0-9]+ \* [a-z0-9]+'
+TIMES='[a-z0-9]+ \* [a-z0-9]+'
+
+PATTERN="(${TIMES}"
 
 # Prefer the use of `&copy;`
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # ASCII transliteration of the copyright symbol
-scan '\([cC]\)'
+COPY='\([cC]\)'
+
+PATTERN="${PATTERN}|${COPY}"
 
 # Prefer the use of `&reg;`
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # ASCII transliteration of the registered trademark symbol
-scan '\([rR]\)'
+REG='\([rR]\)'
+
+PATTERN="${PATTERN}|${REG}"
 
 # Prefer the use of `&trade;`
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # ASCII transliteration of the trademark symbol
-scan '\([tT][mM]\)'
+TRADE='\([tT][mM]\)'
+
+PATTERN="${PATTERN}|${TRADE}"
 
 # Prefer the use of `&check;`
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Heavy check mark (not a named entity)
-scan '&#x2714;'
+CHECK='&#x2714;'
+
+PATTERN="${PATTERN}|${CHECK}"
 
 # Prefer the use of `&ndash;`
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Numerical ranges
-scan "[^a-zA-Z0-9-\"'\`.][[:digit:]]+-[[:digit:]]+[^a-zA-Z0-9-\"'\`.]"
+DASH="[^a-zA-Z0-9-\"'\`.][[:digit:]]+-[[:digit:]]+[^a-zA-Z0-9-\"'\`.]"
+
+PATTERN="${PATTERN}|${DASH}"
 
 # Prefer the use of `&mdash;`
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -65,18 +77,29 @@ scan "[^a-zA-Z0-9-\"'\`.][[:digit:]]+-[[:digit:]]+[^a-zA-Z0-9-\"'\`.]"
 # TODO: Decide whether (and when) to enforce spaces around an em dash
 
 # Use of a single hyphen instead of an em dash
-ALPHA_HYPHEN_ALPHA='[a-zA-Z]+ - [a-zA-Z]+'
-ALPHA_HYPHEN_ALNUM='[a-zA-Z]+ - [[:alnum:]]+'
-ALNUM_HYPHEN_ALPHA='[[:alnum:]]+ - [a-z-A-Z]+'
-scan "(${ALPHA_HYPHEN_ALPHA}|${ALPHA_HYPHEN_ALNUM}|${ALNUM_HYPHEN_ALPHA})"
+DASH_ALPHA_ALPHA='[a-zA-Z]+ - [a-zA-Z]+'
+DASH_ALPHA_ALNUM='[a-zA-Z]+ - [[:alnum:]]+'
+DASH_ALNUM_ALPHA='[[:alnum:]]+ - [a-z-A-Z]+'
+DASH="(${DASH_ALPHA_ALPHA}|${DASH_ALPHA_ALNUM}|${DASH_ALNUM_ALPHA})"
 
 # ASCII transliteration of an em dash
-SPACE_EM_DASH_SPACE=' -- '
-ALNUM_EM_DASH_ALNUM='[[:alnum:]]+--[[:alnum:]]+'
-scan "(${SPACE_EM_DASH_SPACE}|${ALNUM_EM_DASH_ALNUM})"
+DASH_DASH_SPACE=' -- '
+DASH_DASH_ALNUM='[[:alnum:]]+--[[:alnum:]]+'
+DASH_DASH="(${DASH_DASH_SPACE}|${DASH_DASH_ALNUM})"
+
+MDASH="(${DASH}|${DASH_DASH})"
+
+PATTERN="${PATTERN}|${MDASH}"
 
 # Prefer the use of `&hellip;`
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # ASCII transliteration of a horizontal ellipsis
-scan '\.\.\.'
+HELLIP='\.\.\.'
+
+PATTERN="${PATTERN}|${HELLIP})"
+
+# Scan
+# -----------------------------------------------------------------------------
+
+scan "${PATTERN}"

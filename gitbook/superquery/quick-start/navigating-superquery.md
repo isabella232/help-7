@@ -158,7 +158,7 @@ In your results grid, you can:
 <!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/ChartsSQ (1).gif>)
 
-### #4 - Dashboard View
+### #4 &mdash; Dashboard View
 
 The **Visualize** toggle transforms the latest results of all of your query tabs into a [dashboard](../dashboards/create-dashboards.md) in one click &mdash; no exporting required.
 
@@ -169,14 +169,14 @@ The **Visualize** toggle transforms the latest results of all of your query tabs
 
 Your right pane (highlighted below) is separated into the following features
 
-* [Schedule Query](../scheduled-queries/schedule-query.md) - schedule your current tab's SQL to run at a regularly scheduled interval
-* [Query Tab Settings](../superquery-editor/tab-settings.md) - modify settings for your query tab like billing project, destination table, and more
-* Full-Screen Mode - expands your editor view
+* [Schedule Query](../scheduled-queries/schedule-query.md) &mdash; schedule your current tab's SQL to run at a regularly scheduled interval
+* [Query Tab Settings](../superquery-editor/tab-settings.md) &mdash; modify settings for your query tab like billing project, destination table, and more
+* Full-Screen Mode &mdash; expands your editor view
 * A "More Options" button which opens
-  * Format Query - formats your current tab's SQL
-  * Save View - saves your current query as a view
-  * Save To - saves your current query tab to a different board
-  * Download SQL - downloads your current query tab's SQL into a .sql file
+  * Format Query &mdash; formats your current tab's SQL
+  * Save View &mdash; saves your current query as a view
+  * Save To &mdash; saves your current query tab to a different board
+  * Download SQL &mdash; downloads your current query tab's SQL into a .sql file
 
 <!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/CleanShot 2021-02-22 at 12.23.06.jpg>)

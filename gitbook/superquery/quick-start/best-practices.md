@@ -6,7 +6,7 @@ description: Start using superQuery with these power tips
 
 If you follow some of these starter tips, you'll see an immediate boost to your productivity.
 
-## #1 - Group related queries into Boards
+## #1 &mdash; Group related queries into Boards
 
 [Boards](../superquery-editor/organizing-queries.md) are like folders for organizing your [query tabs](../superquery-editor/query-tabs.md). They're a huge upgrade over Saved Queries, helping you to better manage your queries in sub-groupings, rather than one long list.
 
@@ -15,7 +15,7 @@ Organize queries in a way that makes sense for your work &mdash; by work project
 <!-- markdownlint-disable-next-line -->
 ![](../.gitbook/assets/image.png)
 
-## #2 - Give your query Tabs and Boards identifiable names
+## #2 &mdash; Give your query Tabs and Boards identifiable names
 
 As you create more [query tabs](../superquery-editor/query-tabs.md) and boards, it will be easier for you to identify them if you give them good names from the start.\
 &#x20;\
@@ -24,7 +24,7 @@ The names should be **descriptive** enough that it is obvious to you what query 
 <!-- markdownlint-disable-next-line -->
 ![](../.gitbook/assets/BoardTabName.jpg)
 
-## #3 - Use variables to save time when modifying queries
+## #3 &mdash; Use variables to save time when modifying queries
 
 [Variables](../superquery-editor/variables.md) are placeholders for values that can change &mdash; for example, field values in the WHERE clause. They make your queries more dynamic and allow you to perform quick edits on your query without modifying the SQL itself.
 
@@ -50,7 +50,7 @@ This replaces having to perform a CTRL-F and selecting "Replace All", you just h
 
 ![Changing a variable's value](../.gitbook/assets/ChangeVariable.gif)
 
-## #4 - Visualize your query results using Charts in a single click
+## #4 &mdash; Visualize your query results using Charts in a single click
 
 Viewing query results in a [chart](../superquery-editor/charts.md) offers a perspective that tables don't. It's much easier to spot anomalies and see the full picture.
 
@@ -61,7 +61,7 @@ Use superQuery's **Charts** feature to generate a quick visualization of your qu
 <!-- markdownlint-disable-next-line -->
 ![](../.gitbook/assets/ChartsSQ.gif)
 
-## #5 - Connect your Github repo or GitLab project to superQuery
+## #5 &mdash; Connect your Github repo or GitLab project to superQuery
 
 For many, code management and tracking changes to queries is important. Most of the time, however, this is done manually. Too much time is spent comparing code versions, trying to figure out what part of the query was changed.
 
