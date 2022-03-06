@@ -18,4 +18,3 @@ In the Share pop-up you have two options:
 Additionally, you may make&#x20;
 
 ![](<../.gitbook/assets/image (96).png>)
-

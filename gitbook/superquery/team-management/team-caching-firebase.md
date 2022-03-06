@@ -70,8 +70,6 @@ Once you've done that, a cache table called "superQueryCache" will be available 
 
 Your query's results will come from cache when you see "**100% saved**" next to your query's cost in the dry run, like below.
 
-
-
 If results come from cache, you will see a message appear above your results like below. If you wish to generate fresh results not from cache, click on **refresh without cache** in your results tab. Hovering over the message will also show the "Last refresh time", which tells you how fresh the data is.
 
 ![](<../.gitbook/assets/image (105).png>)

@@ -8,7 +8,6 @@ This article will help you understand the various options you have in your query
 
 Click on the Settings gear icon at the top right of your screen to open query tab settings, as shown below.\
 
-
 ![](<../.gitbook/assets/image (19).png>)
 
 A slideout will appear, showing your Query Tab settings:

@@ -59,4 +59,3 @@
 * [How to deal with an expired / revoked token](faq-and-troubleshooting/expired-token.md)
 * ["Where are my Saved Queries?"](faq-and-troubleshooting/where-saved-queries.md)
 * ["Where are my scheduled queries from BigQuery?"](faq-and-troubleshooting/where-scheduled-queries.md)
-

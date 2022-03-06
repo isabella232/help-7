@@ -5,17 +5,14 @@ description: Go from your editor to a Jupyter Notebook environment in one click
 # Export your query to Google Colab
 
 In this post, we'll go over how to seamlessly export your SQL to [Google Colab](https://colab.research.google.com), or to a .ipynb format.\
-\
+
 If you're a data scientist, or just work with python in general, Jupyter Notebooks likely represent the hub where most of your work gets done.
 
-&#x20;\
 [Google Colab](https://colab.research.google.com) is a free cloud service that provides a Jupyter notebook environment, and it requires no setup to use! Perfect for developing deep learning applications, ML education, or just to brush up on your Python skills.
 
-\
 With this trick, you will go from working on your query in superQuery to exploring it further in Colab with **zero copying and pasting.**\
-\
-The initial process of setting up your connection to Google Colab goes as follows:\
 
+The initial process of setting up your connection to Google Colab goes as follows:\
 
 ### Step 1: Export query results to Jupyter
 
@@ -34,8 +31,6 @@ If this is your first time, you'll be asked to add an auth scope for Google Driv
 Click "Allow" to give superQuery the requisite permissions.
 
 ![](<../.gitbook/assets/image (73).png>)
-
-
 
 ### Step 4: Open your SQL in Colab
 

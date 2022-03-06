@@ -52,7 +52,7 @@ html_last_updated_fmt = "%b %d, %Y"
 
 rst_prolog = """
 .. role:: raw-html(raw)
-   :format: html
+    :format: html
 """
 
 rst_epilog = """

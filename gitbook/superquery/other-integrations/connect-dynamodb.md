@@ -26,8 +26,6 @@ Next, under "Available Integrations" click on the "Connect" button that appears 
 
 ![](<../.gitbook/assets/image (64).png>)
 
-
-
 A modal will appear for you to enter your AWS Athena credentials:
 
 ![](<../.gitbook/assets/image (65).png>)

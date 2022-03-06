@@ -15,4 +15,3 @@ Here's how to create a Chart:
 3. Select your graph type in the left-hand resource panel.
 
 ![](<../.gitbook/assets/ChartsSQ (2).gif>)
-

@@ -73,15 +73,20 @@ LINTSPACES := lintspaces \
 	--endofline LF \
 	--guessindentation \
 	--matchdotfiles \
-	--maxnewlines 1 \
 	--newline \
 	--trailingspaces
+
+LINTSPACES_DEFAULT := $(LINTSPACES) --maxnewlines 1
+LINTSPACES_PYTHON := $(LINTSPACES) --maxnewlines 2
 
 check: lintspaces
 .PHONY: lintspaces
 lintspaces:
 	$(call print-target)
-	$(FIND) -exec grep -Iq . {} \; | xargs -0 $(LINTSPACES)
+	$(FIND) -exec grep -Iq . {} \; -not -name '*.py' | \
+		xargs -0 $(LINTSPACES_DEFAULT)
+	$(FIND) -name '*.py' | \
+		xargs -0 $(LINTSPACES_PYTHON)
 
 # prettier
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

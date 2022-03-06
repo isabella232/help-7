@@ -23,4 +23,3 @@ Then, click on the **\[2]** "Local History" button underneath the SQL preview fo
 Finally, select which result's SQL you'd like to compare using the dropdown menus on either side of the Diff pop-up (first screenshot above).
 
 ![](<../.gitbook/assets/image (52).png>)
-

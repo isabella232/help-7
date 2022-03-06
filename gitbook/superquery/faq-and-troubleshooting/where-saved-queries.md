@@ -30,8 +30,6 @@ From the perspective of query management, this is a much better alternative than
 
 ![](<../.gitbook/assets/image (4).png>)
 
-
-
 ### What about private and project-level saved queries?
 
 By default, all of your queries and boards are private. If you'd like to share your board(s) with others &mdash; our equivalent of project-level queries &mdash; you can do so in three clicks.

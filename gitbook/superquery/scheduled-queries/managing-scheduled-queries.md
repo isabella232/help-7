@@ -8,8 +8,6 @@ To view and manage your scheduled queries, click on the Scheduled Queries icon i
 
 ![](<../.gitbook/assets/image (80).png>)
 
-
-
 ### View scheduled queries
 
 After clicking through, you will see all of your scheduled queries as well as some high-level information on each query.
@@ -25,8 +23,6 @@ This includes:&#x20;
 ![](<../.gitbook/assets/image (82).png>)
 
 ### Manage scheduled queries
-
-
 
 By clicking on the **&vellip;** icon to the left of your query, you can manage your scheduled queries:
 
@@ -53,6 +49,5 @@ Click on "**Audit**" next to a scheduled job to view the logs for that query.
 Click on "**Configuration**" to view the query scheduler settings for that job.&#x20;
 
 This includes information such as the schedule interval, destination dataset, and the SQL itself.\
-
 
 ![](<../.gitbook/assets/image (84).png>)

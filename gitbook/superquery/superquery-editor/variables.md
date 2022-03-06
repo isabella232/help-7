@@ -91,8 +91,6 @@ GROUP BY 2,1
 ORDER BY 3 asc;
 ```
 
-
-
 First, we'll create two Date variables called "begDate" and "endDate" which hold the values "2017-01-01" and "2017-09-30", respectively.
 
 ![](<../.gitbook/assets/image (117).png>)

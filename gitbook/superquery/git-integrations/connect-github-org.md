@@ -34,8 +34,4 @@ Click "**Configure**" next to "superQuery.io" and go to "**Repository access**" 
 
 Navigate to the "Third-party access" tab and double-check that the superQuery application is permitted.
 
-
-
 ![](<../.gitbook/assets/image (28).png>)
-
-\

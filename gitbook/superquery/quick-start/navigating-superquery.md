@@ -16,8 +16,6 @@ superQuery is broken down into five sections:
 
 Let's briefly cover the main capabilities of each section.
 
-
-
 ### #1 &mdash; Resource Panel <a href="1--resource-panel" id="1--resource-panel"></a>
 
 The resource panel contains eight resources, each represented by a unique icon.
@@ -34,7 +32,6 @@ The resource panel contains eight resources, each represented by a unique icon.
 
 Access all of your BigQuery projects and resources for other supported services (AWS Athena and DynamoDB) here.\
 
-
 #### Schema <a href="schema" id="schema"></a>
 
 [![](https://downloads.intercomcdn.com/i/o/162587680/541666f1e4269e9b643dfa05/schema.png)](https://downloads.intercomcdn.com/i/o/162587680/541666f1e4269e9b643dfa05/schema.png)
@@ -43,14 +40,11 @@ View columns of the table(s) being queried in your current query tab.&#x20;
 
 [Schema](../superquery-editor/schema.md) is automatically detected based on the tables queried in your SQL.
 
-\
 **Query History**
 
 [![](https://downloads.intercomcdn.com/i/o/162595843/e4ad30227edb768a9248e820/scheduled.png)](https://downloads.intercomcdn.com/i/o/162595843/e4ad30227edb768a9248e820/scheduled.png)
 
 Query history displays the previous queries you've executed in superQuery and BigQuery.
-
-
 
 #### **Scheduled Queries** ****[![](https://downloads.intercomcdn.com/i/o/162595797/4e75d0213a3a869dc4799b1d/queryhistory.png)](https://downloads.intercomcdn.com/i/o/162595797/4e75d0213a3a869dc4799b1d/queryhistory.png)
 
@@ -65,8 +59,6 @@ Manage and edit your [scheduled queries](../scheduled-queries/managing-scheduled
 Connect your [GitHub repository](../git-integrations/connect-github.md) or [GitLab project](../git-integrations/connect-gitlab.md) to superQuery.
 
 Once connected, it's easy to back up queries, catalogue them, and version-control them.
-
-
 
 #### Dark Mode / Light Mode toggle
 
@@ -142,8 +134,6 @@ Use [Manual Commit](../git-integrations/add-commit-messages.md) to add a message
 
 ![](<../.gitbook/assets/Manual Commit.gif>)
 
-
-
 ### #3 &mdash; Results Grid
 
 In your results grid, you can:
@@ -154,8 +144,6 @@ In your results grid, you can:
 * Make changes to views and [commit them to Git](../git-integrations/version-control-views.md)
 
 ![](<../.gitbook/assets/ChartsSQ (1).gif>)
-
-
 
 ### #4 - Dashboard View
 
@@ -177,5 +165,3 @@ Your right pane (highlighted below) is separated into the following features
   * Download SQL - downloads your current query tab's SQL into a .sql file
 
 ![](<../.gitbook/assets/CleanShot 2021-02-22 at 12.23.06.jpg>)
-
-\

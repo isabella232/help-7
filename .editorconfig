@@ -9,23 +9,19 @@ insert_final_newline = true
 max_line_length = 79
 trim_trailing_whitespace = true
 
-[*.md]
+[{*.md,*.rst,*.html}]
 indent_size = off
 max_line_length = off
 
-[*.html]
-indent_size = off
-max_line_length = off
-
-[*.csv]
-max_line_length = off
-
-[*.sh]
+[{*.sh,*.py}]
 indent_size = 4
 
 [Makefile]
 indent_size = 4
 indent_style = tab
+
+[*.csv]
+max_line_length = off
 
 [.markdown-link-check.json]
 max_line_length = off

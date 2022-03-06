@@ -22,8 +22,6 @@ The names should be **descriptive** enough that it is obvious to you what query 
 
 ![](../.gitbook/assets/BoardTabName.jpg)
 
-
-
 ### #3 - Use variables to save time when modifying queries
 
 [Variables](../superquery-editor/variables.md) are placeholders for values that can change &mdash; for example, field values in the WHERE clause. They make your queries more dynamic and allow you to perform quick edits on your query without modifying the SQL itself.
@@ -48,8 +46,6 @@ This replaces having to perform a CTRL-F and selecting "Replace All", you just h
 
 ![Changing a variable's value](../.gitbook/assets/ChangeVariable.gif)
 
-
-
 ### #4 - Visualize your query results using Charts in a single click
 
 Viewing query results in a [chart](../superquery-editor/charts.md) offers a perspective that tables don't. It's much easier to spot anomalies and see the full picture.
@@ -59,8 +55,6 @@ For ad-hoc visualizations, you may opt to export to Google Sheets or your BI too
 Use superQuery's **Charts **feature to generate a quick visualization of your query results. This'll help you avoid any unnecessary back-and-forth when/if the query becomes something you'd like to visualize in your BI tool.
 
 ![](../.gitbook/assets/ChartsSQ.gif)
-
-
 
 ### #5 - Connect your Github repo or GitLab project to superQuery
 
