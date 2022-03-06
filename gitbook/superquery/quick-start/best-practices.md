@@ -22,7 +22,7 @@ As you create more [query tabs](../superquery-editor/query-tabs.md) and boards, 
 The names should be **descriptive** enough that it is obvious to you what query the tab contains. Or, in the case of Boards, which queries the board contains.
 
 <!-- markdownlint-disable-next-line -->
-![](../.gitbook/assets/BoardTabName.jpg)
+![](../.gitbook/assets/BoardTabName.png)
 
 ## #3 &mdash; Use variables to save time when modifying queries
 
@@ -37,12 +37,12 @@ To create a variable, \[1] choose a data type,  \[2] give your variable a name, 
 In our example below, we're analyzing eCommerce store data, and thus creating a variable called "category" and assigning it a value of "Bags"
 
 <!-- markdownlint-disable-next-line -->
-![](../.gitbook/assets/VariablesSetup.jpg)
+![](../.gitbook/assets/VariablesSetup.png)
 
 Once created, insert the variable into your query in place of a literal value. The variable "holds" whatever value you assigned it.
 
 <!-- markdownlint-disable-next-line -->
-![](<../.gitbook/assets/CleanShot 2021-02-22 at 10.46.53.jpg>)
+![](<../.gitbook/assets/CleanShot 2021-02-22 at 10.46.53.png>)
 
 Changing your variable's value is also easy. Just enter a new value at the top, as shown below.&#x20;
 

@@ -56,7 +56,7 @@ If instead you want to preview queries in another Board without switching, expan
 
 Clicking on a query in the dropdown will open up a preview of its SQL in your results grid.
 
-![Previewing the "Crimes by District" query, which is inside the "SF Police Data" Board](../.gitbook/assets/PreviewQuery.jpg)
+![Previewing the "Crimes by District" query, which is inside the "SF Police Data" Board](../.gitbook/assets/PreviewQuery.png)
 
 {% hint style="info" %}
 If you click on a query within your active board, then you will be switched to that tab instead.

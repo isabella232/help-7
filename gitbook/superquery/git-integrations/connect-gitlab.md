@@ -15,7 +15,7 @@ Let's see how to set this up below.
 Click on the "Source Control" icon in the lower-left corner of your navigation panel, and select "Connect to GitLab"
 
 <!-- markdownlint-disable-next-line -->
-![](<../.gitbook/assets/GitLabConnect 2.jpg>)
+![](<../.gitbook/assets/GitLabConnect 2.png>)
 
 Next, choose your deployment option and click "**Connect**".
 

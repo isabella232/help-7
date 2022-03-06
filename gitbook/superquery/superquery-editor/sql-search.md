@@ -17,7 +17,7 @@ Continue reading to see how it works.
 First, click on the "SQL Search" magnifying glass icon in your left-hand navigation bar.
 
 <!-- markdownlint-disable-next-line -->
-![](../.gitbook/assets/SQLSEARTCH.jpg)
+![](../.gitbook/assets/SQLSEARTCH.png)
 
 Then enter a search term that you remember being used in the SQL your searching for. This can be anything from a:
 

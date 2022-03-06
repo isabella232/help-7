@@ -10,7 +10,7 @@ Your table's schema is automatically detected from your SQL. Once dataset and ta
 
 Access the Schema tab via the left-hand resource panel.
 
-![Viewing the schema for the "online\_purchases" table](../.gitbook/assets/SchemaTab.jpg)
+![Viewing the schema for the "online\_purchases" table](../.gitbook/assets/SchemaTab.png)
 
 ## Interacting with Schema
 
@@ -25,4 +25,4 @@ The Schema tab displays the schema for _all_ tables that are referenced in your 
 
 For example, when your tab contains multiple queries, or you're querying multiple tables in a query (ex. JOINs).
 
-![Schema tab displaying column info for two tables referenced in a query](../.gitbook/assets/TwoTAbles.jpg)
+![Schema tab displaying column info for two tables referenced in a query](../.gitbook/assets/TwoTAbles.png)

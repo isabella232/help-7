@@ -27,7 +27,7 @@ You can execute multiple queries in parallel inside a single tab while viewing e
 First, open the [Board](organizing-queries.md) you'd like to add the query tab to or create a new one. Then, click the "Add tab" button as shown below.
 
 <!-- markdownlint-disable-next-line -->
-![](../.gitbook/assets/AddTab.jpg)
+![](../.gitbook/assets/AddTab.png)
 
 ### Give your tab(s) a memorable name
 
@@ -40,7 +40,7 @@ Each tab has its own settings that you can edit. To make changes to your tab's s
 For more information on your tab settings, read [**this article**](tab-settings.md).
 
 <!-- markdownlint-disable-next-line -->
-![](../.gitbook/assets/QuerySettings.jpg)
+![](../.gitbook/assets/QuerySettings.png)
 
 ## Tab Options
 

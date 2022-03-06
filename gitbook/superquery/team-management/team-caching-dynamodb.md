@@ -41,7 +41,7 @@ Under "**Team Caching**" click the "Private" button and set your database to "AW
 Then click on "Set credentials" to enter your DynamoDB details. Copy and paste your access key and secret key from earlier. Then name your connection and select your database region(s).
 
 <!-- markdownlint-disable-next-line -->
-![](<../.gitbook/assets/CleanShot 2021-03-03 at 10.52.33.jpg>)
+![](<../.gitbook/assets/CleanShot 2021-03-03 at 10.52.33.png>)
 
 ## Activate Team Caching
 

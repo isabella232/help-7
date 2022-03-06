@@ -19,7 +19,7 @@ Let's see how to set this up below.
 Click on the Source Control icon (shown below), and then select "Connect to Github".
 
 <!-- markdownlint-disable-next-line -->
-![](../.gitbook/assets/ConnectGithub.jpg)
+![](../.gitbook/assets/ConnectGithub.png)
 
 ## Step 2: Authorize superQuery to access your resources
 

@@ -60,7 +60,7 @@ Manage and edit your [scheduled queries](../scheduled-queries/managing-scheduled
 ### Source Control
 
 <!-- markdownlint-disable-next-line -->
-![](../.gitbook/assets/SourceControl.jpg)
+![](../.gitbook/assets/SourceControl.png)
 
 Connect your [GitHub repository](../git-integrations/connect-github.md) or [GitLab project](../git-integrations/connect-gitlab.md) to superQuery.
 
@@ -76,7 +76,7 @@ Toggle between Dark Mode and Light Mode with a single click.
 ### superQuery Help
 
 <!-- markdownlint-disable-next-line -->
-![](../.gitbook/assets/Help.jpg)
+![](../.gitbook/assets/Help.png)
 
 Clicking on this icon gives you several options:
 
@@ -179,4 +179,4 @@ Your right pane (highlighted below) is separated into the following features
   * Download SQL &mdash; downloads your current query tab's SQL into a .sql file
 
 <!-- markdownlint-disable-next-line -->
-![](<../.gitbook/assets/CleanShot 2021-02-22 at 12.23.06.jpg>)
+![](<../.gitbook/assets/CleanShot 2021-02-22 at 12.23.06.png>)
