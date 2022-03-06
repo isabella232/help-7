@@ -382,6 +382,8 @@ rm-unused-assets:
 # fdupes
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+# TODO: Scan superQuery docs (see `fdupes.sh` file)
+
 FDUPES = ./bin/fdupes.sh
 
 check: fdupes
