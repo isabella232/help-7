@@ -5,20 +5,20 @@
 .EXPORT_ALL_VARIABLES:
 
 # POSIX locale
-LC_ALL=C
+LC_ALL = C
 
 # ANSI formatting
-BOLD := [1m
-RED := [31m
-RESET := [0m
+BOLD = [1m
+RED = [31m
+RESET = [0m
 
-BIN_DIR := ./bin
-GH_PAGES_DIR := gh-pages
+BIN_DIR = ./bin
+GH_PAGES_DIR = gh-pages
 GITBOOK_ASSETS_DIR = .gitbook/assets
-GITBOOK_CMP_DIR := gitbook/cmp
-GITBOOK_SUPERQUERY_DIR := gitbook/superquery
+GITBOOK_CMP_DIR = gitbook/cmp
+GITBOOK_SUPERQUERY_DIR = gitbook/superquery
 SPHINX_ASSETS_DIR = src/_assets
-SPHINX_CMP_DIR := sphinx/cmp
+SPHINX_CMP_DIR = sphinx/cmp
 
 FIND := $(BIN_DIR)/find.sh
 
@@ -30,7 +30,7 @@ endef
 # Targets
 # =============================================================================
 
-.DEFAULT_GOAL := check
+.DEFAULT_GOAL = check
 
 # check
 # -----------------------------------------------------------------------------
@@ -84,7 +84,7 @@ lintspaces:
 
 # https://github.com/prettier/prettier
 
-PRETTIER := prettier --check --ignore-unknown .
+PRETTIER = prettier --check --ignore-unknown .
 
 check: prettier
 .PHONY: prettier
@@ -97,7 +97,7 @@ prettier:
 
 # https://github.com/psf/black
 
-BLACK := prettier --check .
+BLACK = prettier --check .
 
 check: black
 .PHONY: black
@@ -110,7 +110,7 @@ black:
 
 # https://github.com/adrienverge/yamllint
 
-YAMLLINT := yamllint --config-file .yamllint.yaml .
+YAMLLINT = yamllint --config-file .yamllint.yaml .
 
 check: yamllint
 .PHONY: yamllint
@@ -123,7 +123,7 @@ yamllint:
 
 # https://github.com/koalaman/shellcheck
 
-SHELLCHECK := shellcheck
+SHELLCHECK = shellcheck
 
 check: shellcheck
 .PHONY: shellcheck
@@ -136,7 +136,7 @@ shellcheck:
 
 # https://github.com/mvdan/sh
 
-SHFMT := shfmt -d -p -i 4 -ci .
+SHFMT = shfmt -d -p -i 4 -ci .
 
 check: shfmt
 .PHONY: shfmt
@@ -174,7 +174,7 @@ rm-unused-docs:
 # markdownlint
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-MARKDOWNLINT = $(BIN_DIR)/markdownlint.sh
+MARKDOWNLINT := $(BIN_DIR)/markdownlint.sh
 
 check: markdownlint
 .PHONY: markdownlint
@@ -207,7 +207,7 @@ inline-html:
 # update-dict
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-UPDATE_DICT = $(BIN_DIR)/update-dict.sh --dry-run
+UPDATE_DICT := $(BIN_DIR)/update-dict.sh --dry-run
 
 check: update-dict
 .PHONY: update-dict
@@ -220,7 +220,7 @@ update-dict:
 
 # https://github.com/streetsidesoftware/cspell
 
-CSPELL := cspell --no-progress --no-summary --config .cspell.json
+CSPELL = cspell --no-progress --no-summary --config .cspell.json
 
 check: cspell
 .PHONY: cspell
@@ -231,7 +231,7 @@ cspell:
 # misspell
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-MISSPELL := $(BIN_DIR)/misspell.sh
+MISSPELL = $(BIN_DIR)/misspell.sh
 
 check: misspell
 .PHONY: misspell
@@ -244,7 +244,7 @@ misspell:
 
 # https://github.com/sapegin/proselint
 
-# PROSELINTJS := proselintjs --config .proselintrc.json
+# PROSELINTJS = proselintjs --config .proselintrc.json
 
 # all: proselintjs
 # .PHONY: proselintjs
@@ -257,7 +257,7 @@ misspell:
 
 # https://github.com/textlint/textlint
 
-# TEXTLINT := textlint --config .textlintrc.yaml
+# TEXTLINT = textlint --config .textlintrc.yaml
 
 # FIND_TEXTLINT_RULE := $(FIND) | xargs -0 $(TEXTLINT) --rule
 
@@ -300,13 +300,13 @@ misspell:
 
 # TODO: https://share.streamlit.io/jdkato/rules/main/app/main.py
 
-VALE_CLI := vale \
+VALE_CLI = vale \
 	--config .vale.ini \
 	--minAlertLevel warning \
 	--output=.vale/templates/cli.tmpl \
 	--no-wrap
 
-VALE_CLI_RULE = $(FIND) \
+VALE_CLI_RULE := $(FIND) \
 	-exec grep -Iq . {} \; \
 	-not -name '.dict.txt' \
 	-not -name '*.xml' | \
@@ -323,7 +323,7 @@ vale:
 
 # https://github.com/smallhadroncollider/brok
 
-# BROK := brok --check-certs --only-failures
+# BROK = brok --check-certs --only-failures
 
 # TODO: Keep cache file in Git
 
@@ -340,7 +340,7 @@ vale:
 
 # https://github.com/tcort/markdown-link-check
 
-# MARKDOWN_LINK_CHECK := markdown-link-check \
+# MARKDOWN_LINK_CHECK = markdown-link-check \
 # 	--config .markdown-link-check.json \
 # 	--quiet \
 # 	--retry
@@ -371,7 +371,7 @@ rm-unused-assets:
 
 # TODO: Scan superQuery docs (see `fdupes.sh` file)
 
-FDUPES = $(BIN_DIR)/fdupes.sh
+FDUPES := $(BIN_DIR)/fdupes.sh
 
 check: fdupes
 .PHONY: fdupes
@@ -382,7 +382,7 @@ fdupes:
 # imgdup2go
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# IMGDUP2GO = $(BIN_DIR)/imgdup2go.sh
+# IMGDUP2GO := $(BIN_DIR)/imgdup2go.sh
 
 # all: imgdup2go
 # .PHONY: imgdup2go
@@ -395,7 +395,7 @@ fdupes:
 # optipng
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-OPTIPNG = $(BIN_DIR)/optipng.sh --dry-run
+OPTIPNG := $(BIN_DIR)/optipng.sh --dry-run
 
 check: optipng
 .PHONY: optipng
@@ -443,14 +443,15 @@ $(GH_PAGES_DIR)/assets.html:
 
 # https://github.com/errata-ai/vale
 
-VALE_JSON := vale \
+VALE_JSON = vale \
 	--config .vale.ini \
 	--minAlertLevel suggestion \
 	--output=JSON \
 	--no-wrap \
 	--no-exit
 
-VALE_JSON_RULE = $(FIND) -exec grep -Iq . {} \; -not -name '.dict.txt' | \
+VALE_JSON_RULE := $(FIND) \
+	-exec grep -Iq . {} \; -not -name '.dict.txt' | \
 	xargs -0 $(VALE_JSON) >$@
 
 $(GH_PAGES_DIR)/index.html: $(GH_PAGES_DIR)/vale.json
