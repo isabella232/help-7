@@ -36,7 +36,7 @@ docs_dir="${1}"
 assets_dir="${2}"
 
 tmp_errors="$(mktemp)"
-./bin/find.sh -path "./${docs_dir}/${assets_dir}/*" | tr '\0' '\n' |
+./bin/find.sh "./${docs_dir}/${assets_dir}/" |
     while read -r file; do
         pattern="assets/$(basename "${file}")"
         if ! grep -rsqF "${pattern}" --include='*.md' "${docs_dir}"; then

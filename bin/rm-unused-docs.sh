@@ -34,8 +34,7 @@ done
 docs_dir="${1}"
 
 tmp_errors="$(mktemp)"
-./bin/find.sh -path "./${docs_dir}/*" -name '*.md' -not -name 'SUMMARY.md' |
-    tr '\0' '\n' |
+./bin/find.sh --mode md-pages "./${docs_dir}/" |
     while read -r file; do
         basename="$(basename "${file}")"
         if ! grep -rsqF "${basename}" --include='*.md' "./${docs_dir}"; then

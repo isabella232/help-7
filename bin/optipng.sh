@@ -37,7 +37,7 @@ docs_lock_dir="${OPTIPNG_LOCK_DIR}/${docs_dir}"
 mkdir -p "${docs_lock_dir}"
 
 tmp_errors="$(mktemp)"
-./bin/find.sh -path "./${docs_dir}/${assets_dir}/*" -name '*.png' |
+./bin/find.sh --binary --mode png "./${docs_dir}/${assets_dir}/*" |
     tr '\0' '\n' |
     while read -r file; do
         basename="$(basename "${file}")"

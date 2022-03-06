@@ -1,4 +1,5 @@
 .brokdb
+.docops/cache
 .vscode/settings.json
 *.log
 *.out

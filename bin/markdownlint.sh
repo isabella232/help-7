@@ -21,7 +21,7 @@ markdownlint .
 
 search() {
     pattern="${1}"
-    if (./bin/find.sh -name '*.md' |
+    if (./bin/find.sh --mode md --print0 |
         xargs -0 grep --color=always -E "${pattern}"); then
         return 1
     else

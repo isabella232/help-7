@@ -32,7 +32,7 @@ test_encoding() {
 }
 
 tmp_errors="$(mktemp)"
-./bin/find.sh -exec grep -Iq . {} \; | tr '\0' '\n' | while read -r file; do
+./bin/find.sh | while read -r file; do
     test_encoding "${file}" | tee -a "${tmp_errors}"
 done
 

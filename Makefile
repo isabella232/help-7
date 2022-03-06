@@ -17,8 +17,11 @@ GH_PAGES_DIR = gh-pages
 GITBOOK_ASSETS_DIR = .gitbook/assets
 GITBOOK_CMP_DIR = gitbook/cmp
 GITBOOK_SUPERQUERY_DIR = gitbook/superquery
+CACHE_DIR = .docops/cache
 SPHINX_ASSETS_DIR = src/_assets
 SPHINX_CMP_DIR = sphinx/cmp
+SPHINX_CMP_DOCS_DIR = $(SPHINX_CMP_DIR)/docs
+SPHINX_CMP_VENV_DIR = $(SPHINX_CMP_DIR)/.venv
 
 FIND := $(BIN_DIR)/find.sh
 
@@ -30,10 +33,23 @@ endef
 # Targets
 # =============================================================================
 
+# TODO: Convert all lint checks into scripts and use a single pattern rule to
+#       invoke them
+
+# TODO: All targets that call a script multiple times should be simplified so
+#       that it can be done by pattern rules
+
+# TODO: Move the lint scripts into a separate directory
+
+# TODO: Now that `find.sh` has been partially refactored, go through each
+#       target and test that it still correctly flags errors
+
 .DEFAULT_GOAL = check
 
 # check
 # -----------------------------------------------------------------------------
+
+# TODO: Perhaps purge the `find.sh` cache before a run
 
 .PHONY: check
 check:
@@ -97,7 +113,7 @@ prettier:
 
 # https://github.com/psf/black
 
-BLACK = prettier --check .
+BLACK = black --check --quiet .
 
 check: black
 .PHONY: black
@@ -121,22 +137,18 @@ yamllint:
 # shellcheck
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# https://github.com/koalaman/shellcheck
-
-SHELLCHECK = shellcheck
+SHELLCHECK = $(BIN_DIR)/shellcheck.sh
 
 check: shellcheck
 .PHONY: shellcheck
 shellcheck:
 	$(call print-target)
-	$(FIND) -name '*.sh' | xargs -0 $(SHELLCHECK)
+	$(SHELLCHECK)
 
 # shfmt
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# https://github.com/mvdan/sh
-
-SHFMT = shfmt -d -p -i 4 -ci .
+SHFMT = $(BIN_DIR)/shfmt.sh
 
 check: shfmt
 .PHONY: shfmt
@@ -218,15 +230,12 @@ update-dict:
 # cspell
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# https://github.com/streetsidesoftware/cspell
-
-CSPELL = cspell --no-progress --no-summary --config .cspell.json
-
+CSPELL = $(BIN_DIR)/cspell.sh
 check: cspell
 .PHONY: cspell
 cspell:
 	$(call print-target)
-	$(FIND) -exec grep -Iq . {} \; | xargs -0 $(CSPELL)
+	$(CSPELL)
 
 # misspell
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -250,7 +259,7 @@ misspell:
 # .PHONY: proselintjs
 # proselintjs:
 # 	$(call print-target)
-# 	$(FIND) | xargs -0 $(PROSELINTJS) || true
+# 	$(FIND) --print0 | xargs -0 $(PROSELINTJS) || true
 
 # textlint
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -259,7 +268,7 @@ misspell:
 
 # TEXTLINT = textlint --config .textlintrc.yaml
 
-# FIND_TEXTLINT_RULE := $(FIND) | xargs -0 $(TEXTLINT) --rule
+# FIND_TEXTLINT_RULE := $(FIND) --print0 | xargs -0 $(TEXTLINT) --rule
 
 # all: textlint
 # .PHONY: textlint
@@ -300,23 +309,13 @@ misspell:
 
 # TODO: https://share.streamlit.io/jdkato/rules/main/app/main.py
 
-VALE_CLI = vale \
-	--config .vale.ini \
-	--minAlertLevel warning \
-	--output=.vale/templates/cli.tmpl \
-	--no-wrap
-
-VALE_CLI_RULE := $(FIND) \
-	-exec grep -Iq . {} \; \
-	-not -name '.dict.txt' \
-	-not -name '*.xml' | \
-	xargs -0 $(VALE_CLI)
+VALE := $(BIN_DIR)/vale.sh
 
 check: vale
 .PHONY: vale
 vale:
 	$(call print-target)
-	$(VALE_CLI_RULE)
+	$(VALE)
 
 # brok
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -333,7 +332,7 @@ vale:
 # .PHONY: brok
 # brok:
 # 	$(call print-target)
-# 	$(FIND) | xargs -0 $(BROK)
+# 	$(FIND) -print0 | xargs -0 $(BROK)
 
 # markdown-link-check
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -349,7 +348,7 @@ vale:
 # .PHONY: markdown-link-check
 # markdown-link-check:
 # 	$(call print-target)
-# 	$(FIND) -name '*.md' | xargs -0 $(MARKDOWN_LINK_CHECK)
+# 	$(FIND) --mode md --print0 | xargs -0 $(MARKDOWN_LINK_CHECK)
 
 # rm-unused-assets
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -450,9 +449,7 @@ VALE_JSON = vale \
 	--no-wrap \
 	--no-exit
 
-VALE_JSON_RULE := $(FIND) \
-	-exec grep -Iq . {} \; -not -name '.dict.txt' | \
-	xargs -0 $(VALE_JSON) >$@
+VALE_JSON_RULE := $(FIND) --mode vale -print0 | xargs -0 $(VALE_JSON) >$@
 
 $(GH_PAGES_DIR)/index.html: $(GH_PAGES_DIR)/vale.json
 .PHONY: $(GH_PAGES_DIR)/vale.json
@@ -462,11 +459,26 @@ $(GH_PAGES_DIR)/vale.json:
 	$(VALE_JSON_RULE)
 	prettier --loglevel silent --write $@
 
-# clean
+# Maintenance
 # -----------------------------------------------------------------------------
+
+# TODO: Figure out how to structure these targets
+
+# purge
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+purge:
+	rm -rf $(CACHE_DIR)
+
+# clean
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# TODO: Evaluate how many of these rules are still needed
 
 clean:
 	rm -rf $(GH_PAGES_DIR)
+	rm -rf $(SPHINX_CMP_DOCS_DIR)
+	rm -rf $(SPHINX_CMP_VENV_DIR)
 	find . -type f -name '*.sig' -delete
 	find . -type f -name '*.out' -delete
 	find . -type f -name '*.tmp' -delete

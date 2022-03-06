@@ -20,11 +20,7 @@ run_lintspaces() {
 }
 
 # Python files
-./bin/find.sh \
-    -name '*.py' |
-    run_lintspaces 2
+./bin/find.sh --mode py | run_lintspaces 2
 
 # All other files
-./bin/find.sh \
-    -exec grep -Iq . {} \; -not -name '*.py' |
-    run_lintspaces 1
+./bin/find.sh --mode py --invert | run_lintspaces 1

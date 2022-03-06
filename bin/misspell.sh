@@ -18,8 +18,8 @@ misspell -locale US . |
     grep -vE '.*/_static/[^:]+:' |
     grep -vE '.*/.venv/[^:]+:' |
     grep -vE '.*/searchindex.js:' |
-        grep -vE 'sphinx/[^/]+/docs/[^:]+:' \
-    >"${tmp_errors}" || true
+    grep -vE 'sphinx/[^/]+/docs/[^:]+:' \
+        >"${tmp_errors}" || true
 
 if test -s "${tmp_errors}"; then
     sed -E "s,^(.*),  ${RED}\1${RESET}," <"${tmp_errors}"

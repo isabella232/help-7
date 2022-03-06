@@ -41,7 +41,7 @@ check_filename() {
 }
 
 tmp_errors="$(mktemp)"
-./bin/find.sh -path "./${assets_dir}/*" | tr '\0' '\n' |
+./bin/find.sh --binary "./${assets_dir}" |
     while read -r file; do
         check_filename "${file}" |
             sed -E 's,(.*),(\1),' |

@@ -24,7 +24,7 @@ img {
 </style>
 EOF
 
-./bin/find.sh -path "./${assets_dir}/*" -name '*.png' | tr '\0' '\n' |
+./bin/find.sh --binary --mode img "./${assets_dir}" |
     while read -r file; do
         basename="$(basename "${file}")"
         asset_url="${ASSETS_URL}/${assets_dir}/${basename}"
