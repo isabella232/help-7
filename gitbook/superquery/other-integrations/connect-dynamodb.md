@@ -20,14 +20,17 @@ Let's get started!
 
 &#x20;Under "Resources", click on the "**+**" sign next to the Connections tab.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (59).png>)
 
 Next, under "Available Integrations" click on the "Connect" button that appears next to "DynamoDB".
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (64).png>)
 
 A modal will appear for you to enter your AWS Athena credentials:
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (65).png>)
 
 ## Enter your DynamoDB credentials
@@ -82,8 +85,10 @@ Here's how:
 
 Once you've completed these steps, you'll have the information needed to provide the IAM Role ARN in superQuery, using the formatting mentioned above.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (67).png>)
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (68).png>)
 
 ## Query a DynamoDB table
@@ -96,4 +101,5 @@ Under that, you will see the next level of information appear with the names of 
 \
 Finally, you'll find your tables under the region you select.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (69).png>)

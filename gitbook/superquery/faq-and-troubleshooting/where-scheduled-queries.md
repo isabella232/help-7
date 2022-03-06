@@ -1,6 +1,6 @@
 # "Where are my scheduled queries from BigQuery?"
 
-### Why don't I see my scheduled queries?
+## Why don't I see my scheduled queries?
 
 When you open superQuery's Scheduled Queries Manager, you might notice that any previously-saved scheduled jobs from BigQuery don't appear.
 
@@ -10,7 +10,7 @@ As a result, your previously scheduled queries aren't carried over initially.&#x
 
 Simply copy + paste the SQL of the scheduled queries you already set up and re-enter the interval and destination table.
 
-### Benefits of the superQuery scheduler
+## Benefits of the superQuery scheduler
 
 Building our own query scheduler allows us to build unique capabilities on top of the normal scheduler over time and be more responsive to user requests.
 

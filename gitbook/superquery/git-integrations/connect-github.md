@@ -14,19 +14,20 @@ By connecting your Github repository to superQuery, you'll effectively create a 
 
 Let's see how to set this up below.
 
-### Step 1: Open Source Control options in your Resource Panel
+## Step 1: Open Source Control options in your Resource Panel
 
 Click on the Source Control icon (shown below), and then select "Connect to Github".
 
+<!-- markdownlint-disable-next-line -->
 ![](../.gitbook/assets/ConnectGithub.jpg)
 
-### Step 2: Authorize superQuery to access your resources
+## Step 2: Authorize superQuery to access your resources
 
 You will temporarily be taken to Github to sign in (if you're not already signed in) and then give the superQuery Github app authorization to access resources.
 
 This allows superQuery to display a list of repositories, from which you'll select the one that you can connect to.
 
-### Step 3: Select the repository you want to connect
+## Step 3: Select the repository you want to connect
 
 After granting authorization, you will be taken back to superQuery where you can now select the repo you want to connect.
 
@@ -36,9 +37,10 @@ Make sure your repository has **at least one file** inside _before_ connecting (
 
 If you don't have a GitHub repository already, don't worry. You can set up a private one [**for free**](https://github.com/pricing).&#x20;
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (21).png>)
 
-### Step 4 \[optional]: Request permission to install the superQuery Github application
+## Step 4 \[optional]: Request permission to install the superQuery Github application
 
 In cases where you want to connect to a repository you're not the owner of &mdash; such as a repository inside of your company's [GitHub Organization](https://help.github.com/en/articles/about-organizations) &mdash; you have to request permission from the repository owner.\
 \
@@ -46,13 +48,15 @@ To request permission, [go here](https://github.com/apps/superQuery-io/installat
 
 Select your company's GitHub Organization to request access.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (22).png>)
 
 Then, determine whether you want to request permission for all repositories, or specific ones.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (23).png>)
 
-### Step #5: View your changes in GitHub
+## Step #5: View your changes in GitHub
 
 In GitHub, your queries are organized in your project under a pre-determined hierarchy of User > [Board](../superquery-editor/organizing-queries.md) > [Query Tab](../superquery-editor/query-tabs.md).
 
@@ -69,12 +73,15 @@ Once arriving at the query tab you want to examine (in our case below, "Most Pro
 
 To view the history of changes and see what changes were made, click on "History"
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (48).png>)
 
 You will be able to see your latest commits / changes made to that tab.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (49).png>)
 
 Finally, click on any of the messages to see the changes made in that commit.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (50).png>)

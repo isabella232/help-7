@@ -12,7 +12,7 @@ Are you a DoiT International customer? If so, you can use the [BigQuery Lens](ht
 
 superQuery is a web-based IDE that helps data analysts & scientists work more productively when querying data stored in Google BigQuery, AWS Athena (S3), and AWS DynamoDB.
 
-### What can I do with superQuery?
+## What can I do with superQuery?
 
 You can use superQuery to:
 

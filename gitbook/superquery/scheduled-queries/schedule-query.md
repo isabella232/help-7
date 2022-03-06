@@ -12,6 +12,7 @@ To schedule a query, first open the tab containing the query you'd like to sched
 
 Then, click on the scheduler icon that appears to the right of your [query tabs](../superquery-editor/query-tabs.md) (show below).
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (78).png>)
 
 ## Scheduler Settings
@@ -44,6 +45,7 @@ Your query scheduler settings (screenshot at the end) contain four main sections
 Note: When you are scheduling a query that contains [variables](../superquery-editor/variables.md), the variable will execute as a literal value.
 {% endhint %}
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (79).png>)
 
 ## Scheduling a sequence of DML scripts

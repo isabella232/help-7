@@ -14,12 +14,14 @@ Similar to Git Diff functionality in source control tools, changes made between 
 
 For Local History to work, make sure you've run a query at least two times in a query tab, with modifications made to the SQL along the way.
 
-Access Local History by clicking on the **\[1] **"Details" button in your results grid.
+Access Local History by clicking on the **\[1]** "Details" button in your results grid.
 
 Then, click on the **\[2]** "Local History" button underneath the SQL preview for that result tab.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (51).png>)
 
 Finally, select which result's SQL you'd like to compare using the dropdown menus on either side of the Diff pop-up (first screenshot above).
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (52).png>)

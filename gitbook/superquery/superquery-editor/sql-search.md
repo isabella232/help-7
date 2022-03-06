@@ -12,10 +12,11 @@ Now, you can use SQL Search and search for query tabs using keyword(s) used in t
 
 Continue reading to see how it works.
 
-### Using SQL Search
+## Using SQL Search
 
 First, click on the "SQL Search" magnifying glass icon in your lefthand navigation bar.
 
+<!-- markdownlint-disable-next-line -->
 ![](../.gitbook/assets/SQLSEARTCH.jpg)
 
 Then enter a search term that you remember being used in the SQL your searching for. This can be anything from a:
@@ -27,6 +28,7 @@ Then enter a search term that you remember being used in the SQL your searching 
 
 After you enter a search term, results containing your term will be displayed below, with the search term being highlighted.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (18).png>)
 
 Next, click on the results to expand the SQL so you can identify which result contains the SQL you're looking for. Notice the "Path" column, which tells you which Board / Query Tab the SQL is located in.

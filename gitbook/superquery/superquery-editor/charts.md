@@ -14,4 +14,5 @@ Here's how to create a Chart:
 2. Click on the "**Chart**" icon in your results grid.
 3. Select your graph type in the left-hand resource panel.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/ChartsSQ (2).gif>)

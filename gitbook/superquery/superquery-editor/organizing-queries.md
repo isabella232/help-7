@@ -10,6 +10,7 @@ For example, if you're exploring user metrics AND separately working on a person
 
 As illustrated below, you would separate queries into "User Metrics" and "Personal Project" boards.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (7).png>)
 
 ## How do I create and access my boards?
@@ -18,12 +19,14 @@ As illustrated below, you would separate queries into "User Metrics" and "Person
 
 Click on the **Boards** icon (shown below) in your Resource Panel to open a list of boards you've created.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (8).png>)
 
 ### Create Boards
 
 To create a new board, click on the "**+**" sign at the top of your boards list.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (9).png>)
 
 #### Give your Board a good name
@@ -32,6 +35,7 @@ After creating a Board, you'll want to give it a good name. Perhaps you intend o
 
 The point is &mdash; just like with naming [Query Tabs](query-tabs.md) &mdash; your Board's name should be **descriptive** enough that it is obvious where to find specific data and easy to identify which queries the board contains.
 
+<!-- markdownlint-disable-next-line -->
 ![](../.gitbook/assets/renameboard.gif)
 
 ### Switch to another Board
@@ -40,12 +44,14 @@ Each board will have its name displayed, along with a dropdown list of all of th
 
 To switch to another Board, click on the name of a Board other than the one you currently have open.
 
+<!-- markdownlint-disable-next-line -->
 ![](../.gitbook/assets/OpenBoard.gif)
 
 #### Preview queries in another Board
 
 If instead you want to preview queries in another Board without switching, expand a Board to view the queries inside by clicking the &#x25ba; icon.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (10).png>)
 
 Clicking on a query in the dropdown will open up a preview of its SQL in your results grid.
@@ -60,6 +66,7 @@ If you click on a query within your active board, then you will be switched to t
 
 Sharing Boards helps when you want to collaborate on a group of queries with others. It's also just an easier way of sharing more than one query in one fell swoop.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (97).png>)
 
 To share a Board, click on the Share button at the top of the people you want to share with, and select whether you want to give them View or Edit permissions.
@@ -70,4 +77,5 @@ To share a Board, click on the Share button at the top of the people you want to
 
 Finally, click "Send Invite" to share the tab. It will be accessible from the recipient(s) Board list, but only the tab(s) you share will be visible.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (97).png>)

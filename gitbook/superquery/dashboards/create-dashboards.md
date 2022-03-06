@@ -12,10 +12,12 @@ For that, there is **Visualize**. This takes the latest result for each query ta
 
 To do so, click on the "Visualize" toggle at the top-right corner of your screen
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (94).png>)
 
 Each box represents a query tab's results. We refer to these as "widgets" in a dashboard.&#x20;
 
 In the example below, we have seven query tabs, so we see seven widgets in the dashboard.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/CleanShot 2021-03-02 at 15.02.04.gif>)

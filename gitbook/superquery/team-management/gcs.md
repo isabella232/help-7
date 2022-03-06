@@ -8,15 +8,17 @@ Follow these short instructions to have all downloaded CSV results go into a GCS
 
 Open superQuery and click on your Profile icon in the Resource Panel. Then, click on "**Settings**".
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (98).png>)
 
 You should arrive at the "**System Preferences**" tab. Under "**Download CSV**", select **Private**.&#x20;
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (99).png>)
 
 Then click "**Set credentials**" to set up your Google Cloud Storage service account.
 
-### Enter Google Cloud Storage Credentials
+## Enter Google Cloud Storage Credentials
 
 * Enter the name of your GCS bucket.
 * Follow Google Cloud's instructions for [creating service account keys](https://cloud.google.com/iam/docs/creating-managing-service-account-keys#iam-service-account-keys-create-console).
@@ -38,4 +40,5 @@ Keys created using the GCP Console or the `gcloud` command-line tool look like t
 }
 ```
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (101).png>)

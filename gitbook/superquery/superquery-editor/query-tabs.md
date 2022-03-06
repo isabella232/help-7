@@ -26,6 +26,7 @@ You can execute multiple queries in parallel inside a single tab while viewing e
 
 First, open the [Board](organizing-queries.md) you'd like to add the query tab to or create a new one. Then, click the "Add tab" button as shown below.
 
+<!-- markdownlint-disable-next-line -->
 ![](../.gitbook/assets/AddTab.jpg)
 
 ### Give your tab(s) a memorable name
@@ -38,6 +39,7 @@ Each tab has its own settings that you can edit. To make changes to your tab's s
 
 For more information on your tab settings, read [**this article**](tab-settings.md).
 
+<!-- markdownlint-disable-next-line -->
 ![](../.gitbook/assets/QuerySettings.jpg)
 
 ## Tab Options
@@ -46,14 +48,13 @@ A [set of options](query-tabs.md#tab-options) are available in each tab by click
 
 ![Query Tab options](<../.gitbook/assets/image (54).png>)
 
-###
-
 ### Closing and Deleting Tabs
 
 Closing tabs hides it from your Editor, but it doesn't mean the tab is deleted. You can close tabs by clicking on the "x" that appears when hovering over a query tab, or via two tab options ("**Close Other Tabs**", "**Close Tabs To The Right**").
 
 You can always bring it back to your editor view from your Boards list. Just click on the tab that was closed and it will resurface as a tab in your editor.
 
+<!-- markdownlint-disable-next-line -->
 ![](../.gitbook/assets/REcoverTabs.gif)
 
 To permanently remove a query tab, open the options dropdown for that tab and click the "Delete Tab" option from the dropdown menu.
@@ -64,6 +65,7 @@ If you accidentally deleted a tab, you can restore it with the "Restore Deleted 
 "Restore Deleted Tabs" will only restore tabs that were deleted in your current session.
 {% endhint %}
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (6).png>)
 
 ### Share Tab
@@ -78,6 +80,7 @@ To share a tab, enter the email(s) of the people you want to share with, and sel
 
 Finally, click "Send Invite" to share the tab. It will be accessible from the recipient(s) Board list, but only the tab(s) you share will be visible.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (55).png>)
 
 ### Lock Tab
@@ -88,4 +91,5 @@ When a tab is locked, you will see a lock icon next to its name in your Board's 
 
 To unlock a tab, click on "Unlock Tab" from your tab options dropdown or click on the "Locked" message at the top-right of your editor.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (56).png>)

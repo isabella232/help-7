@@ -20,14 +20,17 @@ Let's get started.
 
 Under "Resources", click on the "**+**" sign next to the Connections tab.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (59).png>)
 
 Next, under "Available Integrations" click on the "Connect" button that appears next to "Athena".
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (58).png>)
 
 A modal will appear for you to enter your AWS Athena credentials:
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (60).png>)
 
 ## Enter AWS Athena credentials
@@ -86,6 +89,7 @@ Once you've completed these steps, you'll have the information needed to provide
 
 To grab the IAM Role ARN, open IAM, and search for the Role you created. Click on the role and under the Summary, copy the value next to "Role ARN".
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (61).png>)
 
 ### Choose your query result location
@@ -104,6 +108,7 @@ Before choosing to save results to your default workgroup, make sure that a quer
 
 To check this, go to your Workgroup tab from the Athena UI, select the radio button next to the primary workgroup, and then click "View Details".
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (62).png>)
 
 #### Option #2: Specify an S3 Bucket
@@ -128,4 +133,5 @@ Under that, you will see the next level of information appear with the naming co
 \
 Finally, you'll find your tables in the database you select.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (63).png>)

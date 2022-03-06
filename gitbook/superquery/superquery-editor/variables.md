@@ -18,7 +18,7 @@ The best part? You can create and modify them in superQuery without using any SQ
 
 ## Creating Variables in superQuery
 
-### Step 1: Open the Variables side panel.
+### Step 1: Open the Variables side panel
 
 In the example below, our query is finding the best-performing products for an eCommerce store, for a given category. Currently, the query is examining the "Drinkware" category.
 
@@ -26,16 +26,19 @@ Let's see how variables can help us here.&#x20;
 
 Click on the **(x) icon** to open the variables side panel and create your first variable.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (114).png>)
 
 Then click on the purple "**Add a variable**" button or  the **"+"** Add Variable button to create a new variable.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (113).png>)
 
 ### Step 2a: Give your variable a good name and initial value
 
 Since we're exploring categories in our example, we will name our variable "**category**", and give it an initial value of "**Apparel**" in order to explore a different category.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (116).png>)
 
 ### Step 2b: Select your variable's data type
@@ -48,6 +51,7 @@ In our example with the variable representing a product category, we will make o
 When creating a new variable, the data type dropdown will be visible by default. If you want to hide it, click on the "^" button next to the value. Similarly, click on the "v" button to un-collapse it and show the data type dropdown.
 {% endhint %}
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (115).png>)
 
 ### Step 3: Insert your variable into a query
@@ -58,6 +62,7 @@ To use a variable in your SQL, place an **'@'** character in front of the variab
 
 In our case, we'll replace "Drinkware" with a variable named "category" that currently holds a value of "Apparel"
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/CleanShot 2021-04-12 at 14.08.45.gif>)
 
 ## Editing your variable's value
@@ -68,6 +73,7 @@ To edit your variable's value, simply update the text box corresponding to the v
 
 Then re-run the query to have your results reflect the change in variable value, as shown below.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/CleanShot 2021-04-12 at 14.19.38.gif>)
 
 ## Other use cases for variables
@@ -93,6 +99,7 @@ ORDER BY 3 asc;
 
 First, we'll create two Date variables called "begDate" and "endDate" which hold the values "2017-01-01" and "2017-09-30", respectively.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (117).png>)
 
 Then insert the two variables in place of the date values that were originally there.
@@ -107,10 +114,12 @@ You can then use your array variable in your queries &mdash; specifically after 
 
 To create an Array variable, after selecting the Array data type, enter all of the possible values your array will hold.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (119).png>)
 
 You can then modify the values the Array holds by checking the boxes next to fields you want or don't want to include, then re-run the query:
 
+<!-- markdownlint-disable-next-line -->
 ![](../.gitbook/assets/arrayquery.gif)
 
 ### Table & Dataset names and Partitioned Table suffixes
@@ -121,13 +130,15 @@ First, create a string variable and uncheck the "**Add quotes automatically**" b
 
 In our example below, we're creating a variable called "table" that holds the value of our table "online\_purchases".
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (15).png>)
 
 Finally replace the table name in your query with your variable, in our case "@table".
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (17).png>)
 
-That's it! The same thing works for datasets and date-partitioned tables. For the latter, you'd create a string variable that contains the date suffix, for example "20200225" and insert the variable _after  _the table name like below:
+That's it! The same thing works for datasets and date-partitioned tables. For the latter, you'd create a string variable that contains the date suffix, for example "20200225" and insert the variable _after_ the table name like below:
 
 `project.dataset.table@suffix`
 

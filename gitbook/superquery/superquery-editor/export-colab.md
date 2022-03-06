@@ -14,33 +14,37 @@ With this trick, you will go from working on your query in superQuery to explori
 
 The initial process of setting up your connection to Google Colab goes as follows:\
 
-### Step 1: Export query results to Jupyter
+## Step 1: Export query results to Jupyter
 
 After running a query, click on the "Export to Jupyter" icon that appears next to the row count for your results.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (70).png>)
 
-### Step 2: Add the Google Drive scope
+## Step 2: Add the Google Drive scope
 
 If this is your first time, you'll be asked to add an auth scope for Google Drive. Because Colab works off of your Google Drive, superQuery requires your permission to access your Drive.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (71).png>)
 
-### Step 3: Review the permissions superQuery is requesting
+## Step 3: Review the permissions superQuery is requesting
 
 Click "Allow" to give superQuery the requisite permissions.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (73).png>)
 
-### Step 4: Open your SQL in Colab
+## Step 4: Open your SQL in Colab
 
 After authenticating and giving the requisite permissions, you will see a slideout appear whenever you click on the "Export to Jupyter" button.
 
 Click "Open" to open your query in a Google Colab notebook.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (74).png>)
 
-### Step 5: Explore your results in Colab
+## Step 5: Explore your results in Colab
 
 Colab will open with five pre-filled cells containing:
 
@@ -57,12 +61,15 @@ Colab will open with five pre-filled cells containing:
 
 **5.** Statistics on your query such as cost, data scanned, or whether you received all or partial results from cache.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (75).png>)
 
 When running a query for the first time in Colab, you will be prompted to click a link and get a verification code.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (76).png>)
 
 After entering the verification code, you'll be able to explore your results in a pivot table and get various query statistics.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (77).png>)

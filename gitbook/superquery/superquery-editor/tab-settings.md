@@ -8,26 +8,28 @@ This article will help you understand the various options you have in your query
 
 Click on the Settings gear icon at the top right of your screen to open query tab settings, as shown below.\
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (19).png>)
 
 A slideout will appear, showing your Query Tab settings:
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (20).png>)
 
 Let's go over each of the options:
 
-### Select Project
+## Select Project
 
 * This is the project to be billed when you execute a query in the active tab.&#x20;
 * By default, "Auto" mode is selected. This pulls your current project from your SQL.&#x20;
 * If you need to bill another project, select your project from the dropdown list.
 
-### SQL Dialect
+## SQL Dialect
 
 * This lets you toggle between **Standard** and **Legacy** SQL dialects, as well as superQuery's "**Auto-Detect**" mode.&#x20;
 * The default setting is "**Auto-Detect**" mode, which automatically detects your SQL syntax from your query and makes sure it runs correctly. This also replaces the necessity to put #standardSQL or #legacySQL.
 
-### Cache Preference
+## Cache Preference
 
 You have three options for caching:
 
@@ -35,26 +37,27 @@ You have three options for caching:
 * "**BigQuery**" &mdash; executes your query without applying any enhanced cost-saving logic.&#x20;
 * "**Off**" &mdash; executes your query using superQuery's query optimization algorithm, but without caching.&#x20;
 
+<!-- markdownlint-disable-next-line -->
 [![](https://downloads.intercomcdn.com/i/o/130019029/eaac9cf1706138996e0c05c5/image.png)](https://downloads.intercomcdn.com/i/o/130019029/eaac9cf1706138996e0c05c5/image.png)
 
-### Query Priority
+## Query Priority
 
 * Interactive queries will start immediately.&#x20;
 * Queries with batch priority have fewer quota restrictions, but may not execute for up to 24 hours.&#x20;
 
 For more details on query priority, see GCP's [documentation](https://developers.google.com/bigquery/docs/queries#batchqueries).
 
-### Processing Location
+## Processing Location
 
 * Specify the location in which the query will execute. Queries that run in a specific location may only reference data in that location.
 * For data in US/EU, you may choose Unspecified to run the query in the location where the data resides. For data in other locations, you must specify the query location explicitly.
 
-### Max**. Query Cost**
+## Max**. Query Cost**
 
 * Sets a limit for the tab's query cost.
 * If this query will have a cost billed beyond this limit, the query will not execute (without incurring a charge).
 
-### Destination Table
+## Destination Table
 
 Generates a new table based on the result of an executed query.&#x20;
 
@@ -67,10 +70,10 @@ Generates a new table based on the result of an executed query.&#x20;
 2. Append to table &mdash; Appends the query results to an existing table.
 3. Overwrite table &mdash; Overwrites an existing table with the same name using the query results.
 
-### Autocomplete
+## Autocomplete
 
 Toggling "**Autocomplete**" on will activate an IntelliSense-like auto-complete feature in your SQL editor.&#x20;
 
-### Source Control
+## Source Control
 
 Toggling "Auto Commit" on will automatically commit your query to whichever Git repo you've selected (Github, GitLab, or BitBucket) if you've set up the connection.

@@ -8,6 +8,7 @@ When you share a dashboard with someone, you're effectively sharing a Board with
 
 Click on the "Share" button to share your dashboard with other colleagues.
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (95).png>)
 
 In the Share pop-up you have two options:
@@ -17,4 +18,5 @@ In the Share pop-up you have two options:
 
 Additionally, you may make&#x20;
 
+<!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (96).png>)
