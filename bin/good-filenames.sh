@@ -3,7 +3,7 @@
 # Find files that should be renamed (for clarity and consistency)
 # =============================================================================
 
-# Usage: ./bin/lint-filenames.sh
+# Usage: ./bin/good-filenames.sh ASSETS_DIR
 
 # POSIX locale
 LC_ALL=C
@@ -13,6 +13,8 @@ export LC_ALL
 RED='\x1b[31m'
 RESET='\x1b[0m'
 
+assets_dir="${1}"
+
 # Markdown
 # -----------------------------------------------------------------------------
 
@@ -20,8 +22,6 @@ RESET='\x1b[0m'
 
 # Assets
 # -----------------------------------------------------------------------------
-
-ASSETS_DIR=docs/.gitbook/assets
 
 ALLOWED_PREFIXES='^(cmp|aws|gcp|ms|slack|cloudhealth|feedback-hub|email|file)'
 ALLOWED_CHARS='[a-z0-9.-]+'
@@ -41,7 +41,7 @@ check_filename() {
 }
 
 tmp_errors="$(mktemp)"
-./bin/find.sh -path "./${ASSETS_DIR}/*" | tr '\0' '\n' |
+./bin/find.sh -path "./${assets_dir}/*" | tr '\0' '\n' |
     while read -r file; do
         check_filename "${file}" |
             sed -E 's,(.*),(\1),' |

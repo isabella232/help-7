@@ -3,13 +3,28 @@
 # Update the custom dictionary file
 # =============================================================================
 
-# Usage: ./bin/update-dict.sh (--dry-run)
+# Usage: ./bin/update-dict.sh [-d|--dry-run]
 
 # POSIX locale
 LC_ALL=C
 export LC_ALL
 
 DICT_FILE="./.dict.txt"
+
+dry_run=0
+for arg in "$@"; do
+    case "${arg}" in
+    -d | --dry-run)
+        dry_run=1
+        shift
+        ;;
+    -*)
+        echo "ERROR: Unknown option: ${arg}"
+        exit 1
+        ;;
+    *) ;;
+    esac
+done
 
 match_words() {
     tmp_cat="$(mktemp)"
@@ -30,13 +45,13 @@ match_words | awk '{print tolower($0)}' | sort | uniq >"${tmp_dict}"
 
 status_code=0
 
-if test "${1}" = '--dry-run'; then
+if test "${dry_run}" = 0; then
+    cat <"${tmp_dict}" >"${DICT_FILE}"
+else
     diff --color=always -u \
         --label "${DICT_FILE}.orig" "${DICT_FILE}" \
         --label "${DICT_FILE}" "${tmp_dict}" ||
         status_code=1
-else
-    cat <"${tmp_dict}" >"${DICT_FILE}"
 fi
 
 rm "${tmp_dict}"

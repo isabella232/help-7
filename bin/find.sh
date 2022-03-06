@@ -3,7 +3,7 @@
 # Print a null separated list of all versionable files
 # =============================================================================
 
-# Usage: ./bin/find.sh
+# Usage: ./bin/find.sh [OPTIONS...]
 
 # POSIX locale
 LC_ALL=C

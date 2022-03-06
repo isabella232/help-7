@@ -12,8 +12,12 @@ BOLD := [1m
 RED := [31m
 RESET := [0m
 
-ASSETS_DIR := docs/.gitbook/assets
 GH_PAGES_DIR := gh-pages
+GITBOOK_ASSETS_DIR = .gitbook/assets
+GITBOOK_CMP_DIR := gitbook/cmp
+GITBOOK_SUPERQUERY_DIR := gitbook/superquery
+SPHINX_ASSETS_DIR = src/_assets
+SPHINX_CMP_DIR := sphinx/cmp
 
 FIND := ./bin/find.sh
 
@@ -156,13 +160,17 @@ shfmt:
 # good-filenames
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+# TODO: Include superQuery docs
+
 GOOD_FILENAMES := ./bin/good-filenames.sh
 
 check: good-filenames
 .PHONY: good-filenames
 good-filenames:
 	$(call print-target)
-	$(GOOD_FILENAMES)
+	$(GOOD_FILENAMES) $(GITBOOK_CMP_DIR)/$(GITBOOK_ASSETS_DIR)
+	@ # $(GOOD_FILENAMES) $(GITBOOK_SUPERQUERY_DIR)/$(GITBOOK_ASSETS_DIR)
+	@ # $(GOOD_FILENAMES) $(SPHINX_CMP_DIR)/$(SPHINX_ASSETS_DIR)
 
 # rm-unused-docs
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -173,7 +181,8 @@ check: rm-unused-docs
 .PHONY: rm-unused-docs
 rm-unused-docs:
 	$(call print-target)
-	$(RM_UNUSED_DOCS)
+	$(RM_UNUSED_DOCS) $(GITBOOK_CMP_DIR)
+	$(RM_UNUSED_DOCS) $(GITBOOK_SUPERQUERY_DIR)
 
 # markdownlint
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -211,13 +220,13 @@ inline-html:
 # update-dict
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-UPDATE_DICT = ./bin/update-dict.sh
+UPDATE_DICT = ./bin/update-dict.sh --dry-run
 
 check: update-dict
 .PHONY: update-dict
 update-dict:
 	$(call print-target)
-	$(UPDATE_DICT) --dry-run
+	$(UPDATE_DICT)
 
 # cspell
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -357,13 +366,17 @@ vale:
 # rm-unused-assets
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-RM_UNUSED_ASSETS_DIR := ./bin/rm-unused-assets.sh --dry-run
+# TODO: Make this check work for Sphinx (RST files in particular)
+
+RM_UNUSED_ASSETS := ./bin/rm-unused-assets.sh --dry-run
 
 check: rm-unused-assets
 .PHONY: rm-unused-assets
 rm-unused-assets:
 	$(call print-target)
-	$(RM_UNUSED_ASSETS_DIR)
+	$(RM_UNUSED_ASSETS) $(GITBOOK_CMP_DIR) $(GITBOOK_ASSETS_DIR)
+	$(RM_UNUSED_ASSETS) $(GITBOOK_SUPERQUERY_DIR) $(GITBOOK_ASSETS_DIR)
+	@ # $(RM_UNUSED_ASSETS) $(SPHINX_SUPERQUERY_DIR) $(SPHINX_ASSETS_DIR)
 
 # fdupes
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -385,18 +398,22 @@ fdupes:
 # .PHONY: imgdup2go
 # imgdup2go:
 # 	$(call print-target)
-# 	$(IMGDUP2GO)
+# 	$(IMGDUP2GO) $(GITBOOK_CMP_DIR)/$(GITBOOK_ASSETS_DIR)
+# 	$(IMGDUP2GO) $(GITBOOK_SUPERQUERY_DIR)/$(GITBOOK_ASSETS_DIR)
+# 	$(IMGDUP2GO) $(SPHINX_CMP_DIR)/$(SPHINX_ASSETS_DIR)
 
 # optipng
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-OPTIPNG = ./bin/optipng.sh
+OPTIPNG = ./bin/optipng.sh --dry-run
 
 check: optipng
 .PHONY: optipng
 optipng:
 	$(call print-target)
-	$(OPTIPNG)
+	$(OPTIPNG) $(GITBOOK_CMP_DIR) $(GITBOOK_ASSETS_DIR)
+	$(OPTIPNG) $(GITBOOK_SUPERQUERY_DIR) $(GITBOOK_ASSETS_DIR)
+	$(OPTIPNG) $(SPHINX_CMP_DIR) $(SPHINX_ASSETS_DIR)
 
 # telemetry
 # -----------------------------------------------------------------------------
@@ -418,6 +435,9 @@ $(GH_PAGES_DIR)/index.html:
 # assets.html
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+# TODO: Include GitBook superQuery docs
+# TODO: Include Sphinx CMP docs
+
 GEN_ASSETS_LIST := ./bin/gen-assets-list.sh
 
 $(GH_PAGES_DIR)/index.html: $(GH_PAGES_DIR)/assets.html
@@ -425,7 +445,7 @@ $(GH_PAGES_DIR)/index.html: $(GH_PAGES_DIR)/assets.html
 $(GH_PAGES_DIR)/assets.html:
 	$(call print-target)
 	@ mkdir -p $(dir $@)
-	$(GEN_ASSETS_LIST) >$@
+	$(GEN_ASSETS_LIST) $(GITBOOK_CMP_DIR)/$(GITBOOK_ASSETS_DIR) >$@
 	@ # TODO: Format the HTML file
 
 # vale.json

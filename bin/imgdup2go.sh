@@ -3,7 +3,7 @@
 # Wrap the `imgdup2go` command to cache results
 # =============================================================================
 
-# Usage: ./bin/imgdup2go.sh
+# Usage: ./bin/imgdup2go.sh ASSETS_DIR
 
 # POSIX locale
 LC_ALL=C
@@ -13,7 +13,7 @@ export LC_ALL
 RED='\x1b[31m'
 RESET='\x1b[0m'
 
-ASSETS_DIR=docs/.gitbook/assets
+assets_dir="${1}"
 
 IMGDUP2GO_LOCK=.docops/lock/imgdup2go
 mkdir -p "${IMGDUP2GO_LOCK}"
@@ -40,8 +40,8 @@ echo >"${ASSETS_SIG}"
 
 # Generate the output cache
 echo 'Processing images...'
-imgdup2go -dryrun -algo diff -path "${ASSETS_DIR}" 2>/dev/null |
-    grep "${ASSETS_DIR}" |
+imgdup2go -dryrun -algo diff -path "${assets_dir}" 2>/dev/null |
+    grep "${assets_dir}" |
     sed -E 's,.* imgdup2go.go:[0-9]+: ,,' \
         >"${ASSETS_OUT}"
 
