@@ -1,4 +1,5 @@
 {
+  // /* cspell:disable */
   "recommendations": [
     "bierner.github-markdown-preview",
     "cschleiden.vscode-github-actions",

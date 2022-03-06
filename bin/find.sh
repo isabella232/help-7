@@ -15,6 +15,10 @@ export LC_ALL
 # positional arguments to this script
 
 find . -type f \
+    -not -name '*.svg' \
+    -not -name 'gender.txt' \
+    -not -path './.docops/lock/*' \
+    -not -path './.docops/lock/*' \
     -not -path './.git/*' \
     -not -exec git check-ignore --quiet {} \; \
     "${@}" \

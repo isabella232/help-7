@@ -8,7 +8,7 @@ This post goes over how to set up the cache to be stored on your Firebase.
 
 First, open the [IAM & Admin page](https://console.cloud.google.com/project/\_/iam-admin?\_ga=2.255639179.-2078623115.1529931311) in the Google Cloud Console. Then, select your project and click "**Continue**".
 
-In the lefthand navigation panel, click "**Service accounts**".
+In the left-hand navigation panel, click "**Service accounts**".
 
 <!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (102).png>)

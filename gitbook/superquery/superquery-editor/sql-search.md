@@ -14,7 +14,7 @@ Continue reading to see how it works.
 
 ## Using SQL Search
 
-First, click on the "SQL Search" magnifying glass icon in your lefthand navigation bar.
+First, click on the "SQL Search" magnifying glass icon in your left-hand navigation bar.
 
 <!-- markdownlint-disable-next-line -->
 ![](../.gitbook/assets/SQLSEARTCH.jpg)

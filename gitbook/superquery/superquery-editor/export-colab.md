@@ -37,7 +37,7 @@ Click "Allow" to give superQuery the requisite permissions.
 
 ## Step 4: Open your SQL in Colab
 
-After authenticating and giving the requisite permissions, you will see a slideout appear whenever you click on the "Export to Jupyter" button.
+After authenticating and giving the requisite permissions, you will see a slide-out appear whenever you click on the "Export to Jupyter" button.
 
 Click "Open" to open your query in a Google Colab notebook.
 

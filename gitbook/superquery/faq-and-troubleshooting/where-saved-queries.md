@@ -14,7 +14,7 @@ Now let's explore why you don't need Saved Queries in superQuery.
 
 ## Queries DO persist in superQuery Tabs
 
-When working in superQuery Tabs, the experience is similar to that of working in a Google Doc &mdash; your work autosaves. That way, you don't need to fret about saving the latest version of your query.
+When working in superQuery Tabs, the experience is similar to that of working in a Google Doc &mdash; your work auto-saves. That way, you don't need to fret about saving the latest version of your query.
 
 The only way a query will disappear is if you erase it yourself, or delete the tab it's stored in.
 

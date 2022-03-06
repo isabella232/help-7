@@ -4,7 +4,7 @@ description: How to update your scheduled query settings and the underlying SQL.
 
 # Updating scheduled queries
 
-Open your [Scheduled Queries Manager](managing-scheduled-queries.md) by clicking on the "Scheduled queries" icon in your lefthand resource panel. This is where you go to view, edit, and manage all of your scheduled queries.
+Open your [Scheduled Queries Manager](managing-scheduled-queries.md) by clicking on the "Scheduled queries" icon in your left-hand resource panel. This is where you go to view, edit, and manage all of your scheduled queries.
 
 <!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (85).png>)
@@ -21,9 +21,9 @@ If the changes you need to make involves the scheduled query's interval, destina
 <!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (88).png>)
 
-Additionally, a new query tab will open, containing the SQL of that scheduled query. If your change requires updating the underlying SQL of your scheduled query, then click "Cancel" in the slideout and make the change in the newly-opened query tab.
+Additionally, a new query tab will open, containing the SQL of that scheduled query. If your change requires updating the underlying SQL of your scheduled query, then click "Cancel" in the slide-out and make the change in the newly-opened query tab.
 
-After making your changes, click on the "Schedule Query" icon to bring back the slideout. Finally, click on "Update" to make your changes final.&#x20;
+After making your changes, click on the "Schedule Query" icon to bring back the slide-out. Finally, click on "Update" to make your changes final.&#x20;
 
 <!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (89).png>)

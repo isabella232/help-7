@@ -18,8 +18,6 @@ This document outlines what customer data Cloud Management Platform accesses, wh
 
 **TL;DR:** We only access data required for Cloud Management Platform (CMP) functionality. We store and handle your data in a secure way, encrypted in transit and at rest. We do not provide the data to any 3rd party, with the exceptions required for core CMP functionality and listed below.
 
-.. _h_7bc78dd6-eab0-4188-bf00-b0017561511f:
-
 What we access
 --------------
 
@@ -144,8 +142,6 @@ We only store data required for CMP functionality.
 * **Contracts** - required for core CMP functionality; stored in Google Cloud Storage
 * **Service Account Keys** - required for core CPM functionality; stored in Firestore and encrypted with KMS
 
-.. _h_24ce7c2f-7dbb-482d-94a7-3a73a39adcb7:
-
 How we handle and store your data
 ---------------------------------
 
@@ -158,16 +154,12 @@ All data we store are encrypted at rest:
 * **Google Cloud Storage** - using Google-managed encryption keys and AES
 * **Service Account Keys** - encrypted using Google Cloud KMS and stored in Google Secret Manager
 
-.. _h_e71c7f53-d7e9-4273-a1cc-49e6714bbfa6:
-
 Who can access your data?
 -------------------------
 
 DoiT International employees in customer-facing roles, such as Account managers and Support engineers, can access your data using the CMP platform. Only a small team of core CMP developers is able to access your data directly in the underlying storage.
 
 Service Account keys are only used by backend systems to retrieve relevant data from GCP. Only a small team of core CMP developers has access to the KMS keys used for encryption and would be able to decrypt the keys.
-
-.. _h_2dd17fc8-13d8-4aad-b58c-3a9be9bc310e:
 
 3rd parties
 -----------
@@ -177,16 +169,12 @@ We do not provide your data to any 3rd party, with the exceptions listed below r
 * **CMP Support** - We use ZenDesk as a backend for support ticketing functionality. All ticket-related data are stored in ZenDesk and retrieved using ZenDesk APIs [1].
 * **Payments** - We use Stripe for payments. All payment-related data (such as Credit card or bank account details) are stored in the Stripe platform and used via Stripe APIs [2].
 
-.. _h_cb4c8c24-7b2b-4458-b890-8c866b99aee6:
-
 Compliance
 ----------
 
 EU and GDPR Compliance - we have many customers in the European Economic Area and we handle your data in compliance with the General Data Protection Regulation (GDPR) [3].
 
 We're working towards completing our SOC 2 Type 2 audit. We anticipate the Type 2 report being available during Q2, 2021.
-
-.. _h_923e9d39-0606-471f-bbb3-2f899c859d8c:
 
 External references
 -------------------

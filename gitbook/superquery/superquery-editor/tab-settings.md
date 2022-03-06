@@ -11,7 +11,7 @@ Click on the Settings gear icon at the top right of your screen to open query ta
 <!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (19).png>)
 
-A slideout will appear, showing your Query Tab settings:
+A slide-out will appear, showing your Query Tab settings:
 
 <!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (20).png>)
