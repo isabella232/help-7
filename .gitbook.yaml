@@ -1,4 +1,4 @@
-root: ./docs/
+root: ./gitbook/cmp/
 
 redirects:
   amazon-web-services/add-your-amazon-web-services-iam-role: ./amazon-web-services/link-account.md
