@@ -30,7 +30,7 @@ Open superQuery and click on your Profile icon in the Resource Panel. Then, clic
 
 ![](<../.gitbook/assets/image (98).png>)
 
-Under "**Team Caching**" click the "Private" button and set your database to "AWS — DynamoDB".
+Under "**Team Caching**" click the "Private" button and set your database to "AWS &mdash; DynamoDB".
 
 ![](<../.gitbook/assets/image (99).png>)
 

@@ -12,7 +12,7 @@ In the lefthand navigation panel, click "**Service accounts**".
 
 ![](<../.gitbook/assets/image (102).png>)
 
-Then look for the service account for which you wish to create a key. Click the **More ⋮** button in that row, and then select "Create key".
+Then look for the service account for which you wish to create a key. Click the **More &vellip;** button in that row, and then select "Create key".
 
 ![](<../.gitbook/assets/image (103).png>)
 
@@ -54,7 +54,7 @@ Open superQuery and click on your Profile icon in the Resource Panel. Then, go t
 
 ![](<../.gitbook/assets/image (98).png>)
 
-Under "**Team Caching**" click the "Private" button and select "Google — Firebase" from the dropdown. Then click on "**Set credentials**" to enter your Firebase details.
+Under "**Team Caching**" click the "Private" button and select "Google &mdash; Firebase" from the dropdown. Then click on "**Set credentials**" to enter your Firebase details.
 
 ![](<../.gitbook/assets/image (99).png>)
 

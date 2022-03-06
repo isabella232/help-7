@@ -154,124 +154,124 @@ Summary: Pre-built Roles and Permissions
      - **Standard User**
      - **superQuery User**
    * - Anomalies Viewer
-     - **✓**
-     - **✓**
-     - **✓**
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
    * - Assets Manager
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
      -
    * - Attributions Manager
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
-     - **✓**
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
      -
    * - Billing Profile Admin
-     - **✓**
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
      -
      -
    * - Budgets Manager
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
-     - **✓**
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
      -
    * - Cloud Analytics
-     - **✓**
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
      -
-     - **✓**
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
      -
    * - Contracts Viewer
-     - **✓**
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
      -
-     - **✓**
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
      -
    * - Flexible RI Admin
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
    * - Invoice Viewer
-     - **✓**
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
      -
      -
    * - Issues Viewer
-     - **✓**
-     - **✓**
-     - **✓**
-     - **✓**
-     - **✓**
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
    * - Settings Manager
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
    * - Sandbox Admin
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
    * - Sandbox User
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
-     - **✓**
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
      -
    * - Spot0
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
    * - Support Requester
-     - **✓**
-     - **✓**
-     - **✓**
-     - **✓**
-     - **✓**
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
    * - Users Manager
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
    * - superQuery
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
      -
      -
-     - **✓**
-     - **✓**
-     - **✓**
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
+     - :raw-html:`<strong>&check;</strong>`
 
 Custom Roles
 ------------

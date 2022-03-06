@@ -126,7 +126,7 @@ N1 Commitments / N1 Usage as %
 Including Customer Metrics in Cloud Analytics Reports
 -----------------------------------------------------
 
-To include a metric in a report, :doc:`create a new report​ <create-cloud-report/index>`
+To include a metric in a report, :doc:`create a new report <create-cloud-report/index>`
 
 In the Report configuration panel select *'Metric'*
 

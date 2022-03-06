@@ -152,6 +152,7 @@ proselintrc
 proserv
 pv
 qg
+rarr
 ravsamhq
 rbac
 rcs

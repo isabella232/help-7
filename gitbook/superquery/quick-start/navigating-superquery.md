@@ -18,7 +18,7 @@ Let's briefly cover the main capabilities of each section.
 
 
 
-### #1 — Resource Panel <a href="1--resource-panel" id="1--resource-panel"></a>
+### #1 &mdash; Resource Panel <a href="1--resource-panel" id="1--resource-panel"></a>
 
 The resource panel contains eight resources, each represented by a unique icon.
 
@@ -96,7 +96,7 @@ Clicking on this icon gives you several options:
 * View and change your billing plan
 * Connect your Google Cloud Storage bucket to save downloaded CSV results there.
 
-### #2 — SQL Editor
+### #2 &mdash; SQL Editor
 
 The SQL Editor is where you write your queries. In the editor, you have the following capabilities for analyzing data faster and more efficiently.
 
@@ -104,7 +104,7 @@ The SQL Editor is where you write your queries. In the editor, you have the foll
 
 Organize your queries into [tabs](../superquery-editor/query-tabs.md) that you can name & easily identify later.&#x20;
 
-Tabs allow you to work across multiple queries in one window. The SQL persists across sessions, similar to how you work in a Google Doc — meaning you won't lose your work if you refresh the page or close your session.
+Tabs allow you to work across multiple queries in one window. The SQL persists across sessions, similar to how you work in a Google Doc &mdash; meaning you won't lose your work if you refresh the page or close your session.
 
 With tabs, you can easily jump between queries you're working on.
 
@@ -144,7 +144,7 @@ Use [Manual Commit](../git-integrations/add-commit-messages.md) to add a message
 
 
 
-### #3 — Results Grid
+### #3 &mdash; Results Grid
 
 In your results grid, you can:
 
@@ -159,11 +159,11 @@ In your results grid, you can:
 
 ### #4 - Dashboard View
 
-The **Visualize** toggle transforms the latest results of all of your query tabs into a [dashboard](../dashboards/create-dashboards.md) in one click — no exporting required.
+The **Visualize** toggle transforms the latest results of all of your query tabs into a [dashboard](../dashboards/create-dashboards.md) in one click &mdash; no exporting required.
 
 ![](../.gitbook/assets/VisuallizeSQ.gif)
 
-### #5 — Right Pane
+### #5 &mdash; Right Pane
 
 Your right pane (highlighted below) is separated into the following features
 

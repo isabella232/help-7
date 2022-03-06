@@ -6,7 +6,7 @@ description: Find the query you're looking for with keyword search
 
 Have you ever found yourself trying to remember where a particular query is located?
 
-Even with [Query Tabs](query-tabs.md) and [Boards](organizing-queries.md) making query organization easier, you can still get stuck trying to find a query you've been looking for if you can't remember the name. Perhaps you remember an alias used, or a column referenced, or something else — but not the name of the query itself.
+Even with [Query Tabs](query-tabs.md) and [Boards](organizing-queries.md) making query organization easier, you can still get stuck trying to find a query you've been looking for if you can't remember the name. Perhaps you remember an alias used, or a column referenced, or something else &mdash; but not the name of the query itself.
 
 Now, you can use SQL Search and search for query tabs using keyword(s) used in the SQL. So if you remember that a particular column, alias, table, etc. was used, you can easily find that query!
 

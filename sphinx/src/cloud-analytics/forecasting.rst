@@ -29,7 +29,7 @@ For example, if you selected "Last 30 days" under the "Time Range" dropdown, you
 Identify incomplete billing data
 --------------------------------
 
-Because billing data can lag behind — sometimes by 12-36 hours — sometimes you can get an incomplete picture of your daily cloud costs, .
+Because billing data can lag behind :raw-html:`&mdash;` sometimes by 12-36 hours :raw-html:`&mdash;` sometimes you can get an incomplete picture of your daily cloud costs, .
 
 As shown in the example below, in these situations you can use forecasts to give you an idea of what to expect your cloud costs to be.
 

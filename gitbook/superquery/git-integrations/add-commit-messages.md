@@ -20,7 +20,7 @@ For your SQL to be committed to Github, a change needs to be made from the previ
 
 By default, all queries are committed once your Github/BitBucket repo or GitLab project is connected. You can toggle the Auto Commit functionality off in your query settings if you'd prefer to manually commit.
 
-To manually commit your SQL, click on the ⬇️ icon next to the "Run" button, and click "Commit"
+To manually commit your SQL, click on the &#x2b07;&#xfe0f; icon next to the "Run" button, and click "Commit"
 
 ![](<../.gitbook/assets/CleanShot 2020-07-08 at 11.43.57.gif>)
 
@@ -35,6 +35,3 @@ Once you write the message, click "Ok" to commit the changes and your message to
 When opening your Git repo and going to the appropriate Board, you should see your commit message next to the query tab you modified:
 
 ![](<../.gitbook/assets/image (45).png>)
-
-
-

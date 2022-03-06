@@ -8,9 +8,9 @@ In this post, you'll learn how to query tables located in DynamoDB databases usi
 
 With DynamoDB connected, you'll be able to:
 
-* Perform table joins — even across regions.
+* Perform table joins &mdash; even across regions.
 * Run aggregations without any ETL.
-* Export all results — not just one page at a time.
+* Export all results &mdash; not just one page at a time.
 * Get faster Scan results with parallel execution.
 * ...and much more!
 
@@ -66,7 +66,7 @@ Finally, click **Download Credentials**, and store the keys in a secure location
 
 An IAM role is an IAM identity that you can create in your account that has specific permissions.
 
-[Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference\_identifiers.html#identifiers-arns) formatting is used to uniquely identify AWS resources — in this case, your IAM role.
+[Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference\_identifiers.html#identifiers-arns) formatting is used to uniquely identify AWS resources &mdash; in this case, your IAM role.
 
 Example formatting: arn:aws:iam::account-id:role/role-name
 

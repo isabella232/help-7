@@ -60,7 +60,7 @@ Finally, click **Download Credentials**, and store the keys in a secure location
 
 An IAM role is an IAM identity that you can create in your account that has specific permissions.
 
-[Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference\_identifiers.html#identifiers-arns) formatting is used to uniquely identify AWS resources — in this case, your IAM role.
+[Amazon Resource Name (ARN)](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference\_identifiers.html#identifiers-arns) formatting is used to uniquely identify AWS resources &mdash; in this case, your IAM role.
 
 Example formatting: arn:aws:iam::account-id:role/role-name
 
@@ -129,4 +129,3 @@ Under that, you will see the next level of information appear with the naming co
 Finally, you'll find your tables in the database you select.
 
 ![](<../.gitbook/assets/image (63).png>)
-

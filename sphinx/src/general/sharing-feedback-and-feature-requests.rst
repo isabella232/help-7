@@ -50,7 +50,7 @@ If an idea has been added to the roadmap or development has begun, you will see 
 .. image:: ../_assets/feedbackhub2.jpg
    :alt: A screenshot showing the location of the _Status_ icon
 
-Upvote an idea that interests you by clicking on the "Vote" button next to the idea. Finally — if you aren't signed in already — enter your email or sign in with Google to submit your vote.
+Upvote an idea that interests you by clicking on the "Vote" button next to the idea. Finally :raw-html:`&mdash;` if you aren't signed in already :raw-html:`&mdash;` enter your email or sign in with Google to submit your vote.
 
 You will be notified if the status of the idea changes or ultimately gets released in the product it corresponds to.
 

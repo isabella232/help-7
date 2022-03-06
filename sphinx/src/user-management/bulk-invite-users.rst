@@ -14,7 +14,7 @@ Begin by navigating to the **Users and Roles** page.
 .. image:: ../_assets/bulkuser2.jpg
    :alt: A screenshot showing the location of the _Users and Roles_ menu item
 
-Then, at the top-right corner of the page, click on the vertical ellipsis (``⋮``). Next, click on "Upload Users" and upload a CSV file with your user information.
+Then, at the top-right corner of the page, click on the vertical ellipsis (:raw-html:`&vellip;`). Next, click on "Upload Users" and upload a CSV file with your user information.
 
 .. image:: ../_assets/bulkuser1.jpg
    :alt: A screenshot showing the location of the _Upload Users_ menu item
@@ -23,4 +23,4 @@ To ensure your CSV file is structured properly, we recommend downloading the tem
 
 .. highlights::
 
-   📎 :download:`User Bulk Invite Template <../_assets/flex-ri-bulk-upload-template.csv>`
+   :raw-html:`&#x1f4ce;` :download:`User Bulk Invite Template <../_assets/flex-ri-bulk-upload-template.csv>`

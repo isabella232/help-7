@@ -26,7 +26,7 @@ Make sure that you see "superQuery.io" is installed. If it isn't please install 
 
 ### Step #3: Permit the repos that can be accessed
 
-Click “**Configure**” next to "superQuery.io" and go to "**Repository access**" to determine which repos to permit for connection to superQuery.
+Click "**Configure**" next to "superQuery.io" and go to "**Repository access**" to determine which repos to permit for connection to superQuery.
 
 ![](<../.gitbook/assets/image (27).png>)
 

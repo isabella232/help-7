@@ -27,9 +27,9 @@ Reference Links:
 
    If you have more than one cloud billing account, do one of the following:
 
-   ➜ To manage Cloud Billing for the current project, select Go to linked billing account.
+   :raw-html:`&rarr;` To manage Cloud Billing for the current project, select Go to linked billing account.
 
-   ➜ To locate a different Cloud Billing account, select Manage billing accounts and then choose the account that you want to manage.
+   :raw-html:`&rarr;` To locate a different Cloud Billing account, select Manage billing accounts and then choose the account that you want to manage.
 
    .. image:: ../../_assets/image\ (91).png
       :alt: A screenshot of the *You have multiple billing accounts* message

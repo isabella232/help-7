@@ -28,7 +28,7 @@ This includes:&#x20;
 
 
 
-By clicking on the **⋮** icon to the left of your query, you can manage your scheduled queries:
+By clicking on the **&vellip;** icon to the left of your query, you can manage your scheduled queries:
 
 * **Run Now** - Execute the query immediately.
 * **Open Query** - Open your scheduled query in a new tab.

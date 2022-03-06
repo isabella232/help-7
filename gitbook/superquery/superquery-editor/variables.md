@@ -54,7 +54,7 @@ When creating a new variable, the data type dropdown will be visible by default.
 
 Once created, insert your variable into your variable by replacing a field with it.
 
-To use a variable in your SQL, place an **'@'** character in front of the variable’s name, like the example below.
+To use a variable in your SQL, place an **'@'** character in front of the variable's name, like the example below.
 
 In our case, we'll replace "Drinkware" with a variable named "category" that currently holds a value of "Apparel"
 
@@ -74,20 +74,20 @@ Then re-run the query to have your results reflect the change in variable value,
 
 ### Dates and Date Ranges
 
-Beyond replacing numbers and strings, variables are great for holding date values — perfect if you're modifying date ranges, as we'll see below.
+Beyond replacing numbers and strings, variables are great for holding date values &mdash; perfect if you're modifying date ranges, as we'll see below.
 
 Using our previous example, we can replace the date range referred to in line 8 below with two variables
 
 ```
-SELECT 
+SELECT
   ProductCategory__Enhanced_E_commerce AS category,
-  product, 
-  ROUND(SUM(revenue),1) AS revenues, 
-  COUNT(*) AS totalPurchases 
-FROM test-data-211411.google_store_data.online_purchases 
-WHERE ProductCategory__Enhanced_E_commerce = '@category' 
-AND transaction_date BETWEEN '2017-01-01' AND '2017-09-30' 
-GROUP BY 2,1 
+  product,
+  ROUND(SUM(revenue),1) AS revenues,
+  COUNT(*) AS totalPurchases
+FROM test-data-211411.google_store_data.online_purchases
+WHERE ProductCategory__Enhanced_E_commerce = '@category'
+AND transaction_date BETWEEN '2017-01-01' AND '2017-09-30'
+GROUP BY 2,1
 ORDER BY 3 asc;
 ```
 
@@ -105,7 +105,7 @@ Then insert the two variables in place of the date values that were originally t
 
 Arrays are multi-value columns in BigQuery, where an array field contains more than one value (of the same data type). You can create variables that contain arrays, and from there, "check" which fields you'd like to include in your query, as shown below.
 
-You can then use your array variable in your queries — specifically after the IN clause.
+You can then use your array variable in your queries &mdash; specifically after the IN clause.
 
 To create an Array variable, after selecting the Array data type, enter all of the possible values your array will hold.
 
@@ -138,4 +138,3 @@ That's it! The same thing works for datasets and date-partitioned tables. For th
 Watch our 3-minute variables tutorial below:
 
 {% embed url="https://www.loom.com/share/1c9cb4b255914817b095295a83971275" %}
-

@@ -13,15 +13,18 @@ do_lint() {
         grep -v 'No directive entry for "toctree"' |
         grep -v 'No role entry for "doc"' |
         grep -v 'No role entry for "download"' |
+        grep -v 'No role entry for "raw-html"' |
         grep -v 'No role entry for "ref"' |
         grep -v 'Trying "doc" as canonical role name' |
         grep -v 'Trying "doc" as download role name' |
         grep -v 'Trying "download" as canonical role name' |
+        grep -v 'Trying "raw-html" as canonical role name' |
         grep -v 'Trying "ref" as canonical role name' |
         grep -v 'Trying "toctree" as canonical directive name' |
         grep -v 'Unknown directive type "toctree"' |
         grep -v 'Unknown interpreted text role "doc"' |
         grep -v 'Unknown interpreted text role "download"' |
+        grep -v 'Unknown interpreted text role "raw-html"' |
         grep -v 'Unknown interpreted text role "ref"' \
             >"${tmp_file}"
     if test -s "${tmp_file}"; then

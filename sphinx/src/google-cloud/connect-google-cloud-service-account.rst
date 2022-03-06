@@ -73,7 +73,7 @@ If there is something wrong with the JSON file you uploaded, you will see an "**
 Updating your Service Account
 -----------------------------
 
-If, after initially connecting your Google Cloud Organization, you decide that you want to grant permissions for an additional feature — or remove permissions — you can do that easily from the same page.
+If, after initially connecting your Google Cloud Organization, you decide that you want to grant permissions for an additional feature :raw-html:`&mdash;` or remove permissions :raw-html:`&mdash;` you can do that easily from the same page.
 
 First, check or uncheck the feature(s) you'd like to add or remove. Then click on "Update Role".
 

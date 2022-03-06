@@ -32,9 +32,9 @@ Let's go over each of the options:
 
 You have three options for caching:
 
-* “**SuperQuery**” — executes your query leveraging superQuery's enhanced caching if you have it set up.
-* “**BigQuery**” — executes your query without applying any enhanced cost-saving logic.&#x20;
-* “**Off**” — executes your query using superQuery's query optimization algorithm, but without caching.&#x20;
+* "**SuperQuery**" &mdash; executes your query leveraging superQuery's enhanced caching if you have it set up.
+* "**BigQuery**" &mdash; executes your query without applying any enhanced cost-saving logic.&#x20;
+* "**Off**" &mdash; executes your query using superQuery's query optimization algorithm, but without caching.&#x20;
 
 [![](https://downloads.intercomcdn.com/i/o/130019029/eaac9cf1706138996e0c05c5/image.png)](https://downloads.intercomcdn.com/i/o/130019029/eaac9cf1706138996e0c05c5/image.png)
 
@@ -43,7 +43,7 @@ You have three options for caching:
 * Interactive queries will start immediately.&#x20;
 * Queries with batch priority have fewer quota restrictions, but may not execute for up to 24 hours.&#x20;
 
-For more details on query priority, see GCP’s [documentation](https://developers.google.com/bigquery/docs/queries#batchqueries).
+For more details on query priority, see GCP's [documentation](https://developers.google.com/bigquery/docs/queries#batchqueries).
 
 ### Processing Location
 
@@ -64,9 +64,9 @@ Generates a new table based on the result of an executed query.&#x20;
 * **Table**: Give your new table a name.
 * **Preference**: Use this option to control the write disposition of the destination table. You have three options:
 
-1. Write if empty — Writes the query results to the table only if the table is empty.
-2. Append to table — Appends the query results to an existing table.
-3. Overwrite table — Overwrites an existing table with the same name using the query results.
+1. Write if empty &mdash; Writes the query results to the table only if the table is empty.
+2. Append to table &mdash; Appends the query results to an existing table.
+3. Overwrite table &mdash; Overwrites an existing table with the same name using the query results.
 
 ### Autocomplete
 

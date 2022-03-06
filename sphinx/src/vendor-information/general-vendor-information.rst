@@ -25,7 +25,7 @@ Germany
 
 * Our company name is: DoiT International, DACH GmbH
 * Our VAT number is DE331662430
-* Our address is: Amelia-Mary-Earhart-Straße 8 Frankfurt, 60549
+* Our address is :raw-html:`Amelia-Mary-Earhart-Stra&szlig;e` 8 Frankfurt, 60549
 
 France
 ------
@@ -74,4 +74,4 @@ Sweden
 
 * Our company name is DoiT Multi-Cloud Sverige International AB
 * Our Registration Number is 559300-7197
-* Our address is Bolagsrätt Sundsvall AB, Box 270 851 04 SUNDSVALL, Sweden
+* Our address is :raw-html:`Bolagsr&auml;tt` Sundsvall AB, Box 270 851 04 SUNDSVALL, Sweden

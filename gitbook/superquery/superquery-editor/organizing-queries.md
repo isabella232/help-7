@@ -1,6 +1,6 @@
 # Organizing Query Tabs with Boards
 
-Boards are like folders for your [Query Tabs](query-tabs.md). Instead of saving all of your queries into one Saved Queries list — as you would in BigQuery — you can group tabs into multiple Boards.
+Boards are like folders for your [Query Tabs](query-tabs.md). Instead of saving all of your queries into one Saved Queries list &mdash; as you would in BigQuery &mdash; you can group tabs into multiple Boards.
 
 ## How should I use Boards?
 
@@ -30,7 +30,7 @@ To create a new board, click on the "**+**" sign at the top of your boards list.
 
 After creating a Board, you'll want to give it a good name. Perhaps you intend on storing a queries which analyze your user behavior in a Board. In that case, you might call your Board "User Analytics", for example.
 
-The point is — just like with naming [Query Tabs](query-tabs.md) — your Board's name should be **descriptive** enough that it is obvious where to find specific data and easy to identify which queries the board contains.
+The point is &mdash; just like with naming [Query Tabs](query-tabs.md) &mdash; your Board's name should be **descriptive** enough that it is obvious where to find specific data and easy to identify which queries the board contains.
 
 ![](../.gitbook/assets/renameboard.gif)
 
@@ -44,7 +44,7 @@ To switch to another Board, click on the name of a Board other than the one you 
 
 #### Preview queries in another Board
 
-If instead you want to preview queries in another Board without switching, expand a Board to view the queries inside by clicking the ► icon.
+If instead you want to preview queries in another Board without switching, expand a Board to view the queries inside by clicking the &#x25ba; icon.
 
 ![](<../.gitbook/assets/image (10).png>)
 

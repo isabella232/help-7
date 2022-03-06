@@ -4,7 +4,7 @@ description: Effectively turning on Git Ignore
 
 # Turning off Auto Commit for Git integrations
 
-By default, after you connect your source control tool to superQuery, each query execution is automatically committed to your repository — as long as a change was made to the SQL from the previously-committed version.
+By default, after you connect your source control tool to superQuery, each query execution is automatically committed to your repository &mdash; as long as a change was made to the SQL from the previously-committed version.
 
 However, there may be cases where you won't want each query execution to be committed to Github, and you may want to perform the equivalent of a [Git Ignore](https://www.toolsqa.com/git/git-ignore/).
 

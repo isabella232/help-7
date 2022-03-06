@@ -62,7 +62,7 @@ Using our example from above, we will also create similar attributions for dev a
 
 .. TIP::
 
-   You should **not** set multiple separate conditions with the same field — unless there is an exclusion set up in one of those conditions.
+   You should **not** set multiple separate conditions with the same field :raw-html:`&mdash;` unless there is an exclusion set up in one of those conditions.
 
 Using Attributions in Cloud Analytics Reports
 ---------------------------------------------

@@ -70,7 +70,7 @@ From CMP navigation pane, select Assets > Google Cloud:
 Locate the Billing Account you want to update and click on the:
 
 .. image:: ../_assets/image\ (84).png
-   :alt: An image of the "⌄" icon icon
+   :alt: An image of the :raw-html:`"&#8964;"` icon icon
 
 .. image:: ../_assets/image\ (10).png
    :alt: A screenshot showing the location of the *Assets* icon

@@ -117,9 +117,9 @@ When selected **we will automatically adjust your report**, you will be warned o
 .. image:: ../_assets/image\ (154).png
    :alt: A screenshot of the Show Comparative Report modal dialog
 
-Once enabled, you will see new columns in your table based view showing the ∆ between time intervals. This difference (∆) appears **after** the intervals compared.
+Once enabled, you will see new columns in your table based view showing the :raw-html:`&#8710;` between time intervals. This difference :raw-html:`(&#8710;)` appears **after** the intervals compared.
 
-For example below: Months 07 (July) and 08 (August) show the % change after in the column ∆08 (Change to August)
+For example below: Months 07 (July) and 08 (August) show the % change after in the column :raw-html:`&#8710;08` (Change to August)
 
 .. image:: ../_assets/image\ (155).png
    :alt: Report with highlighted comparison columns

@@ -45,10 +45,10 @@ If you're viewing your results in a Table view, then a final column titled "Tota
 .. image:: ../_assets/pct-of-row-report.jpg
    :alt: A screenshot showing a _% of Row_ aggregation report
 
-Cost÷Usage
-----------
+Cost :raw-html:`&divide;` Usage
+-------------------------------
 
-"Cost÷Usage" aggregations are great for use cases requiring cost-per-unit pricing validation. In the example below, we are using this aggregation to examine BigQuery SKU costs per project.
+"Cost :raw-html:`&divide;` Usage" aggregations are great for use cases requiring cost-per-unit pricing validation. In the example below, we are using this aggregation to examine BigQuery SKU costs per project.
 
 .. image:: ../_assets/cost-usage-report.png
-   :alt: A screenshot showing a _Cost÷Usage_ aggregation report
+   :alt: A screenshot showing a _Cost :raw-html:`&divide;` Usage_ aggregation report

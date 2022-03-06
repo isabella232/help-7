@@ -5,7 +5,6 @@ amet
 aren
 Auths
 Aviv
-Bolagsrätt
 BYOL
 cno
 consectetur
@@ -31,12 +30,10 @@ QG
 RDDD
 reate
 ro
-São
 Sarbanes
 Scaling's
 Selinger
 Stax
-Straße
 Trifacta
 TRUSTe
 uncheck

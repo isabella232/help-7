@@ -71,8 +71,8 @@ What are the advantages of Spot Scaling?
      - **Monthly Cost**
      -
    * - 50 instances * $0.192 * 730h = $7,008
-     - 10 instances × $0.192 × 730h = $1,401
-     - 0 instances × $0.0399 × 730h = $1,165
+     - 10 instances :raw-html:`&times;` $0.192 :raw-html:`&times;` 730h = $1,401
+     - 0 instances :raw-html:`&times;` $0.0399 :raw-html:`&times;` 730h = $1,165
      - Total cost = $1,401 + $1,165 = $2,566
    * - Monthly Savings $
      - $0

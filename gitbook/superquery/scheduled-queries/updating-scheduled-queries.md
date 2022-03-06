@@ -8,7 +8,7 @@ Open your [Scheduled Queries Manager](managing-scheduled-queries.md) by clicking
 
 ![](<../.gitbook/assets/image (85).png>)
 
-Then, next to the scheduled query you want to update, click on the vertical ellipsis **⋮** and then "Update Scheduled Query".
+Then, next to the scheduled query you want to update, click on the vertical ellipsis **&vellip;** and then "Update Scheduled Query".
 
 ![](<../.gitbook/assets/image (87).png>)
 
@@ -23,4 +23,3 @@ Additionally, a new query tab will open, containing the SQL of that scheduled qu
 After making your changes, click on the "Schedule Query" icon to bring back the slideout. Finally, click on "Update" to make your changes final.&#x20;
 
 ![](<../.gitbook/assets/image (89).png>)
-

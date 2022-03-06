@@ -48,16 +48,16 @@ Note: When you are scheduling a query that contains [variables](../superquery-ed
 
 ## Scheduling a sequence of DML scripts
 
-You can save tons of time by setting up a series of [DML statements](https://cloud.google.com/bigquery/docs/reference/standard-sql/dml-syntax) to execute in a sequence — and how to schedule these in a single scheduler.  \
+You can save tons of time by setting up a series of [DML statements](https://cloud.google.com/bigquery/docs/reference/standard-sql/dml-syntax) to execute in a sequence &mdash; and how to schedule these in a single scheduler.  \
 \
 It might look a little bit like this:
 
 ```
 CREATE TABLE IF NOT EXISTS `myproject.mydataset.mytable` (
-the_time TIMESTAMP,    
-customer_name STRING,    
-item_name STRING,    
-item_id NUMERIC NOT NULL,    
+the_time TIMESTAMP,
+customer_name STRING,
+item_name STRING,
+item_id NUMERIC NOT NULL,
 price NUMERIC);
 
 INSERT INTO `myproject.mydataset.mytable` (

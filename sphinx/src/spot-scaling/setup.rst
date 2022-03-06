@@ -16,7 +16,7 @@ To use Spot Scaling, you must provide access to your AWS account(s) to the CMP. 
 
    If you"ve already linked your AWS account(s) to the CMP, go to this step instead.
 
-As part of linking your account, you will need to create an AWS IAM Role and attach an IAM Policy to it containing a requisite set of permissions. These permissions allow Spot Scaling to function — monitor your ASG behavior, make spot instance recommendations, and allow you to implement them from the CMP
+As part of linking your account, you will need to create an AWS IAM Role and attach an IAM Policy to it containing a requisite set of permissions. These permissions allow Spot Scaling to function :raw-html:`&mdash;`  monitor your ASG behavior, make spot instance recommendations, and allow you to implement them from the CMP
 
 In the same article linked above, read the section on `how to create a policy for Spot Scaling <https://help.doit-intl.com/amazon-web-services/add-your-amazon-web-services-iam-role#spot-scaling>`__ with the requisite permissions.
 

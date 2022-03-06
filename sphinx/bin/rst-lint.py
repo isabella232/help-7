@@ -15,10 +15,12 @@ SPHINX_ERROR_IGNORE = [
     r'directive type "toctree"',
     r'entry for "doc"',
     r'entry for "download"',
+    r'entry for "raw-html',
     r'entry for "ref"',
     r'entry for "toctree"',
     r'text role "doc"',
     r'text role "download"',
+    r'text role "raw-html"',
     r'text role "ref"',
 ]
 

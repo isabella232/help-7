@@ -8,13 +8,13 @@ Before we go over why superQuery doesn't have a Saved Queries feature, it's impo
 
 If you refresh a page running Google BigQuery, any SQL you had written in your query editor will disappear.&#x20;
 
-Because queries don't persist in BigQuery over time, Google offers the "**Saved Queries**" feature for you to quickly access queries you use frequently — or perhaps just don't want to rewrite again.
+Because queries don't persist in BigQuery over time, Google offers the "**Saved Queries**" feature for you to quickly access queries you use frequently &mdash; or perhaps just don't want to rewrite again.
 
 Now let's explore why you don't need Saved Queries in superQuery.
 
 ### Queries DO persist in superQuery Tabs
 
-When working in superQuery Tabs, the experience is similar to that of working in a Google Doc — your work autosaves. That way, you don't need to fret about saving the latest version of your query.
+When working in superQuery Tabs, the experience is similar to that of working in a Google Doc &mdash; your work autosaves. That way, you don't need to fret about saving the latest version of your query.
 
 The only way a query will disappear is if you erase it yourself, or delete the tab it's stored in.
 
@@ -34,7 +34,7 @@ From the perspective of query management, this is a much better alternative than
 
 ### What about private and project-level saved queries?
 
-By default, all of your queries and boards are private. If you'd like to share your board(s) with others — our equivalent of project-level queries — you can do so in three clicks.
+By default, all of your queries and boards are private. If you'd like to share your board(s) with others &mdash; our equivalent of project-level queries &mdash; you can do so in three clicks.
 
 When you share access to a board, you can choose to give View or Edit access.
 
@@ -42,11 +42,11 @@ When you share access to a board, you can choose to give View or Edit access.
 
 Users with View access will not be able to edit the SQL of queries in the shared Board. They can do the following in your board:
 
-* Run queries — these will be executed on the account of the Board creator, not your own.
+* Run queries &mdash; these will be executed on the account of the Board creator, not your own.
 * View the SQL of the queries.
 * Copy the SQL and paste it into their own board.
 * Access the dashboard view of your board.
-* Modify your variable(s) values if they exist and refresh the dashboard — any query affected by the changed value will be charged to the billing project of the board admin.
+* Modify your variable(s) values if they exist and refresh the dashboard &mdash; any query affected by the changed value will be charged to the billing project of the board admin.
 
 #### Edit Access
 

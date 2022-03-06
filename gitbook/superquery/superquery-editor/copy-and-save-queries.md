@@ -4,7 +4,7 @@ description: How to copy queries from one Board to another
 
 # Copy and save queries to a different Board
 
-To copy one or more query tabs to another [Board](organizing-queries.md), click on the **⋮ **"More Options" button at the top-right corner of your screen, and click "**Save To**".
+To copy one or more query tabs to another [Board](organizing-queries.md), click on the **&vellip;**"More Options" button at the top-right corner of your screen, and click "**Save To**".
 
 ![](<../.gitbook/assets/image (53).png>)
 
@@ -15,4 +15,3 @@ By default, your active query tab will be selected, but you can select multiple 
 ![](../.gitbook/assets/SaveToQueries.gif)
 
 Finally, choose the Board you want to move the selected query/queries to and click "Save".
-

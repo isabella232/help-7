@@ -10,7 +10,7 @@ description: Version control queries to your Github repository
 
 Have you ever written what you thought was a one-time query, only to have to re-create it from memory a few weeks later? Or have you ever found yourself needing a previous version of a query you wrote?
 
-By connecting your Github repository to superQuery, you'll effectively create a query library — a place for saving, updating, and tracking changes in your queries.
+By connecting your Github repository to superQuery, you'll effectively create a query library &mdash; a place for saving, updating, and tracking changes in your queries.
 
 Let's see how to set this up below.
 
@@ -40,7 +40,7 @@ If you don't have a GitHub repository already, don't worry. You can set up a pri
 
 ### Step 4 \[optional]: Request permission to install the superQuery Github application
 
-In cases where you want to connect to a repository you're not the owner of — such as a repository inside of your company's [GitHub Organization](https://help.github.com/en/articles/about-organizations) — you have to request permission from the repository owner.\
+In cases where you want to connect to a repository you're not the owner of &mdash; such as a repository inside of your company's [GitHub Organization](https://help.github.com/en/articles/about-organizations) &mdash; you have to request permission from the repository owner.\
 \
 To request permission, [go here](https://github.com/apps/superQuery-io/installations/new).
 

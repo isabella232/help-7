@@ -10,7 +10,7 @@ superQuery's Query Tabs allow you to work across multiple queries in one browser
 
 ### Your queries auto-save
 
-The query (or queries) you write in a tab persist over time — meaning they'll never disappear unless you erase the SQL or delete the tab yourself. Much like working in a Google Doc, every change you make is auto-saved so you don't need to worry about losing your work if your browser crashes or you refresh your page.
+The query (or queries) you write in a tab persist over time &mdash; meaning they'll never disappear unless you erase the SQL or delete the tab yourself. Much like working in a Google Doc, every change you make is auto-saved so you don't need to worry about losing your work if your browser crashes or you refresh your page.
 
 ### Results stay pinned to tabs
 
@@ -42,7 +42,7 @@ For more information on your tab settings, read [**this article**](tab-settings.
 
 ## Tab Options
 
-A [set of options](query-tabs.md#tab-options) are available in each tab by clicking the vertical ellipsis **⋮ **to the left of any query tab. Most are self-explanatory, but let's dive deeper into some of the often-used options.
+A [set of options](query-tabs.md#tab-options) are available in each tab by clicking the vertical ellipsis **&vellip;**to the left of any query tab. Most are self-explanatory, but let's dive deeper into some of the often-used options.
 
 ![Query Tab options](<../.gitbook/assets/image (54).png>)
 
@@ -82,11 +82,10 @@ Finally, click "Send Invite" to share the tab. It will be accessible from the re
 
 ### Lock Tab
 
-The "Lock Tab" functionality makes the selected query tab uneditable to everyone — as if you're seeing the query from the perspective of someone with "View" permissions.
+The "Lock Tab" functionality makes the selected query tab uneditable to everyone &mdash; as if you're seeing the query from the perspective of someone with "View" permissions.
 
 When a tab is locked, you will see a lock icon next to its name in your Board's list. Additionally, locked tabs have a "Locked" message display towards the top-right corner of your editor.
 
 To unlock a tab, click on "Unlock Tab" from your tab options dropdown or click on the "Locked" message at the top-right of your editor.
 
 ![](<../.gitbook/assets/image (56).png>)
-

@@ -10,7 +10,7 @@ If you follow some of these starter tips, you'll see an immediate boost to your 
 
 [Boards](../superquery-editor/organizing-queries.md) are like folders for organizing your [query tabs](../superquery-editor/query-tabs.md). They're a huge upgrade over Saved Queries, helping you to better manage your queries in sub-groupings, rather than one long list.
 
-Organize queries in a way that makes sense for your work — by work project, department, etc.
+Organize queries in a way that makes sense for your work &mdash; by work project, department, etc.
 
 ![](../.gitbook/assets/image.png)
 
@@ -26,11 +26,11 @@ The names should be **descriptive** enough that it is obvious to you what query 
 
 ### #3 - Use variables to save time when modifying queries
 
-[Variables](../superquery-editor/variables.md) are placeholders for values that can change — for example, field values in the WHERE clause. They make your queries more dynamic and allow you to perform quick edits on your query without modifying the SQL itself.
+[Variables](../superquery-editor/variables.md) are placeholders for values that can change &mdash; for example, field values in the WHERE clause. They make your queries more dynamic and allow you to perform quick edits on your query without modifying the SQL itself.
 
 If you're constantly modifying field values (ex. item id, user id, user events, dates, etc.), then variables will save you **TONS** of time.
 
-Creating a variable is incredibly easy — in fact, there is no SQL required when creating variables in the superQuery UI.
+Creating a variable is incredibly easy &mdash; in fact, there is no SQL required when creating variables in the superQuery UI.
 
 To create a variable, \[1] choose a data type,  \[2] give your variable a name, and \[3] assign it an initial value.&#x20;
 

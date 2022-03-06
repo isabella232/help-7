@@ -52,8 +52,8 @@ How does FlexSave differ from Reserved Instances or Saving Plans?
 With FlexSave there is:
 
 * Zero commitment required
-* Zero loss burden on your part — even if you shut down instances in the middle of the month
-* Zero management on your part — once you enable FlexSave you don't need to do anything else
+* Zero loss burden on your part :raw-html:`&mdash;` even if you shut down instances in the middle of the month
+* Zero management on your part :raw-html:`&mdash;` once you enable FlexSave you don't need to do anything else
 
 .. list-table::
    :header-rows: 1

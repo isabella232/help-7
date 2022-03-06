@@ -6,7 +6,7 @@ description: Save queries and version-control them directly to your GitLab proje
 
 Have you ever written what you thought was a one-time query, only to have to re-create it from memory a few weeks later? Or have you ever found yourself needing a previous version of a query you wrote?
 
-By connecting your GitLab project to superQuery, you'll effectively create a query library — a place for saving, updating, and tracking changes in your queries.
+By connecting your GitLab project to superQuery, you'll effectively create a query library &mdash; a place for saving, updating, and tracking changes in your queries.
 
 Let's see how to set this up below.
 

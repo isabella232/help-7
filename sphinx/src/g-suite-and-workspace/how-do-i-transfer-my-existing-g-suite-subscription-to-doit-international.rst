@@ -17,11 +17,11 @@ To transfer the management of your existing G Suite setup you will need to retri
 
 .. IMPORTANT::
 
-   🇺🇸US & AU 🇦🇺customers, please use ``C02dk8ht9`` as reseller's public identifier
+   :raw-html:`&#127482;&#127480;` US & AU :raw-html:`&#127462;&#127482;` customers, please use ``C02dk8ht9`` as reseller's public identifier
 
 .. IMPORTANT::
 
-   🇪🇺EU customers - please use `C03cno21i`` as reseller's public identifier
+   :raw-html:`&#127466;&#127482;` EU customers - please use `C03cno21i`` as reseller's public identifier
 
 * [ ] Click Generate Transfer Token.
 * [ ] Click Copy Code.

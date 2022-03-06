@@ -70,7 +70,7 @@ With Instance Rightsizing for Google Cloud, you will:
 **FlexSave**
 ----------------
 
-Purchasing compute commitments — Reserved Instances (RIs) or Savings Plans (SPs) for AWS; Committed Use Discounts (CUDs) for Google Cloud — is a great way for you to reduce your compute costs for stable, predictable workloads.
+Purchasing compute commitments :raw-html:`&mdash;` Reserved Instances (RIs) or Savings Plans (SPs) for AWS; Committed Use Discounts (CUDs) for Google Cloud :raw-html:`&mdash;` is a great way for you to reduce your compute costs for stable, predictable workloads.
 
 However, getting compute commitments *just right* and then managing them is an extremely manual, never ending process. FlexSave automates this for you while maximizing your compute discounts.
 
@@ -139,7 +139,7 @@ This way, you'll keep services always running by adjusting limits ahead of time.
 Cost Anomalies
 ^^^^^^^^^^^^^^
 
-With so many moving parts in the cloud, it"s critical to keep a finger on the pulse of your costs. However, unless IT regularly monitors cloud spend, sudden spikes in resource costs can remain undetected for weeks — until the monthly bill arrives.
+With so many moving parts in the cloud, it"s critical to keep a finger on the pulse of your costs. However, unless IT regularly monitors cloud spend, sudden spikes in resource costs can remain undetected for weeks :raw-html:`&mdash;` until the monthly bill arrives.
 
 As a result, critical staff resources are wasted manually monitoring for and identifying the scope & source of problems.
 
@@ -247,7 +247,7 @@ Use User Management to:
 Managed Cloud Support
 ^^^^^^^^^^^^^^^^^^^^^
 
-Within the CMP you can resolve your cloud issues quickly with hyper-responsive and unlimited support from DoiT International— **at no extra cost**.
+Within the CMP you can resolve your cloud issues quickly with hyper-responsive and unlimited support from DoiT International :raw-html:`&mdash;` **at no extra cost**.
 
 * :doc:`Open tickets <tickets/open-a-new-support-request>` with experienced Cloud Architects and Engineers.
 * View open or historical tickets and their statuses.

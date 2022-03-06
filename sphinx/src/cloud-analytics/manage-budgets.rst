@@ -83,7 +83,7 @@ This will open a pop-up that will give you two options when sharing:
 * Give everyone on your team Viewer access.
 * Explicitly give someone from your team Viewer or Editor Access.
 
-Having View access means the Budget will appear on the main Budgets page, and that you can view the Budget itself — but you can"t make any edits to the Budget.
+Having View access means the Budget will appear on the main Budgets page, and that you can view the Budget itself :raw-html:`&mdash;` but you can"t make any edits to the Budget.
 
 Edit access allows you to edit a Budget, but not delete it. Only those with Owner access can delete Budgets.
 
