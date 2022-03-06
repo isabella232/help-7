@@ -1,5 +1,5 @@
 *.csv
 *.html
 *.md
-sphinx/.venv
-sphinx/docs
+sphinx/cmp/.venv
+sphinx/cmp/docs
