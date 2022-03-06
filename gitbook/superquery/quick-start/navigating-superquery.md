@@ -64,7 +64,7 @@ Manage and edit your [scheduled queries](../scheduled-queries/managing-scheduled
 
 Connect your [GitHub repository](../git-integrations/connect-github.md) or [GitLab project](../git-integrations/connect-gitlab.md) to superQuery.
 
-Once connected, it's easy to back up queries, catalogue them, and version-control them.
+Once connected, it's easy to back up queries, catalog them, and version-control them.
 
 ### Dark Mode / Light Mode toggle
 

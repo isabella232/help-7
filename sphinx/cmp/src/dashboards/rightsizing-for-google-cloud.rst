@@ -34,7 +34,7 @@ Recommendations for cost savings will now be presented. Click on the recommendat
 .. image:: ../_assets/recommendations3.png
    :alt: A screenshot showing the _Google Cloud Recommendations_ section
 
-In this dialogue, you will be able to apply the recommendations in order to save costs by changing machine types. DoiT International provides any further recommendations within 24 hours after the change. Afterward, instance recommendations are refreshed at regular intervals throughout the day. To apply the recommendation, stop the instance for the Current machine type that's currently under the status 'Running', then click 'Apply'. You will then be able to start the instance for the New machine type once it reloads.
+In this dialog, you will be able to apply the recommendations in order to save costs by changing machine types. DoiT International provides any further recommendations within 24 hours after the change. Afterward, instance recommendations are refreshed at regular intervals throughout the day. To apply the recommendation, stop the instance for the Current machine type that's currently under the status 'Running', then click 'Apply'. You will then be able to start the instance for the New machine type once it reloads.
 
 .. image:: ../_assets/resize-instance.png
    :alt: A screenshot showing a specific recommendation along with the location of the _Apply_ button

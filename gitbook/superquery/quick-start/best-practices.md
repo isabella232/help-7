@@ -67,4 +67,4 @@ For many, code management and tracking changes to queries is important. Most of 
 
 With superQuery's [GitHub](../git-integrations/connect-github-org.md) and [GitLab](../git-integrations/connect-gitlab.md) integrations, you'll be able to version control your queries and views. This way, you and your team will always have a record of changes made to your BigQuery work.
 
-Your queries are also catalogued for you in a simple hierarchy (User > Board > Tab) inside of your repo/project.
+Your queries are also cataloged for you in a simple hierarchy (User > Board > Tab) inside of your repo/project.

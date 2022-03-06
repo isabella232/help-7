@@ -19,7 +19,7 @@ misspell -locale US . |
     grep -vE '.*/.venv/[^:]+:' |
     grep -vE '.*/searchindex.js:' |
         grep -vE 'sphinx/[^/]+/docs/[^:]+:' \
-    >"${tmp_errors}"
+    >"${tmp_errors}" || true
 
 if test -s "${tmp_errors}"; then
     sed -E "s,^(.*),  ${RED}\1${RESET}," <"${tmp_errors}"
