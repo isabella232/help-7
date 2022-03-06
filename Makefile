@@ -12,6 +12,7 @@ BOLD := [1m
 RED := [31m
 RESET := [0m
 
+BIN_DIR := ./bin
 GH_PAGES_DIR := gh-pages
 GITBOOK_ASSETS_DIR = .gitbook/assets
 GITBOOK_CMP_DIR := gitbook/cmp
@@ -19,7 +20,7 @@ GITBOOK_SUPERQUERY_DIR := gitbook/superquery
 SPHINX_ASSETS_DIR = src/_assets
 SPHINX_CMP_DIR := sphinx/cmp
 
-FIND := ./bin/find.sh
+FIND := $(BIN_DIR)/find.sh
 
 # $(call print-target)
 define print-target
@@ -46,7 +47,7 @@ check-parallel:
 # only-ascii
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-ONLY_ASCII := ./bin/only-ascii.sh
+ONLY_ASCII := $(BIN_DIR)/only-ascii.sh
 
 check: only-ascii
 .PHONY: only-ascii
@@ -70,7 +71,7 @@ ec:
 # lintspaces
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-LINTSPACES := ./bin/lintspaces.sh
+LINTSPACES := $(BIN_DIR)/lintspaces.sh
 
 check: lintspaces
 .PHONY: lintspaces
@@ -148,7 +149,7 @@ shfmt:
 
 # TODO: Include superQuery docs
 
-GOOD_FILENAMES := ./bin/good-filenames.sh
+GOOD_FILENAMES := $(BIN_DIR)/good-filenames.sh
 
 check: good-filenames
 .PHONY: good-filenames
@@ -161,7 +162,7 @@ good-filenames:
 # rm-unused-docs
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-RM_UNUSED_DOCS := ./bin/rm-unused-docs.sh --dry-run
+RM_UNUSED_DOCS := $(BIN_DIR)/rm-unused-docs.sh --dry-run
 
 check: rm-unused-docs
 .PHONY: rm-unused-docs
@@ -173,7 +174,7 @@ rm-unused-docs:
 # markdownlint
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-MARKDOWNLINT = ./bin/markdownlint.sh
+MARKDOWNLINT = $(BIN_DIR)/markdownlint.sh
 
 check: markdownlint
 .PHONY: markdownlint
@@ -184,7 +185,7 @@ markdownlint:
 # html-entities
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-HTML_ENTITIES := ./bin/html-entities.sh
+HTML_ENTITIES := $(BIN_DIR)/html-entities.sh
 
 check: html-entities
 .PHONY: html-entities
@@ -195,7 +196,7 @@ html-entities:
 # inline-html
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-INLINE_HTML := ./bin/inline-html.sh
+INLINE_HTML := $(BIN_DIR)/inline-html.sh
 
 check: inline-html
 .PHONY: inline-html
@@ -206,7 +207,7 @@ inline-html:
 # update-dict
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-UPDATE_DICT = ./bin/update-dict.sh --dry-run
+UPDATE_DICT = $(BIN_DIR)/update-dict.sh --dry-run
 
 check: update-dict
 .PHONY: update-dict
@@ -230,7 +231,7 @@ cspell:
 # misspell
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-MISSPELL := ./bin/misspell.sh
+MISSPELL := $(BIN_DIR)/misspell.sh
 
 check: misspell
 .PHONY: misspell
@@ -355,7 +356,7 @@ vale:
 
 # TODO: Make this check work for Sphinx (RST files in particular)
 
-RM_UNUSED_ASSETS := ./bin/rm-unused-assets.sh --dry-run
+RM_UNUSED_ASSETS := $(BIN_DIR)/rm-unused-assets.sh --dry-run
 
 check: rm-unused-assets
 .PHONY: rm-unused-assets
@@ -370,7 +371,7 @@ rm-unused-assets:
 
 # TODO: Scan superQuery docs (see `fdupes.sh` file)
 
-FDUPES = ./bin/fdupes.sh
+FDUPES = $(BIN_DIR)/fdupes.sh
 
 check: fdupes
 .PHONY: fdupes
@@ -381,7 +382,7 @@ fdupes:
 # imgdup2go
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# IMGDUP2GO = ./bin/imgdup2go.sh
+# IMGDUP2GO = $(BIN_DIR)/imgdup2go.sh
 
 # all: imgdup2go
 # .PHONY: imgdup2go
@@ -394,7 +395,7 @@ fdupes:
 # optipng
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-OPTIPNG = ./bin/optipng.sh --dry-run
+OPTIPNG = $(BIN_DIR)/optipng.sh --dry-run
 
 check: optipng
 .PHONY: optipng
@@ -413,7 +414,7 @@ telemetry:
 # index.html
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-WWW_INDEX := ./bin/www-index.sh
+WWW_INDEX := $(BIN_DIR)/www-index.sh
 
 telemetry: $(GH_PAGES_DIR)/index.html
 $(GH_PAGES_DIR)/index.html:
@@ -427,7 +428,7 @@ $(GH_PAGES_DIR)/index.html:
 # TODO: Include GitBook superQuery docs
 # TODO: Include Sphinx CMP docs
 
-GEN_ASSETS_LIST := ./bin/gen-assets-list.sh
+GEN_ASSETS_LIST := $(BIN_DIR)/gen-assets-list.sh
 
 $(GH_PAGES_DIR)/index.html: $(GH_PAGES_DIR)/assets.html
 .PHONY: $(GH_PAGES_DIR)/assets.html
