@@ -71,7 +71,7 @@ jobs:
         if: always()
         with:
           config: .cspell.json
-          paths: 'src/**/*'
+          paths: src/**/*
           unique: true
 
       # This is third-party action that uses tries to detect non-inclusive
@@ -115,9 +115,9 @@ jobs:
         if: always() && github.event_name != 'pull_request'
         env:
           # TODO: Figure out how to use the name of the job without copying it
-          STATUS: 'QA checks <{run_url}|{status_message}>'
-          COMMIT: 'for commit `<{commit_url}|{commit_sha}>`'
-          BRANCH: 'on branch `{branch}`'
+          STATUS: QA checks <{run_url}|{status_message}>
+          COMMIT: for commit `<{commit_url}|{commit_sha}>`
+          BRANCH: on branch `{branch}`
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
           status: ${{ job.status }}

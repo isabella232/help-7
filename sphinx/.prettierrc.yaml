@@ -1,5 +1,5 @@
 bracketSpacing: false
-proseWrap: 'always'
+proseWrap: always
 semi: true
 singleQuote: true
 trailingComma: all
@@ -7,4 +7,4 @@ trailingComma: all
 overrides:
   - files: '*.rst'
     options:
-      proseWrap: 'never'
+      proseWrap: never
