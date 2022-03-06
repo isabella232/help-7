@@ -36,8 +36,7 @@ docs_dir="${1}"
 assets_dir="${2}"
 
 tmp_errors="$(mktemp)"
-./bin/find.sh -path "./${docs_dir}/${assets_dir}/*" -name '*.png' |
-    tr '\0' '\n' |
+./bin/find.sh -path "./${docs_dir}/${assets_dir}/*" | tr '\0' '\n' |
     while read -r file; do
         pattern="assets/$(basename "${file}")"
         if ! grep -rsqF "${pattern}" --include='*.md' "${docs_dir}"; then
@@ -48,12 +47,12 @@ tmp_errors="$(mktemp)"
 status_code=0
 if test -s "${tmp_errors}"; then
     if test "${dry_run}" = 0; then
+        xargs git rm -f --ignore-unmatch -- <"${tmp_errors}"
+        xargs rm -fv <"${tmp_errors}"
+    else
         printf 'Unused assets:\n\n'
         sed -E "s,^(.*),  ${RED}\1${RESET}," <"${tmp_errors}"
         status_code=1
-    else
-        xargs git rm -f --ignore-unmatch -- <"${tmp_errors}"
-        xargs rm -fv <"${tmp_errors}"
     fi
 fi
 rm -f "${tmp_errors}"
