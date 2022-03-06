@@ -9,6 +9,8 @@
 LC_ALL=C
 export LC_ALL
 
+# TODO: Curry results to avoid repeated file system scans
+
 # TODO: Prebake custom configurations into this script with the use of options
 
 # TODO: Pipe to `xargs` here script and take the final command to run as
