@@ -319,7 +319,10 @@ VALE_CLI := vale \
 	--output=.vale/templates/cli.tmpl \
 	--no-wrap
 
-VALE_CLI_RULE = $(FIND) -exec grep -Iq . {} \; -not -name '.dict.txt' | \
+VALE_CLI_RULE = $(FIND) \
+	-exec grep -Iq . {} \; \
+	-not -name '.dict.txt' \
+	-not -name '*.xml' | \
 	xargs -0 $(VALE_CLI)
 
 check: vale
