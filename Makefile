@@ -101,6 +101,19 @@ prettier:
 	$(call print-target)
 	$(PRETTIER)
 
+# black
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# https://github.com/psf/black
+
+BLACK := prettier --check .
+
+check: black
+.PHONY: black
+black:
+	$(call print-target)
+	$(BLACK)
+
 # yamllint
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
