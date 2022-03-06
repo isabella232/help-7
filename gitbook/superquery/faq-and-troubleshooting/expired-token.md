@@ -16,13 +16,13 @@ It's worth mentioning that superQuery fully relies on BigQuery's authentication 
 Let's explore both cases mentioned above.\
 &#x20;
 
-### You have recently reset / recovered your Google password. <a href="you-have-recently-reset--recovered-your-google-password" id="you-have-recently-reset--recovered-your-google-password"></a>
+### You have recently reset / recovered your Google password
 
 In this first case, the good news is that if you simply re-authenticate with superQuery, you'll get a new token from Google and can continue using superQuery uninterrupted.
 
 To re-authenticate, just log out of superQuery and then log back in.
 
-### Your token has been actively revoked. <a href="your-token-has-been-actively-revoked" id="your-token-has-been-actively-revoked"></a>
+### Your token has been actively revoked
 
 If you don't have the ability to grant superQuery access and get a new token, then speak with your IT administrator, or the person responsible for assigning permissions to your Google Cloud.
 

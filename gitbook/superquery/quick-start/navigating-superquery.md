@@ -16,7 +16,7 @@ superQuery is broken down into five sections:
 
 Let's briefly cover the main capabilities of each section.
 
-## #1 &mdash; Resource Panel <a href="1--resource-panel" id="1--resource-panel"></a>
+## #1 &mdash; Resource Panel
 
 The resource panel contains eight resources, each represented by a unique icon.
 
@@ -27,14 +27,14 @@ The resource panel contains eight resources, each represented by a unique icon.
 
 [Boards](../superquery-editor/organizing-queries.md) are like folders, where you can organize your queries by topic, theme, project. Think of them as a filing & management system for your queries.
 
-### Resources  <a href="projects" id="projects"></a>
+### Resources
 
 <!-- markdownlint-disable-next-line -->
 [![](https://downloads.intercomcdn.com/i/o/162586232/2f6b298a4d97ab75c6b3dbc1/projects.png)](https://downloads.intercomcdn.com/i/o/162586232/2f6b298a4d97ab75c6b3dbc1/projects.png)
 
 Access all of your BigQuery projects and resources for other supported services (AWS Athena and DynamoDB) here.\
 
-### Schema <a href="schema" id="schema"></a>
+### Schema
 
 <!-- markdownlint-disable-next-line -->
 [![](https://downloads.intercomcdn.com/i/o/162587680/541666f1e4269e9b643dfa05/schema.png)](https://downloads.intercomcdn.com/i/o/162587680/541666f1e4269e9b643dfa05/schema.png)

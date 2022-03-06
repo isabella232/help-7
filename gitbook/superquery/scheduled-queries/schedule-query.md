@@ -37,7 +37,7 @@ Your query scheduler settings (screenshot at the end) contain four main sections
 * This is just like setting up a destination table for a regular query.&#x20;
 * Give the table a recognizable name, and decide whether you'd like the results to append to or overwrite the table's previous results.
 
-### Notification options   <a href="notification-options" id="notification-options"></a>
+### Notification options
 
 * Decide whether you'd like to receive alerts when the query executes successfully, fails, or both.
 
@@ -75,7 +75,7 @@ superQuery detects from the syntax whether to execute these queries in parallel,
 
 To do so, write out your queries as you would in a Query Tab, separated by a semicolon. Then create your scheduled query as normal, except **do not** include a destination table when configuring the settings.
 
-## Scheduler Tips & Tricks <a href="scheduler-tips--tricks" id="scheduler-tips--tricks"></a>
+## Scheduler Tips & Tricks
 
 There are a couple unique characteristics about superQuery's scheduler. Notably, you can:
 

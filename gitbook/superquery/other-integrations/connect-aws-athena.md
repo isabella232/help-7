@@ -12,7 +12,7 @@ Once connected, you will be able to enjoy other capabilities you don't have in t
 * Organize tabs into folder-like [Boards](../superquery-editor/organizing-queries.md)
 * Produce [ad-hoc visualizations](../superquery-editor/charts.md) of query results
 * Version control your queries to [GitHub](../git-integrations/connect-github.md) or [GitLab](../git-integrations/connect-gitlab.md)
-* ...and much more!
+* &hellip;and much more!
 
 Let's get started.
 

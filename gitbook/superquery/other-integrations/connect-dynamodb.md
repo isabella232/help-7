@@ -12,7 +12,7 @@ With DynamoDB connected, you'll be able to:
 * Run aggregations without any ETL.
 * Export all results &mdash; not just one page at a time.
 * Get faster Scan results with parallel execution.
-* ...and much more!
+* &hellip;and much more!
 
 Let's get started!
 
