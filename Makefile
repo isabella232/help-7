@@ -244,9 +244,7 @@ cspell:
 # misspell
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# https://github.com/client9/misspell
-
-MISSPELL := misspell -locale US .
+MISSPELL := ./bin/misspell.sh
 
 check: misspell
 .PHONY: misspell

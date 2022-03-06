@@ -206,6 +206,7 @@ sarl
 sas
 savingsplans
 scaling's
+searchindex
 sed
 sek
 serviceusage
