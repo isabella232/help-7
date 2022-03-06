@@ -1,0 +1,7 @@
+=====
+Perks
+=====
+
+.. toctree::
+
+   perks

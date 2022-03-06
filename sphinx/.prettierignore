@@ -1,0 +1,5 @@
+*.py
+*.md
+**/_templates/*.html
+.venv/**
+docs/**

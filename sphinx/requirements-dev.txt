@@ -1,0 +1,12 @@
+sphinx-autobuild
+m2r
+restructuredtext_lint
+rstcheck
+esbonio
+pastel
+black
+snooty
+icecream
+prospector
+pyyaml>=5.4 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=1.26.5 # not directly required, pinned by Snyk to avoid a vulnerability

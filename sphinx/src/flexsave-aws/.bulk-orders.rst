@@ -1,0 +1,32 @@
+.. _flexsave-aws_bulk-orders:
+
+Bulk Upload FlexSave Orders
+===========================
+
+.. epigraph::
+
+   Managing your FlexSave reservations via bulk import
+
+When you have a lot of FlexSave orders to place for the coming month, bulk uploading your orders may save you lots of time. From within the CMP, you can make as many orders as you want by uploading a CSV file.
+
+.. IMPORTANT::
+
+   This capability is for :doc:`FlexSave Manual Mode <overview>` only.
+
+Begin by navigating to the FlexSave page, and click on the vertical ellipsis (``⋮``) at the top-right of your screen.
+
+Then, select "Upload Orders" and upload the CSV file with your order information.
+
+.. image:: ../_assets/cleanshot-2021-06-22-at-12.23.46.jpg
+   :alt: A screenshot showing the location of the _Upload Orders_ option
+
+The following fields are optional and don't need to be filled for your CSV file to be processed:
+
+* Note
+* Recurring
+
+To ensure your CSV file is structured properly, we recommend downloading the template below and using it to format your orders.
+
+.. highlights::
+
+   📎 :download:`FlexSave Bulk Upload Template <../_assets/flex-ri-bulk-upload-template.csv>`
