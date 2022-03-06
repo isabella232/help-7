@@ -19,15 +19,21 @@ scan() {
     fi
 }
 
-scan_tags() {
+tag_pattern() {
     name="${1}"
-    scan "(<${name}>|<${name} ([^>]*>)?|</${name}>)"
+    echo "(<${name}>|<${name} ([^>]*>)?|</${name}>)"
 }
 
-scan_elements() {
-    for name in "${@}"; do
-        scan_tags "${name}"
-    done
-}
+P="$(tag_pattern p)"
+A="$(tag_pattern a)"
+I="$(tag_pattern i)"
+EM="$(tag_pattern em)"
+B="$(tag_pattern b)"
+STRONG="$(tag_pattern strong)"
+IMG="$(tag_pattern img)"
+CODE="$(tag_pattern code)"
+PRE="$(tag_pattern pre)"
 
-scan_elements 'p' 'a' 'i' 'em' 'b' 'strong' 'img' 'code' 'pre'
+PATTERN="(${P}|${A}|${I}|${EM}|${B}|${STRONG}|${IMG}|${CODE}|${PRE})"
+
+scan "${PATTERN}"
