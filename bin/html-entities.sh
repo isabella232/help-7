@@ -12,7 +12,7 @@ export LC_ALL
 scan() {
     pattern="${1}"
     if (./bin/find.sh -name '*.md' |
-        xargs -0 grep --color=always -Pi "${pattern}"); then
+        xargs -0 grep --color=always -P "${pattern}"); then
         return 1
     else
         return 0
@@ -25,26 +25,27 @@ scan() {
 # Prefer the use of `&times;`
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# ASCII transliteration of the multiplication symbol
-scan '[[:alnum:]] \* [[:alnum:]]'
+# ASCII transliteration of the multiplication symbol (ignoring upper case words
+# which may indicate SQL syntax)
+scan '[a-z0-9]+ \* [a-z0-9]+'
 
 # Prefer the use of `&copy;`
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # ASCII transliteration of the copyright symbol
-scan '\(c\)'
+scan '\([cC]\)'
 
 # Prefer the use of `&reg;`
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # ASCII transliteration of the registered trademark symbol
-scan '\(r\)'
+scan '\([rR]\)'
 
 # Prefer the use of `&trade;`
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # ASCII transliteration of the trademark symbol
-scan '\(tm\)'
+scan '\([tT][mM]\)'
 
 # Prefer the use of `&check;`
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -56,7 +57,7 @@ scan '&#x2714;'
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 # Numerical ranges
-scan "[^a-z0-9-\"'\`.][[:digit:]]+-[[:digit:]]+[^a-z0-9-\"'\`.]"
+scan "[^a-zA-Z0-9-\"'\`.][[:digit:]]+-[[:digit:]]+[^a-zA-Z0-9-\"'\`.]"
 
 # Prefer the use of `&mdash;`
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -64,13 +65,15 @@ scan "[^a-z0-9-\"'\`.][[:digit:]]+-[[:digit:]]+[^a-z0-9-\"'\`.]"
 # TODO: Decide whether (and when) to enforce spaces around an em dash
 
 # Use of a single hyphen instead of an em dash
-scan '[a-z] - [a-z]'
-scan '[a-z] - [[:alnum:]]'
-scan '[[:alnum:]] - [a-z]'
+ALPHA_HYPHEN_ALPHA='[a-zA-Z]+ - [a-zA-Z]+'
+ALPHA_HYPHEN_ALNUM='[a-zA-Z]+ - [[:alnum:]]+'
+ALNUM_HYPHEN_ALPHA='[[:alnum:]]+ - [a-z-A-Z]+'
+scan "(${ALPHA_HYPHEN_ALPHA}|${ALPHA_HYPHEN_ALNUM}|${ALNUM_HYPHEN_ALPHA})"
 
 # ASCII transliteration of an em dash
-scan ' -- '
-scan '[[:alnum:]]--[[:alnum:]]'
+SPACE_EM_DASH_SPACE=' -- '
+ALNUM_EM_DASH_ALNUM='[[:alnum:]]+--[[:alnum:]]+'
+scan "(${SPACE_EM_DASH_SPACE}|${ALNUM_EM_DASH_ALNUM})"
 
 # Prefer the use of `&hellip;`
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
