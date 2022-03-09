@@ -47,10 +47,10 @@ If one of the current incidents appears to be related to your request, you may s
 {% endhint %}
 
 1. Select the severity of your request. Each severity level corresponds with a target response time:
-   * General Guidance — Four hours
-   * System Impaired — Two hours
-   * Production System Impaired — One hour
-   * Production System Down — 30 minutes
+   * General Guidance &mdash; Four hours
+   * System Impaired &mdash; Two hours
+   * Production System Impaired &mdash; One hour
+   * Production System Down &mdash; 30 minutes
 2. Write a descriptive subject, add any additional CCs to the ticket, and provide a complete description of your request.
 
 {% hint style="info" %}
