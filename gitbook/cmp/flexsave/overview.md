@@ -6,9 +6,9 @@ description: >-
 
 # FlexSave overview
 
-FlexSave is your cloud co-pilot, dynamically maximizing your cloud-compute discounts for [Amazon Web Services][aws] (AWS) and [Google Compute Platform][gcp] (GCP) without any of the risks or limitations of long-term use commitments.
+FlexSave is your cloud co-pilot, dynamically maximizing your cloud-compute discounts for [Amazon Web Services](https://aws.amazon.com) (AWS) and [Google Compute Platform](https://cloud.google.com) (GCP) without any of the risks or limitations of long-term use commitments.
 
-In most cases, save [the equivalent of a 1-year commitment discount](#how-much-can-i-save) on your cloud-compute spend with on-demand access to DoiT International's wholesale inventory of AWS [Savings Plans][sps] (SPs), AWS [EC2 Reserved Instances][ris] (RIs), and GCP [Committed Use Discounts][cuds] (CUDs).
+In most cases, save [the equivalent of a 1-year commitment discount](overview.md#how-much-can-i-save) on your cloud-compute spend with on-demand access to DoiT International's wholesale inventory of AWS [Savings Plans](https://https/aws.amazon.com/savingsplans/) (SPs), AWS [EC2 Reserved Instances](https://https/aws.amazon.com/ec2/pricing/reserved-instances/) (RIs), and GCP [Committed Use Discounts](https://https/cloud.google.com/docs/cuds) (CUDs).
 
 {% hint style="info" %}
 See also:
@@ -19,13 +19,10 @@ See also:
 
 ## Benefits
 
-* _No commitment_ &mdash; AWS and GCP provide cloud-compute discounts (SPs, RIs, and CUDs) with mandatory commitment periods lasting one year or more. FlexSave provides the same cloud-compute discounts with no commitments.
-
-* _No risk_ &mdash; FlexSave provides on-demand access to DoiT International's wholesale inventory of SPs, RIs, and CUDs. We handle capacity planning and bear the risk of underutilization, meaning you don't have to.
-
-* _Zero cost_ &mdash; FlexSave costs nothing, there are no hidden fees, and _you are guaranteed to save money_. We optimize our bulk purchasing, so, in most cases, we can afford to pass on the equivalent of a 1-year commitment discount for any SPs, RIs, and CUDs in our wholesale inventory.
-
-* _Easy to use_ &mdash; FlexSave runs on auto-pilot, continually applying the optimum cost-saving strategy to your account. You can enable or disable FlexSave whenever you like.
+* _No commitment_ — AWS and GCP provide cloud-compute discounts (SPs, RIs, and CUDs) with mandatory commitment periods lasting one year or more. FlexSave provides the same cloud-compute discounts with no commitments.
+* _No risk_ — FlexSave provides on-demand access to DoiT International's wholesale inventory of SPs, RIs, and CUDs. We handle capacity planning and bear the risk of underutilization, meaning you don't have to.
+* _Zero cost_ — FlexSave costs nothing, there are no hidden fees, and _you are guaranteed to save money_. We optimize our bulk purchasing, so, in most cases, we can afford to pass on the equivalent of a 1-year commitment discount for any SPs, RIs, and CUDs in our wholesale inventory.
+* _Easy to use_ — FlexSave runs on auto-pilot, continually applying the optimum cost-saving strategy to your account. You can enable or disable FlexSave whenever you like.
 
 ## How it works
 
@@ -33,7 +30,7 @@ FlexSave uses your GCP and AWS billing data to track your on-demand resource uti
 
 FlexSave will attach the ideal blend of DoiT International's wholesale SPs, RIs, and CUDs to your billing account. As your resource utilization changes, FlexSave will continually readjust the configuration of attached SPs, RIs, and CUDs to maximize your potential savings.
 
-We will automatically convert your FlexSave savings to account credits and [deduct them from your monthly invoice](#invoicing).
+We will automatically convert your FlexSave savings to account credits and [deduct them from your monthly invoice](overview.md#invoicing).
 
 ## Start saving
 
@@ -68,12 +65,11 @@ Within the CMP, select _Savings_ from the top menu bar, then select _FlexSave_ f
 In the example screenshot above, FlexSave for GCP has only been active for one and a half months and has already saved the customer a total of $248,145 on their on-demand cloud-compute spend so far.
 {% endhint %}
 
-In the top-right hand corner of the screen, a _Time range_ drop-down menu allows you to select the time range you want to view.
-Above the bar chart, the CMP displays three essential statistics for the specified time range:
+In the top-right hand corner of the screen, a _Time range_ drop-down menu allows you to select the time range you want to view. Above the bar chart, the CMP displays three essential statistics for the specified time range:
 
-* _Time range savings rate_ &mdash; The effective discount applied to your on-demand spend
-* _Time range savings_ &mdash; Your savings as a result of using FlexSave
-* _Time range net On-Demand spend_ &mdash; Your net on-demand spend after applying FlexSave discount
+* _Time range savings rate_ — The effective discount applied to your on-demand spend
+* _Time range savings_ — Your savings as a result of using FlexSave
+* _Time range net On-Demand spend_ — Your net on-demand spend after applying FlexSave discount
 
 In the bar chart shown above:
 
@@ -95,12 +91,12 @@ Because _Units_ is always set to -1 (indicating a credit), the FlexSave _Price P
 
 Here's an abbreviated example:
 
-| Description         | Units |         PPU |        Price |
-| ------------------- | ----: | ----------: | -----------: |
-| Google Cloud        |     1 | $574,813.82 |  $574,813.82 |
-| FlexSave Savings    |    -1 | $206,967.51 | -$206,967.51 |
-|                     |       |             |              |
-| Total               |       |             |  $206,967.51 |
+| Description      | Units |         PPU |        Price |
+| ---------------- | ----: | ----------: | -----------: |
+| Google Cloud     |     1 | $574,813.82 |  $574,813.82 |
+| FlexSave Savings |    -1 | $206,967.51 | -$206,967.51 |
+|                  |       |             |              |
+| Total            |       |             |  $206,967.51 |
 
 ### FAQs
 
@@ -113,9 +109,15 @@ For general platform-specific information, see:
 * [FlexSave for GCP: FAQs](gcp.md#faqs)
 {% endhint %}
 
-#### How much can I save?
+#### How much can I save with FlexSave for Amazon Web Services?
 
-In most cases, your savings will be equivalent to (or higher than) the applicable [AWS Convertible Reserved Instance 1-year Full Upfront][ri-pricing] or [1-year Google Committed Use Discount][cud-pricing].
+Customers on _shared payer accounts_ (e.g. without dedicated AWS organization) and in most cases, will be saving the equivalent to (or higher than) the applicable [AWS Convertible Reserved Instance 1-year Full Upfront](https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/).
+
+Customers on _dedicated payer accounts_ (e.g. with dedicated AWS organization) and in most cases, will be saving the equivalent to (or higher than) the applicable [AWS Convertible Reserved Instance 1-year No Upfront](https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/).
+
+#### How much can I save with FlexSave for Google Cloud?
+
+You can expect to save as much as (or higher than) the applicable [1-year Google Committed Use Discount](https://cloud.google.com/compute/vm-instance-pricing#committed\_use).
 
 #### How is using FlexSave better than purchasing discounts directly from AWS or GCP?
 
@@ -133,19 +135,9 @@ FlexSave will be unavailable if either of the following is true:
 If we are still importing and processing your billing data, you can instead select the _NOTIFY ME_ button to receive an update when FlexSave is available.
 
 {% hint style="warning" %}
-At this time, we only support FlexSave for AWS customers with billing accounts [consolidated][consolidated] with the DoiT International billing organization.
+At this time, we only support FlexSave for AWS customers with billing accounts [consolidated](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html) with the DoiT International billing organization.
 {% endhint %}
 
 #### Can I turn off FlexSave?
 
 You can disable of FlexSave at any time. If you want to disable FlexSave, please [create a new request](../services/consulting-support/#create-a-new-request) for our support team.
-
-[aws]: https://aws.amazon.com/
-[consolidated]: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html
-[cud-pricing]: https://cloud.google.com/compute/vm-instance-pricing#committed_use
-[cuds]: https:/cloud.google.com/docs/cuds
-[gcp]: https://cloud.google.com/
-[reseller]: https://partners.amazonaws.com/partners/001E000001HPlIAIA1/
-[ri-pricing]: https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/
-[ris]: https:/aws.amazon.com/ec2/pricing/reserved-instances/
-[sps]: https:/aws.amazon.com/savingsplans/
