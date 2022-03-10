@@ -21,6 +21,7 @@ atilde
 auml
 auths
 autoscalers
+aviv
 awk
 awsops
 belinga
@@ -53,6 +54,7 @@ davidanson
 dces
 ddl
 deandra
+debussylaan
 deleter
 devcontainer
 dkk
@@ -67,6 +69,7 @@ eamodio
 ecam
 editmsg
 ein
+elazar
 elb
 ena
 enablement
