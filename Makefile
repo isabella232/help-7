@@ -401,6 +401,9 @@ telemetry: $(GH_PAGES_DIR)/index.html
 $(GH_PAGES_DIR)/index.html:
 	$(call print-target)
 	@ mkdir -p $(dir $@)
+	cd $(dir $@) && touch .nojekyll
+	cd $(dir $@) && touch robots.txt
+	cd $(dir $@) && printf "User-agent: *\nDisallow: /\n" > robots.txt
 	$(WWW_INDEX) $(dir $@) $@
 
 # assets.html
@@ -417,7 +420,6 @@ $(GH_PAGES_DIR)/assets.html:
 	$(call print-target)
 	@ mkdir -p $(dir $@)
 	$(GEN_ASSETS_LIST) $(GITBOOK_CMP_DIR)/$(GITBOOK_ASSETS_DIR) >$@
-	@ # TODO: Format the HTML file
 
 # vale.json
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
