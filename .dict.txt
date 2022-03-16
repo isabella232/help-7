@@ -218,6 +218,7 @@ mytable
 nbsp
 ndash
 noempty
+nojekyll
 nok
 num
 oidc
