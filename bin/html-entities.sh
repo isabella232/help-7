@@ -11,7 +11,7 @@ export LC_ALL
 
 scan() {
     pattern="${1}"
-    if (./bin/find.sh --mode md -print0 |
+    if (fdfind --hidden --ignore-case --print0 '\.md$' |
         xargs -0 grep --color=always -P "${pattern}"); then
         return 1
     else

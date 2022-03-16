@@ -36,11 +36,11 @@ docs_dir="${1}"
 assets_dir="${2}"
 
 tmp_errors="$(mktemp)"
-./bin/find.sh "./${docs_dir}/${assets_dir}/" |
+(cd "${docs_dir}/${assets_dir}" && fdfind --no-ignore) |
     while read -r file; do
         pattern="assets/$(basename "${file}")"
         if ! grep -rsqF "${pattern}" --include='*.md' "${docs_dir}"; then
-            echo "${file}" >>"${tmp_errors}"
+            echo "${docs_dir}/${assets_dir}/${file}" >>"${tmp_errors}"
         fi
     done
 

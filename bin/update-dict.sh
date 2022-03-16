@@ -28,7 +28,7 @@ done
 
 match_words() {
     tmp_cat="$(mktemp)"
-    ./bin/find.sh --mode dict-search --print0 |
+    fdfind --hidden --ignore-case --type f --print0 |
         xargs -0 cat >"${tmp_cat}"
     while read -r word; do
         if grep -iF "${word}" "${tmp_cat}" >/dev/null; then

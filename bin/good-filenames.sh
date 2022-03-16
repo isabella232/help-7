@@ -27,7 +27,7 @@ ALLOWED_PREFIXES='^(cmp|aws|gcp|ms|slack|cloudhealth|feedback-hub|email|file)'
 ALLOWED_CHARS='[a-z0-9.-]+'
 DISALLOWED_STEMS='(--|[a-z][0-9]|image|shot|[0-9][^0-9.])'
 DISALLOWED_STEMS_FILTER='s,(-s3|s3-|-office-365),,'
-ALLOWED_SUFFIXES='\.(png|gif|csv)$'
+ALLOWED_SUFFIXES='\.(csv|gif|png)$'
 
 check_filename() {
     file="${1}"
@@ -41,11 +41,11 @@ check_filename() {
 }
 
 tmp_errors="$(mktemp)"
-./bin/find.sh --binary "./${assets_dir}" |
+(cd "${assets_dir}" && fdfind --no-ignore --type f) |
     while read -r file; do
         check_filename "${file}" |
             sed -E 's,(.*),(\1),' |
-            sed "s,^,${file} ," >>"${tmp_errors}"
+            sed "s,^,${assets_dir}/${file} ," >>"${tmp_errors}"
     done
 
 status_code=0

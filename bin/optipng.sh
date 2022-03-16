@@ -37,20 +37,20 @@ docs_lock_dir="${OPTIPNG_LOCK_DIR}/${docs_dir}"
 mkdir -p "${docs_lock_dir}"
 
 tmp_errors="$(mktemp)"
-./bin/find.sh --binary --mode png "./${docs_dir}/${assets_dir}/*" |
-    tr '\0' '\n' |
+(cd "${docs_dir}/${assets_dir}" && fdfind --no-ignore '\.png$') |
     while read -r file; do
         basename="$(basename "${file}")"
         sig_file="${docs_lock_dir}/${basename}.md5sum"
         if md5sum --check --quiet "${sig_file}" 2>/dev/null; then
             continue
         fi
+        full_filename="${docs_dir}/${assets_dir}/${file}"
         if test "${dry_run}" = 0; then
-            echo "Compressing: ${file}"
-            optipng -quiet -strip all "${file}"
-            md5sum "${file}" >"${sig_file}"
+            echo "Compressing: ${full_filename}"
+            optipng -quiet -strip all "${full_filename}"
+            md5sum "${full_filename}" >"${sig_file}"
         else
-            echo "${file}" >>"${tmp_errors}"
+            echo "${full_filename}" >>"${tmp_errors}"
         fi
     done
 
@@ -64,7 +64,7 @@ done
 
 status_code=0
 if test -s "${tmp_errors}"; then
-    printf 'Missing or out-of-date optipng lock file:\n\n'
+    printf 'Missing or stale lock file for:\n\n'
     sed -E "s,^(.*),  ${RED}\1${RESET}," <"${tmp_errors}"
     status_code=1
 fi

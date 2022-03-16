@@ -18,7 +18,7 @@ run_lintspaces() {
 }
 
 # Python files
-./bin/find.sh --mode py | run_lintspaces 2
+fdfind -H -t f '\.py$' | run_lintspaces 2
 
 # All other files
-./bin/find.sh --mode py --invert | run_lintspaces 1
+fdfind -H -t f '\.[^p][^y][^.]?$' | run_lintspaces 1

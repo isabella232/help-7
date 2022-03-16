@@ -34,11 +34,14 @@ done
 docs_dir="${1}"
 
 tmp_errors="$(mktemp)"
-./bin/find.sh --mode md-pages "./${docs_dir}/" |
+(cd "${docs_dir}" && fdfind --ignore-case '\.md$') |
     while read -r file; do
+        if test "${file}" = 'SUMMARY.md'; then
+            continue
+        fi
         basename="$(basename "${file}")"
         if ! grep -rsqF "${basename}" --include='*.md' "./${docs_dir}"; then
-            echo "${file}" >>"${tmp_errors}"
+            echo "${docs_dir}/${file}" >>"${tmp_errors}"
         fi
     done
 

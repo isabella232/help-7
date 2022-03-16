@@ -17,13 +17,10 @@ GH_PAGES_DIR = gh-pages
 GITBOOK_ASSETS_DIR = .gitbook/assets
 GITBOOK_CMP_DIR = gitbook/cmp
 GITBOOK_SUPERQUERY_DIR = gitbook/superquery
-CACHE_DIR = .docops/cache
 SPHINX_ASSETS_DIR = src/_assets
 SPHINX_CMP_DIR = sphinx/cmp
-SPHINX_CMP_DOCS_DIR = $(SPHINX_CMP_DIR)/docs
-SPHINX_CMP_VENV_DIR = $(SPHINX_CMP_DIR)/.venv
-
-FIND := $(BIN_DIR)/find.sh
+SPHINX_CMP_DOCS_DIR := $(SPHINX_CMP_DIR)/docs
+SPHINX_CMP_VENV_DIR := $(SPHINX_CMP_DIR)/.venv
 
 # $(call print-target)
 define print-target
@@ -48,8 +45,6 @@ endef
 
 # check
 # -----------------------------------------------------------------------------
-
-# TODO: Perhaps purge the `find.sh` cache before a run
 
 .PHONY: check
 check:
@@ -255,6 +250,7 @@ misspell:
 # https://github.com/sapegin/proselint
 
 # PROSELINTJS = proselintjs --config .proselintrc.json
+# FIND_PROSELINTJS =
 
 # all: proselintjs
 # .PHONY: proselintjs
@@ -317,33 +313,24 @@ vale:
 # brok
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# https://github.com/smallhadroncollider/brok
-
-BROK = brok --check-certs --only-failures
-
-# TODO: Keep cache file in Git to speed up CICD
+BROK = $(BIN_DIR)/brok.sh
 
 # all: brok
 .PHONY: brok
 brok:
 	$(call print-target)
-	$(FIND) --mode md -print0 | xargs -0 $(BROK)
+	$(BROK)
 
 # markdown-link-check
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-# https://github.com/tcort/markdown-link-check
-
-MARKDOWN_LINK_CHECK = markdown-link-check \
-	--config .markdown-link-check.json \
-	--quiet \
-	--retry
+MARKDOWN_LINK_CHECK = $(BIN_DIR)/markdown-link-check.sh
 
 all: markdown-link-check
 .PHONY: markdown-link-check
 markdown-link-check:
 	$(call print-target)
-	$(FIND) --mode md --print0 | xargs -0 $(MARKDOWN_LINK_CHECK)
+	$(MARKDOWN_LINK_CHECK)
 
 # rm-unused-assets
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -357,7 +344,7 @@ check: rm-unused-assets
 rm-unused-assets:
 	$(call print-target)
 	$(RM_UNUSED_ASSETS) $(GITBOOK_CMP_DIR) $(GITBOOK_ASSETS_DIR)
-	$(RM_UNUSED_ASSETS) $(GITBOOK_SUPERQUERY_DIR) $(GITBOOK_ASSETS_DIR)
+	@ # $(RM_UNUSED_ASSETS) $(GITBOOK_SUPERQUERY_DIR) $(GITBOOK_ASSETS_DIR)
 	@ # $(RM_UNUSED_ASSETS) $(SPHINX_SUPERQUERY_DIR) $(SPHINX_ASSETS_DIR)
 
 # fdupes
@@ -439,33 +426,25 @@ $(GH_PAGES_DIR)/assets.html:
 
 # TODO: Wrap this into the `vale.sh` script
 
-VALE_JSON = vale \
-	--config .vale.ini \
-	--minAlertLevel suggestion \
-	--output=JSON \
-	--no-wrap \
-	--no-exit
+# VALE_JSON = vale \
+# 	--config .vale.ini \
+# 	--minAlertLevel suggestion \
+# 	--output=JSON \
+# 	--no-wrap \
+# 	--no-exit
 
-VALE_JSON_RULE = $(FIND) --mode vale --print0 | xargs -0 $(VALE_JSON) >$@
+# VALE_JSON_RULE = $(FIND) --mode vale --print0 | xargs -0 $(VALE_JSON) >$@
 
-$(GH_PAGES_DIR)/index.html: $(GH_PAGES_DIR)/vale.json
-.PHONY: $(GH_PAGES_DIR)/vale.json
-$(GH_PAGES_DIR)/vale.json:
-	$(call print-target)
-	@ mkdir -p $(dir $@)
-	$(VALE_JSON_RULE)
-	prettier --loglevel silent --write $@
+# $(GH_PAGES_DIR)/index.html: $(GH_PAGES_DIR)/vale.json
+# .PHONY: $(GH_PAGES_DIR)/vale.json
+# $(GH_PAGES_DIR)/vale.json:
+# 	$(call print-target)
+# 	@ mkdir -p $(dir $@)
+# 	$(VALE_JSON_RULE)
+# 	prettier --loglevel silent --write $@
 
 # Maintenance
 # -----------------------------------------------------------------------------
-
-# TODO: Figure out how to structure these targets
-
-# purge
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-purge:
-	rm -rf $(CACHE_DIR)
 
 # clean
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

@@ -15,11 +15,8 @@ RED='\x1b[31m'
 RESET='\x1b[0m'
 
 tmp_errors="$(mktemp)"
-misspell -locale US . |
-    grep -vE '.*/_static/[^:]+:' |
-    grep -vE '.*/.venv/[^:]+:' |
-    grep -vE '.*/searchindex.js:' |
-    grep -vE 'sphinx/[^/]+/docs/[^:]+:' \
+fdfind --hidden --ignore-case --type f --print0 |
+    xargs -0 misspell -locale US \
         >"${tmp_errors}" || true
 
 if test -s "${tmp_errors}"; then

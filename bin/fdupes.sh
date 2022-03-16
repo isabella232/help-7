@@ -19,10 +19,10 @@ make --no-print-directory -C "${tmp_repo_copy}" --silent clean
 
 rm -rf "${tmp_repo_copy}/.git"
 rm -rf "${tmp_repo_copy}/sphinx"
+rm -rf "${tmp_repo_copy}/gitbook/superquery"
 
 tmp_errors="$(mktemp)"
 fdupes --quiet --recurse --order=name --noempty --sameline "${tmp_repo_copy}" |
-    grep -v 'gitbook/superquery' |
     sed "s,${tmp_repo_copy},.,g" |
     sed 's,^,Duplicates: ,' >>"${tmp_errors}"
 

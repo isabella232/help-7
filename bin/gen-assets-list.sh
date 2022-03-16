@@ -9,7 +9,7 @@
 LC_ALL=C
 export LC_ALL
 
-ASSETS_URL=https://raw.githubusercontent.com/doitintl/docs/main
+ASSETS_URL=https://raw.githubusercontent.com/doitintl/help/main
 
 assets_dir="${1}"
 
@@ -24,7 +24,7 @@ img {
 </style>
 EOF
 
-./bin/find.sh --binary --mode img "./${assets_dir}" |
+(cd "${assets_dir}" && fdfind --no-ignore) |
     while read -r file; do
         basename="$(basename "${file}")"
         asset_url="${ASSETS_URL}/${assets_dir}/${basename}"

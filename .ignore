@@ -1,0 +1,10 @@
+# Files to ignore when searching for text files
+.git
+*.gif
+*.ico
+*.jpeg
+*.jpg
+*.md5sum
+*.mp4
+*.png
+*.svg

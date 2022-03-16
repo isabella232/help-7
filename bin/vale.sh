@@ -8,7 +8,7 @@
 # https://github.com/errata-ai/vale
 
 run_vale() {
-    ./bin/find.sh --mode vale --print0 |
+    fdfind --hidden --ignore-case --type f --print0 '\.md$' |
         xargs -0 vale \
             --config .vale.ini \
             --minAlertLevel warning \
