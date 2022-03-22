@@ -84,8 +84,6 @@ Yes, you can. FlexSave works exclusively with your on-demand compute usage and e
 
 FlexSave only supports AWS regional reserved instances. Because AWS on-demand capacity reservations require zonal reserved instances, FlexSave does not provide capacity reservation discounts or discounts for [on-demand capacity reservations][capacity-reservations].
 
-FlexSave only supports AWS regional reserved instances. Because AWS on-demand capacity reservations require zonal reserved instances, FlexSave cannot provide discounts for [on-demand capacity reservations][capacity-reservations].
-
 {% hint style="info" %}
 See also:
 
