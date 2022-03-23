@@ -164,6 +164,22 @@ Within the CMP you can:
 
 {% embed url="https://www.loom.com/share/9ff183270cb84e32817818589a80d37e?sharedAppSource=team_library" %}
 
+## Cloud productivity
+
+### superQuery
+
+[superQuery](http://web.superquery.io) is a web-based IDE that enables you to leverage BigQuery, AWS Athena, and DynamoDB at peak efficiency. With superQuery, you get top-notch capabilities for:
+
+* Query Management with [Tabs](https://help.superquery.io/superquery-editor/query-tabs) and [Boards](https://help.superquery.io/superquery-editor/organizing-queries)
+* Collaboration
+* [Ad-hoc Visualization](https://help.superquery.io/superquery-editor/charts)
+* [Enhanced Caching](https://help.superquery.io/superquery-editor/tab-settings#cache-preference)
+* Git functionality support
+  * [GitHub repository](https://app.gitbook.com/@doitintl/s/superquery-docs/git-integrations/connect-github) and [GitHub organization](https://app.gitbook.com/@doitintl/s/superquery-docs/git-integrations/connect-github-org) support
+  * [GitLab support](https://app.gitbook.com/@doitintl/s/superquery-docs/git-integrations/connect-gitlab)
+
+As a DoiT International customer, you get unlimited superQuery seats and access to superQuery at no additional cost, and can quickly access it from the CMP.
+
 ## Cloud governance
 
 ### Asset management
