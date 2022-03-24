@@ -143,9 +143,9 @@ You can disable of FlexSave at any time. If you want to disable FlexSave, please
 [aws]: https://aws.amazon.com/
 [consolidated]: https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html
 [cud-pricing]: https://cloud.google.com/compute/vm-instance-pricing#committed_use
-[cuds]: https:/cloud.google.com/docs/cuds
+[cuds]: https://cloud.google.com/docs/cuds
 [gcp]: https://cloud.google.com/
 [reseller]: https://partners.amazonaws.com/partners/001E000001HPlIAIA1/
 [ri-pricing]: https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/
-[ris]: https:/aws.amazon.com/ec2/pricing/reserved-instances/
-[sps]: https:/aws.amazon.com/savingsplans/
+[ris]: https://aws.amazon.com/ec2/pricing/reserved-instances/
+[sps]: https://aws.amazon.com/savingsplans/
