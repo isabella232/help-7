@@ -32,7 +32,7 @@ The following table offers a brief summary of our support for [Google Cloud Plat
 | [Cost history widgets](dashboards/widgets-overview.md)               | Yes                                                      | Yes                                | Yes       |
 | [Cloud analytics](./#cloud-analytics)                                | Yes                                                      | Yes                                | No        |
 | [Costs anomalies](./#cost-anomalies)                                 | Yes                                                      | Yes                                | No        |
-| FlexSave                                                             | Yes                                                      | [Yes](flexsave/overview.md)        | No        |
+| Flexsave                                                             | Yes                                                      | [Yes](flexsave/overview.md)        | No        |
 | [EC2 Spot Scaling](spot-scaling/overview.md)                         | N/A                                                      | Yes                                | N/A       |
 
 ## Cloud analytics
@@ -72,18 +72,18 @@ With Instance Rightsizing for Google Cloud, you will:
 
 {% embed url="https://www.loom.com/share/cecfc1a7f3d84240a5be922e27c0ac56?sharedAppSource=team_library" %}
 
-### FlexSave
+### Flexsave
 
 Purchasing compute commitments &mdash; Reserved Instances (RIs) or Savings Plans (SPs) for AWS; Committed Use Discounts (CUDs) for Google Cloud &mdash; is a great way for you to reduce your compute costs for stable, predictable workloads.
 
-However, getting compute commitments _just right_ and then managing them is an extremely manual, never-ending process. FlexSave automates this for you while maximizing your compute discounts.
+However, getting compute commitments _just right_ and then managing them is an extremely manual, never-ending process. Flexsave automates this for you while maximizing your compute discounts.
 
-FlexSave works by analyzing your workloads, seeing which ones aren't covered by compute commitments like CUDs, RIs, or Savings Plans. Then, with the click of a button, it assigns reserved compute resources from DoiT's own wholesale inventory to optimally cover them, continuously monitoring for any changes in needs.
+Flexsave works by analyzing your workloads, seeing which ones aren't covered by compute commitments like CUDs, RIs, or Savings Plans. Then, with the click of a button, it assigns reserved compute resources from DoiT's own wholesale inventory to optimally cover them, continuously monitoring for any changes in needs.
 
 See how it works in the video below:
 
 {% embed url="https://www.loom.com/share/b3a232a312c24735aead19d02df4c50f" %}
-FlexSave demo for Google Cloud and AWS
+Flexsave demo for Google Cloud and AWS
 {% endembed %}
 
 ### BigQuery Lens
