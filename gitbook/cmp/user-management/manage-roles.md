@@ -70,7 +70,7 @@ There are a few pre-built roles in your account for your convenience. The easies
 | Sandbox User         | [create disposable cloud environments][gcp-sandboxes] (sandboxes) governed by a company Sandbox policy |
 | superQuery           | access superQuery IDE                                                                                  |
 | Sandbox Admin        | set company [Sandbox policy][sandbox-policy] for other users                                           |
-| FlexSave Admin       | purchase and manage [flexible reservations](../flexsave/overview.md)                                   |
+| Flexsave Admin       | purchase and manage [flexible reservations](../flexsave/overview.md)                                   |
 | Settings Manager     | manage your Cloud Management Platform account settings                                                 |
 | Contracts Viewer     | provides access to the commercial contracts                                                            |
 | Perks Viewer         | access and request Perks                                                                               |

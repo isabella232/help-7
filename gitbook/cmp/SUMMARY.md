@@ -40,11 +40,11 @@
 * [Manage Budgets](cloud-analytics/manage-budgets.md)
 * [GKE Cost Analytics](cloud-analytics/gke-cost-analytics.md)
 
-## FlexSave
+## Flexsave
 
-* [FlexSave overview](flexsave/overview.md)
-* [FlexSave for AWS](flexsave/aws.md)
-* [FlexSave for GCP](flexsave/gcp.md)
+* [Flexsave overview](flexsave/overview.md)
+* [Flexsave for AWS](flexsave/aws.md)
+* [Flexsave for GCP](flexsave/gcp.md)
 
 ## Spot Scaling
 

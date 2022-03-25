@@ -98,7 +98,7 @@ For each widget there are two concerns
 
 1. Only the Cloud Analytics feature supports Organizations today
    1. If other roles are granted to users within the organization, they will see all company data
-   2. Savings features like [FlexSave](../flexsave/overview.md) are reflective of the total company spend
+   2. Savings features like [Flexsave](../flexsave/overview.md) are reflective of the total company spend
    3. Anomalies run against all company data, not only an organization
 2. Reports shared from outside the organization cannot be seen within the organization
 3. Dashboards and Widgets reflect a global scope, they can be made visible, but the data represented is not filtered to the organization

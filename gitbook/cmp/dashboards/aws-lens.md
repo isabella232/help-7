@@ -50,8 +50,8 @@ Gain insights into how your application is using the _Elastic Block Storage_ (EB
 
 ![A screenshot of the EBS by Volume Type report widget](../.gitbook/assets/cmp-aws-lens-widget-ebs-by-volume-type.png)
 
-### FlexSave AWS
+### Flexsave AWS
 
-See a visual summary of your [FlexSave](../flexsave/overview.md) compute savings.
+See a visual summary of your [Flexsave](../flexsave/overview.md) compute savings.
 
-![A screenshot of the FlexSave AWS report widget](../.gitbook/assets/cmp-aws-lens-widget-flexsave-aws.png)
+![A screenshot of the Flexsave AWS report widget](../.gitbook/assets/cmp-aws-lens-widget-flexsave-aws.png)

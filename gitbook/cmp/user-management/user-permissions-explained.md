@@ -42,9 +42,9 @@ Raising support or consulting requests doesn't require any permission or role.
 
 * Provides access to the commercial contracts
 
-### FlexSave Admin
+### Flexsave Admin
 
-* Enable and disable [FlexSave](../flexsave/overview.md)
+* Enable and disable [Flexsave](../flexsave/overview.md)
 
 ### Invoice Viewer
 
