@@ -4,18 +4,7 @@ description: How to log in and access the Cloud Management Platform (CMP)
 
 # Log in to the CMP
 
-You can log in to the DoiT International _Cloud Management Platform_ (CMP) using one of the following methods:
-
-- [Log-in methods](#log-in-methods)
-  - [Customers](#customers)
-    - [Use an existing Google Workspace account](#use-an-existing-google-workspace-account)
-    - [Use an existing Microsoft Office 365 account](#use-an-existing-microsoft-office-365-account)
-    - [Use an email address and password](#use-an-email-address-and-password)
-  - [Partners](#partners)
-    - [Use your Amazon or Google email address](#use-your-amazon-or-google-email-address)
-- [FAQ](#faq)
-  - [Can I limit access to a single log-in method?](#can-i-limit-access-to-a-single-log-in-method)
-  - [Can I use my own _Single Sign-On_ (SSO) provider?](#can-i-use-my-own-single-sign-on-sso-provider)
+You can log in to the DoiT International _Cloud Management Platform_ (CMP) using one of the methods detailed below.
 
 To log in, visit the [log-in screen](https://app.doit-intl.com/login):
 
