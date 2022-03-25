@@ -26,6 +26,11 @@ If you need to set up DoiT International as a new vendor in your systems, you ca
 * Our VAT number is DE331662430
 * Our address is: c/o Mazars Rechtsanwaltsgesellschaft mbH, Theodor-Stern Kai 1, 60596 Frankfurt am Main
 
+## Ireland
+
+* Our company name is: DoiT International Multi-Cloud Ireland Ltd
+* Our address is: 1&ndash;2 Victoria Buildings, Haddington Road, Dublin 4, Ireland.
+
 ## Israel
 
 * Our company name is DoiT International Ltd
