@@ -23,10 +23,13 @@ indent_style = tab
 [{*.csv,*.html}]
 max_line_length = off
 
-[.markdown-link-check.json]
+[.brokdb]
 max_line_length = off
 
 [.gitbook.yaml]
+max_line_length = off
+
+[.markdown-link-check.json]
 max_line_length = off
 
 [*.md5sum]
