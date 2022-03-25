@@ -29,7 +29,7 @@ Click on the **(x) icon** to open the variables side panel and create your first
 <!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (114).png>)
 
-Then click on the purple "**Add a variable**" button or  the **"+"** Add Variable button to create a new variable.
+Then click on the purple "**Add a variable**" button or the **"+"** Add Variable button to create a new variable.
 
 <!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (113).png>)
@@ -43,7 +43,9 @@ Since we're exploring categories in our example, we will name our variable "**ca
 
 ### Step 2b: Select your variable's data type
 
+ <!-- textlint-disable max-comma -->
 Variables can hold the following data types: String, Number, Date, Datetime, Time, and Array.
+<!-- textlint-enable -->
 
 In our example with the variable representing a product category, we will make our variable a String.
 

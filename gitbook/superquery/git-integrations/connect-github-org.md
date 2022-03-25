@@ -1,9 +1,9 @@
-# Connecting your Github Organization to superQuery
+# Connecting your GitHub Organization to superQuery
 
 > This article is for those who are connecting superQuery to their GitHub Organization. If you'd like to connect to a personal repository instead, refer to [this post](connect-github.md).
 
 {% hint style="info" %}
-**Only GitHub** [**Organization Owners**](https://help.github.com/en/articles/permission-levels-for-an-organization#permission-levels-for-an-organization) **have the permissions required to set up superQuery at the organization level.** If you're not an Owner,  please share this post with an Owner on your team.
+**Only GitHub** [**Organization Owners**](https://help.github.com/en/articles/permission-levels-for-an-organization#permission-levels-for-an-organization) **have the permissions required to set up superQuery at the organization level.** If you're not an Owner, please share this post with an Owner on your team.
 {% endhint %}
 
 In order for your team to connect superQuery to repos in your GitHub organization, you'll need to ensure all permissions are set for the superQuery GitHub application at the Organization level.

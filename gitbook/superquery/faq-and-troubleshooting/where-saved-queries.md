@@ -24,7 +24,7 @@ Instead of having a single Saved Queries folder, you can create multiple **Board
 
 Think of boards as workspaces for grouping related queries together and categorizing them.
 
-You could have one board with three queries dedicated to Website Analytics, and another board containing queries for Marketing Campaigns, as illustrated below.
+You could have one board with three queries dedicated to site Analytics, and another board containing queries for Marketing Campaigns, as illustrated below.
 
 From the perspective of query management, this is a much better alternative than having a single list of many unrelated queries.
 

@@ -2,15 +2,15 @@
 description: Version control queries to your Github repository
 ---
 
-# Connecting your Github repo to superQuery
+# Connecting your GitHub repository to superQuery
 
 {% hint style="success" %}
-**Looking to connect superQuery to a repo in your Github Organization?** First make sure superQuery has the appropriate permissions in your GitHub Organization. Read [this post](connect-github-org.md) to see how.
+**Looking to connect superQuery to a repository in your GitHub Organization?** First make sure superQuery has the appropriate permissions in your GitHub Organization. Read [this post](connect-github-org.md) to see how.
 {% endhint %}
 
 Have you ever written what you thought was a one-time query, only to have to re-create it from memory a few weeks later? Or have you ever found yourself needing a previous version of a query you wrote?
 
-By connecting your Github repository to superQuery, you'll effectively create a query library &mdash; a place for saving, updating, and tracking changes in your queries.
+By connecting your GitHub repository to superQuery, you'll effectively create a query library &mdash; a place for saving, updating, and tracking changes in your queries.
 
 Let's see how to set this up below.
 
@@ -23,13 +23,13 @@ Click on the Source Control icon (shown below), and then select "Connect to Gith
 
 ## Step 2: Authorize superQuery to access your resources
 
-You will temporarily be taken to Github to sign in (if you're not already signed in) and then give the superQuery Github app authorization to access resources.
+You will temporarily be taken to GitHub to sign in (if you're not already signed in) and then give the superQuery GitHub app authorization to access resources.
 
 This allows superQuery to display a list of repositories, from which you'll select the one that you can connect to.
 
 ## Step 3: Select the repository you want to connect
 
-After granting authorization, you will be taken back to superQuery where you can now select the repo you want to connect.
+After granting authorization, you will be taken back to superQuery where you can now select the repository you want to connect.
 
 {% hint style="info" %}
 Make sure your repository has **at least one file** inside _before_ connecting (a README file works just fine)
@@ -40,7 +40,7 @@ If you don't have a GitHub repository already, don't worry. You can set up a pri
 <!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (21).png>)
 
-## Step 4 \[optional]: Request permission to install the superQuery Github application
+## Step 4 \[optional]: Request permission to install the superQuery GitHub application
 
 In cases where you want to connect to a repository you're not the owner of &mdash; such as a repository inside of your company's [GitHub Organization](https://help.github.com/en/articles/about-organizations) &mdash; you have to request permission from the repository owner.\
 \

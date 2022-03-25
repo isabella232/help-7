@@ -31,6 +31,8 @@ if test -s "${tmp_errors}"; then
     sed -E "s,^(.*),${RED}\1${RESET}," <"${tmp_errors}"
     status_code=1
 fi
+
 rm -rf "${tmp_repo_copy}"
 rm -f "${tmp_errors}"
+
 exit "${status_code}"

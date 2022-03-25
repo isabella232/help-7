@@ -6,7 +6,7 @@ description: How to give more context to the SQL you commit to Github
 
 Git commit messages give you and your team more context around the changes that were made, in superQuery's case, to your query.
 
-Once you've connected your Github repo to superQuery, you can start committing queries to Github and add messages to them.
+Once you've connected your GitHub repository to superQuery, you can start committing queries to GitHub and add messages to them.
 
 Let's see how this is all done in three easy steps.
 
@@ -19,7 +19,7 @@ For your SQL to be committed to Github, a change needs to be made from the previ
 
 ## Step #2: Manually commit your SQL
 
-By default, all queries are committed once your Github/BitBucket repo or GitLab project is connected. You can toggle the Auto Commit functionality off in your query settings if you'd prefer to manually commit.
+By default, all queries are committed once your Github/BitBucket repository or GitLab project is connected. You can toggle the Auto Commit functionality off in your query settings if you'd prefer to manually commit.
 
 To manually commit your SQL, click on the &#x2b07;&#xfe0f; icon next to the "Run" button, and click "Commit"
 
@@ -30,12 +30,12 @@ To manually commit your SQL, click on the &#x2b07;&#xfe0f; icon next to the "Run
 
 Finally, write a message for your commit that succinctly explains the changes you made to your query from the last commit.
 
-Once you write the message, click "Ok" to commit the changes and your message to your Github repo.
+Once you write the message, click "Ok" to commit the changes and your message to your GitHub repository.
 
 <!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (46).png>)
 
-When opening your Git repo and going to the appropriate Board, you should see your commit message next to the query tab you modified:
+When opening your Git repository and going to the appropriate Board, you should see your commit message next to the query tab you modified:
 
 <!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (45).png>)

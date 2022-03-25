@@ -72,8 +72,8 @@ Generates a new table based on the result of an executed query.&#x20;
 
 ## Autocomplete
 
-Toggling "**Autocomplete**" on will activate an IntelliSense-like auto-complete feature in your SQL editor.&#x20;
+Toggling "**Autocomplete**" on will activate an IntelliSense-like autocomplete feature in your SQL editor.&#x20;
 
 ## Source Control
 
-Toggling "Auto Commit" on will automatically commit your query to whichever Git repo you've selected (Github, GitLab, or BitBucket) if you've set up the connection.
+Toggling "Auto Commit" on will automatically commit your query to whichever Git repository you've selected (Github, GitLab, or BitBucket) if you've set up the connection.

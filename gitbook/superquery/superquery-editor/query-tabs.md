@@ -4,7 +4,7 @@ description: Organize your queries into tabs that you can name & easily identify
 
 # Using Query Tabs
 
-superQuery's Query Tabs allow you to work across multiple queries in one browser window. With Tabs, you can easily jump between queries you're working on.
+SuperQuery's Query Tabs allow you to work across multiple queries in one browser window. With Tabs, you can easily jump between queries you're working on.
 
 ## How do superQuery Query Tabs work?
 

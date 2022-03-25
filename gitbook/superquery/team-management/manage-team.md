@@ -65,8 +65,7 @@ Bulk editing allows you to change the roles & plans of multiple users in a singl
 
 It also allows you to re-invite users to your team in case they missed your invitation. To perform a bulk edit, select the checkbox next to the users whose role and/or plan you'd like to modify.
 
-From there, select the type of role and/or plan you'd like to assign to them and click "**Save"** when finished.\
-&#x20;
+From there, select the type of role and/or plan you'd like to assign to them and click "**Save**" when finished.
 
 <!-- markdownlint-disable-next-line -->
 ![](<../.gitbook/assets/image (93).png>)

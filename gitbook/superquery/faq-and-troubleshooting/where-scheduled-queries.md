@@ -4,7 +4,7 @@
 
 When you open superQuery's Scheduled Queries Manager, you might notice that any previously-saved scheduled jobs from BigQuery don't appear.
 
-This is because the Query Scheduler isn't simply a wrapper around BigQuery's, but a  new scheduler built from the "ground up".
+This is because the Query Scheduler isn't simply a wrapper around BigQuery's, but a new scheduler built from the "ground up".
 
 As a result, your previously scheduled queries aren't carried over initially.&#x20;
 

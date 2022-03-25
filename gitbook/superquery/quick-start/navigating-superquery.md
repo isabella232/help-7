@@ -139,7 +139,7 @@ Write queries faster using SQL Autocomplete.
 <!-- markdownlint-disable-next-line -->
 ![](../.gitbook/assets/ShareQueryes.gif)
 
-#### Manually commit queries to Github or GitLab
+#### Manually commit queries to GitHub or GitLab
 
 Use [Manual Commit](../git-integrations/add-commit-messages.md) to add a message to your Git commits, or if you want to commit a change without running the query.
 

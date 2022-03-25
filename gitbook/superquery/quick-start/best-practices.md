@@ -28,11 +28,13 @@ The names should be **descriptive** enough that it is obvious to you what query 
 
 [Variables](../superquery-editor/variables.md) are placeholders for values that can change &mdash; for example, field values in the WHERE clause. They make your queries more dynamic and allow you to perform quick edits on your query without modifying the SQL itself.
 
+<!-- textlint-disable max-comma -->
 If you're constantly modifying field values (ex. item id, user id, user events, dates, etc.), then variables will save you **TONS** of time.
+<!-- textlint-enable -->
 
 Creating a variable is incredibly easy &mdash; in fact, there is no SQL required when creating variables in the superQuery UI.
 
-To create a variable, \[1] choose a data type,  \[2] give your variable a name, and \[3] assign it an initial value.&#x20;
+To create a variable, \[1] choose a data type, \[2] give your variable a name, and \[3] assign it an initial value.&#x20;
 
 In our example below, we're analyzing eCommerce store data, and thus creating a variable called "category" and assigning it a value of "Bags"
 
@@ -61,7 +63,7 @@ Use superQuery's **Charts** feature to generate a quick visualization of your qu
 <!-- markdownlint-disable-next-line -->
 ![](../.gitbook/assets/ChartsSQ.gif)
 
-## #5 &mdash; Connect your Github repo or GitLab project to superQuery
+## #5 &mdash; Connect your GitHub repository or GitLab project to superQuery
 
 For many, code management and tracking changes to queries is important. Most of the time, however, this is done manually. Too much time is spent comparing code versions, trying to figure out what part of the query was changed.
 

@@ -22,7 +22,9 @@ Permissions are managed and defined by the user's GCP admin(s) in Google IAM and
 
 We request the following scopes:
 
+<!-- textlint-disable terminology -->
 [https://www.googleapis.com/auth/bigquery](https://www.googleapis.com/auth/bigquery) &mdash; View and Manage your data in Google BigQuery
+<!-- textlint-enable -->
 
 [https://www.googleapis.com/auth/cloud-platform](https://www.googleapis.com/auth/cloud-platform) &mdash; View and manage your data across Google Cloud Platform services
 
@@ -44,7 +46,7 @@ No, superQuery passes the user's OAuth 2.0 Token to BigQuery as part of the quer
 
 ## My company is sensitive to the usage of Chrome extensions &mdash; is there another way we can use superQuery?
 
-Yes. superQuery is a web-based IDE that you can access simply by logging in through the main [website](http://web.superquery.io). In fact, it's our preferred way of using superQuery
+Yes. superQuery is a web-based IDE that you can access simply by logging in through the main [site](http://web.superquery.io). In fact, it's our preferred way of using superQuery
 
 ## Do you base your security program on a recognized security standard?
 

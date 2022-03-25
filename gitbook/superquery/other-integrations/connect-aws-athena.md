@@ -48,7 +48,7 @@ In order to get your **Access Key ID** and **Secret Access Key** follow these st
 
 1. Open the [IAM console](https://console.aws.amazon.com/iam/home?#home).
 2. From the navigation menu, click **Users**.
-3. Select your IAM user name.
+3. Select your IAM username.
 4. Click **User Actions**, and then click **Manage Access Keys**.
 5. Click **Create Access Key**.
 
@@ -81,9 +81,9 @@ Here's how:
 
 \* If you'd prefer not to give FullAccess permissions, you may give these specific permissions instead:
 
-* athena-specific-dataset
-* allow-s3-athena-output
-* allow-s3-athena-data
+* Athena-specific-dataset
+* Allow-s3-athena-output
+* Allow-s3-athena-data
 
 Once you've completed these steps, you'll have the information needed to provide the IAM Role ARN in superQuery, using the formatting mentioned above.
 

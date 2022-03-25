@@ -23,8 +23,8 @@
 
 ## Git Integrations
 
-* [Connecting your Github repo to superQuery](git-integrations/connect-github.md)
-* [Connecting your Github Organization to superQuery](git-integrations/connect-github-org.md)
+* [Connecting your GitHub repository to superQuery](git-integrations/connect-github.md)
+* [Connecting your GitHub Organization to superQuery](git-integrations/connect-github-org.md)
 * [Connect your GitLab project to superQuery](git-integrations/connect-gitlab.md)
 * [Adding Commit Messages to your commits](git-integrations/add-commit-messages.md)
 * [Version control changes made to BigQuery views](git-integrations/version-control-views.md)
