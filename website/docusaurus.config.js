@@ -47,7 +47,7 @@ const config = {
         content:
           '&#9888;&#65039;&nbsp;' +
           'This is a preview of the next generation ' +
-          'Doit International Help Center' +
+          'DoiT International Help Center' +
           '&nbsp;&#9888;&#65039;',
         isCloseable: false,
       },

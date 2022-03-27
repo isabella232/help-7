@@ -12,7 +12,7 @@ const FeatureList = [
     title: 'Under construction',
     description: (
       <>
-        This is a preview of the next generation Doit International Help
+        This is a preview of the next generation DoiT International Help
         Center.
       </>
     ),
@@ -21,7 +21,7 @@ const FeatureList = [
     title: 'Under construction',
     description: (
       <>
-        This is a preview of the next generation Doit International Help
+        This is a preview of the next generation DoiT International Help
         Center.
       </>
     ),
@@ -30,7 +30,7 @@ const FeatureList = [
     title: 'Under construction',
     description: (
       <>
-        This is a preview of the next generation Doit International Help
+        This is a preview of the next generation DoiT International Help
         Center.
       </>
     ),
