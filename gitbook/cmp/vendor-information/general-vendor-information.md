@@ -29,6 +29,7 @@ If you need to set up DoiT International as a new vendor in your systems, you ca
 ## Ireland
 
 * Our company name is: DoiT International Multi-Cloud Ireland Ltd
+* Our VAT number VAT: 3914529VH
 * Our address is: 1&ndash;2 Victoria Buildings, Haddington Road, Dublin 4, Ireland.
 
 ## Israel
