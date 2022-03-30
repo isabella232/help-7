@@ -13,6 +13,10 @@ Required permission to manage and assign roles: **User Manager**
 {% endhint %}
 
 {% hint style="warning" %}
+If someone from your organization (as determined by their email address) signs up without [being invited](creating-a-new-user.md#inviting-new-users), their user account will be assigned your organization's [default role](#setting-a-default-role) (or the [Basic Role](#basic-role) if no default is configured).
+{% endhint %}
+
+{% hint style="warning" %}
 Prior to Roles, CMP users were manually assigned permissions. These legacy permissions are forward-compatible, so you will not lose access to any functionalities you previously had access to.
 {% endhint %}
 

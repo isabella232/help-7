@@ -46,6 +46,12 @@ If you already have a CMP account, enter your email address and password to log 
 
 If you do not have a CMP account, you can create one by selecting _SIGN UP_ and following the instructions.
 
+{% hint style="warning" %}
+If your organization (as determined by your email address) is already using the CMP, you can sign up without [being invited](../user-management/creating-a-new-user.md#inviting-new-users).
+
+However, if you sign up without being invited, your user account will be assigned your organization's [default role](../user-management/manage-roles.md#setting-a-default-role) (or the [Basic Role](../user-management/manage-roles.md#basic-role) if no default is configured).
+{% endhint %}
+
 {% hint style="info" %}
 
 If you have forgotten your password, enter your email address, then select the _CONTINUE_ button. On the next screen, select _Forgot password?_ and follow the instructions to reset your password.

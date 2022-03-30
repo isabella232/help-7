@@ -20,6 +20,12 @@ A modal dialog will appear, allowing you to add multiple email addresses you wan
 
 The recipient(s) you invited will receive an email, which you will be CC'd on, inviting them to complete the sign up and use the CMP.
 
+{% hint style="warning" %}
+Any user from your organization (as determined by their email address) can [sign up for a CMP account](../general/log-in.md) without being invited.
+
+If someone from your organization signs up without being invited, their user account will be assigned your organization's [default role](manage-roles.md#setting-a-default-role) (or the [Basic Role](manage-roles.md#basic-role) if no default is configured).
+{% endhint %}
+
 ## Editing User Profiles
 
 There are two ways you can access the page to edit a user's profile:
