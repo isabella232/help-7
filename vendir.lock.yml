@@ -1,0 +1,9 @@
+apiVersion: vendir.k14s.io/v1alpha1
+directories:
+- contents:
+  - git:
+      commitTitle: fixup
+      sha: 2c48fc24e37db7ed57fe2024342a22038d32c190
+    path: docops/utils
+  path: vendor
+kind: LockConfig

@@ -1,5 +1,1 @@
-bracketSameLine: true
-proseWrap: preserve
-semi: true
-singleQuote: true
-trailingComma: all
+vendor/docops/prettierrc.yml

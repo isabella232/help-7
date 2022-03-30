@@ -1,0 +1,11 @@
+apiVersion: vendir.k14s.io/v1alpha1
+kind: Config
+minimumRequiredVersion: 0.26.0
+directories:
+  - path: vendor
+    contents:
+      - path: docops/utils
+        git:
+          url: https://github.com/doitintl/docops-utils
+          ref: origin/main
+        newRootPath: src
