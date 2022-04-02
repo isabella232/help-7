@@ -15,11 +15,11 @@ To transfer the management of your existing G Suite setup you will need to retri
 * You will be asked to enter the reseller's public identifier
 
 {% hint style="info" %}
-&#x1F1FA;&#x1F1F8; US & &#x1F1E6;&#x1F1FA; AU customers, please use <!-- cspell:disable -->**`C02dk8ht9`**<!-- cspell:enable --> as reseller's public identifier
+US & AU customers, please use **`C02dk8ht9`** as reseller's public identifier
 {% endhint %}
 
 {% hint style="warning" %}
-&#x1F1EA;&#x1F1FA; EU customers &mdash; please use <!-- cspell:disable -->**`C03cno21i`**<!-- cspell:enable --> as reseller's public identifier
+EU customers — please use **`C03cno21i`** as reseller's public identifier
 {% endhint %}
 
 * Click Generate Transfer Token.
