@@ -28,3 +28,4 @@ We will not notify you for increases in non-USD prices that are due to currency 
 | December 2021  | 0.879395 | 0.739649 | 1.263915 | 1.3758   |
 | January 2022   | 0.89051  | 0.74373  | 1.27155  | 1.414827 |
 | February 2022  | 0.89162  | 0.74505  | 1.266715 | 1.377411 |
+| March 2022     | 0.90318  | 0.76066  | 1.249995 | 1.33483  |
