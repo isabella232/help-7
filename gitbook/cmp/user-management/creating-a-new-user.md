@@ -24,6 +24,8 @@ The recipient(s) you invited will receive an email, which you will be CC'd on, i
 Any user from your organization (as determined by their email address) can [sign up for a CMP account](../general/log-in.md) without being invited.
 
 If someone from your organization signs up without being invited, their user account will be assigned your organization's [default role](manage-roles.md#setting-a-default-role) (or the [Basic Role](manage-roles.md#basic-role) if no default is configured).
+
+You cannot enforce invitation-only access to the CMP. However, if you create a default role with no permissions, you can ensure that any users who do sign up without being invited must request permissions from an administrator before being able to do anything within the CMP.
 {% endhint %}
 
 ## Editing User Profiles
