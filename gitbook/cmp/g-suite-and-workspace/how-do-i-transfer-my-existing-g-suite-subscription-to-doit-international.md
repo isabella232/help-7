@@ -19,7 +19,7 @@ US & AU customers, please use **`C02dk8ht9`** as reseller's public identifier
 {% endhint %}
 
 {% hint style="warning" %}
-EU customers — please use **`C03cno21i`** as reseller's public identifier
+EU customers, please use **`C03cno21i`** as reseller's public identifier
 {% endhint %}
 
 * Click Generate Transfer Token.

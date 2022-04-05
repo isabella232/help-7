@@ -190,6 +190,7 @@ toolset
 trifacta
 trunc
 truste
+tyriar
 udfs
 uncheck
 underutilization
