@@ -54,6 +54,7 @@ The saved ACH method will be available when you want to pay for future invoices.
 
 We will automatically initiate ACH debits when your invoice is due. Please note, ACH payments take 4&ndash;7 days to process. While processing, the invoice will be shown with the "processing" state.
 
+<!--
 ## Manually set up ACH payments
 
 There are some edge cases where our ACH verification process doesn't work properly, such as when you have a Wells Fargo or Bank of America account with two-factor authentication enabled.
@@ -68,3 +69,4 @@ To manually set up ACH payments, open a support ticket under the "Billing" categ
 Once we have this information, we will send two small deposits for verification purposes. Typically, these deposits take 1&ndash;2 business days to appear on your online statement.
 
 The statement has a description that includes AMTS followed by the two deposit amounts. To validate your bank account information, follow up on the support ticket with this AMTS description once you see the deposits.
+-->
