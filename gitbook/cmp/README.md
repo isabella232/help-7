@@ -33,7 +33,7 @@ The following table offers a brief summary of our support for [Google Cloud Plat
 | [Cost history widgets](dashboards/widgets-overview.md)               | Yes                                                      | Yes                                | Yes       |
 | [Cloud analytics](./#cloud-analytics)                                | Yes                                                      | Yes                                | No        |
 | [Costs anomalies](./#cost-anomalies)                                 | Yes                                                      | Yes                                | No        |
-| Flexsave                                                             | Yes                                                      | [Yes](flexsave/overview.md)        | No        |
+| [Flexsave](flexsave/overview.md)                                     | Yes                                                      | Yes                                | No        |
 | [EC2 Spot Scaling](spot-scaling/overview.md)                         | N/A                                                      | Yes                                | N/A       |
 
 ## Cloud analytics
