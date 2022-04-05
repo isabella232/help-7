@@ -31,8 +31,12 @@ run_markdown_link_check() {
             --retry 2>/dev/null
 }
 
-run_markdown_link_check |
-    grep --before-context 1 '\[' |
-    grep -E '(FILE|Status)' |
-    sed -E "s,^FILE: (.*),${BLUE}\1${RESET}," |
-    sed -E "s,^(.+\]) ([^ ]+) .+ (.+),${RED}  HTTP \3: \2 ${RESET},"
+tmp_errors="$(mktemp)"
+if ! run_markdown_link_check >"${tmp_errors}"; then
+    grep --before-context 1 '\[' <"${tmp_errors}" |
+        grep -E '(FILE|Status)' |
+        sed -E "s,^FILE: (.*),${BLUE}\1${RESET}," |
+        sed -E "s,^(.+\]) ([^ ]+) .+ (.+),${RED}  HTTP \3: \2 ${RESET},"
+    exit 1
+fi
+rm -f "${tmp_errors}"
