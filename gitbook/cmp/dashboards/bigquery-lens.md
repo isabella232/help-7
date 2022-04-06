@@ -173,6 +173,10 @@ We may not be able to detect which table is being scanned because of:
 
 BigQuery Lens creates and maintains datasets on your behalf to provide you with analytics data (as described above). Typically, this process costs less than $10 per month.
 
+{% hint style="warning" %}
+If you have an excess of historical jobs, you may see an increased cost for BigQuery Streaming Inserts when we backfill them for the last 30 days during your service account setup.
+{% endhint %}
+
 ### What is the difference between "Project" and "Billing project" in the Explorer widget?
 
 The _Billing project_ runs the query and incurs the costs. The _Project_ contains the data that is queried.
