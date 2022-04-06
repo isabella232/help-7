@@ -40,6 +40,8 @@ For platform-agnostic information, see:
 
 Absolutely. Flexsave works exclusively with your on-demand compute usage and excludes anything already covered by an existing discount.
 
+Any resources that do not qualify for committed use discounts automatically qualify for sustained use discounts. You can't combine committed use discounts and sustained use discounts for the same resources.
+
 #### Can I use Flexsave with _Google Kubernetes Engine_ (GKE)?
 
 Flexsave can provide CUD discounts for GKE nodes that use the [Google Compute Engine (GCE) pricing model][gke-pricing]. However, we cannot provide [CUD discounts for GKE Autopilot Mode][gke-autopilot].
