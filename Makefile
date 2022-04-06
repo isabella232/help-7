@@ -33,12 +33,15 @@ help:
 		column -s '#' -t | \
 		sed -E "s,^([a-z]+),  \1,"
 
-.PHONY: check # Run all lint checks
-check:
+.PHONY: check # Lint the project and test the build
+check: lint build
 
-.PHONY: check-parallel
-check-parallel: # Run all lint checks in parallel
-	@ $(MAKE) --no-print-directory -j --output-sync=target check
+.PHONY: lint # Run all lint checks
+lint:
+
+.PHONY: lint-parallel
+lint-parallel: # Run all lint checks in parallel
+	@ $(MAKE) --no-print-directory -j --output-sync=target lint
 
 .PHONY: build # Build the Docusaurus website
 build:
@@ -57,70 +60,70 @@ clean:
 # -----------------------------------------------------------------------------
 
 only-ascii:
-check: only-ascii
+lint: only-ascii
 
 ec:
-check: ec
+lint: ec
 
 lintspaces:
-check: lintspaces
+lint: lintspaces
 
 prettier:
-check: prettier
+lint: prettier
 
 yamllint:
-check: yamllint
+lint: yamllint
 
 shellcheck:
-check: shellcheck
+lint: shellcheck
 
 shfmt:
-check: shfmt
+lint: shfmt
 
 good-filenames:
-check: good-filenames
+lint: good-filenames
 
 rm-unused-docs-dry:
-check: rm-unused-docs-dry
+lint: rm-unused-docs-dry
 
 markdownlint:
-check: markdownlint
+lint: markdownlint
 
 html-entities:
-check: html-entities
+lint: html-entities
 
 inline-html:
-check: inline-html
+lint: inline-html
 
 update-vocab-dry:
-check: update-vocab-dry
+lint: update-vocab-dry
 
 cspell:
-check: cspell
+lint: cspell
 
 misspell:
-check: misspell
+lint: misspell
 
 textlint-dry:
-check: textlint-dry
+lint: textlint-dry
 
 vale:
-check: vale
+lint: vale
 
 markdown-link-check:
-check: markdown-link-check
+lint: markdown-link-check
 
 brok:
-check: brok
+lint: brok
 
 rm-unused-assets-dry:
-check: rm-unused-assets-dry
+lint: rm-unused-assets-dry
 
 fdupes:
-check: fdupes
+lint: fdupes
 
 optipng-dry:
-check: optipng-dry
+lint: optipng-dry
 
 # build
 # -----------------------------------------------------------------------------
