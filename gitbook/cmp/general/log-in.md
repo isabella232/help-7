@@ -89,3 +89,12 @@ We will need the following information:
 | _Certificate_   | _Client Secret_ |
 
 You can provide this information in the support request, or we can set up a configuration session with you.
+
+{% hint style="info" %}
+
+See also:
+
+* [Google Workspace: Set up your own custom SAML application](https://support.google.com/a/answer/6087519?hl=en)
+* [Okta: Get started with app integrations](https://help.okta.com/oie/en-us/Content/Topics/Apps/apps-overview-get-started.htm)
+
+{% endhint %}
