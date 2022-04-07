@@ -41,8 +41,8 @@ jobs:
       - uses: ravsamhq/notify-slack-action@v1
         env:
           STATUS: '{workflow} workflow <{run_url}|{status_message}>'
-          BRANCH: '${{ github.ref_name }}'
-          URL: '${{ github.event.compare }}'
+          BRANCH: 'on `${{ github.ref_name }}`'
+          URL: '${{ github.event.push.compare }}'
           SLACK_WEBHOOK_URL: ${{ secrets.TEST_SLACK_WEBHOOK_URL }}
         with:
           status: ${{ steps.check.outputs.status }}
