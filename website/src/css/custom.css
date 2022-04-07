@@ -44,6 +44,7 @@
   background-color: var(--ifm-font-color-base);
   color: var(--ifm-color-black);
 }
+
 /* Announcement bar close button */
 
 [data-theme='light'] .close {
@@ -58,6 +59,11 @@
 
 #docs-logo {
   margin-top: -5.3rem !important;
+}
+
+/* Hero background */
+.hero {
+  background: url(/img/hero-bg.png) no-repeat center center;
 }
 
 /* Document tabs bar  */
