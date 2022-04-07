@@ -78,7 +78,7 @@ Please create a [support request](../services/consulting-support/README.md), tel
 
 Yes, you can.
 
-Please create a [support request](../services/consulting-support/README.md), and we will configure access via your organization's SSO provider.
+Please create a [support request](../services/consulting-support/README.md), and we will configure access via your organization's _Identity Provider_ (IdP) provider.
 
 We will need the following information:
 
@@ -89,6 +89,16 @@ We will need the following information:
 | _Certificate_   | _Client Secret_ |
 
 You can provide this information in the support request, or we can set up a configuration session with you.
+
+{% hint style="info" %}
+
+You can configure most IdPs to assign a `role_name` to anyone who signs up for a CMP account using SSO. The `role_name` is managed internally by your IdP.
+
+When a user signs up for a CMP account, the CMP will look for an IdP `role_name` and, if found, will assign the matching [CMP Role](../user-management/manage-roles.md) to the user's CMP account. For this to work, the `role_name` must exactly match the name of a CMP Role.
+
+However, if you [invite a user](../user-management/creating-a-new-user.md) and pre-assign a CMP Role to them, the CMP will ignore the `role_name` for that user.
+
+{% endhint %}
 
 {% hint style="info" %}
 
