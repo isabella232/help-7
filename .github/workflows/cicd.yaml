@@ -7,31 +7,31 @@ on:
       - main
 
 jobs:
-  checks:
-    name: Checks
-    runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/doitintl/docops/devcontainer:main
-    steps:
-      - uses: actions/checkout@v2
-      - run: make check
-      - run: make telemetry
-      - uses: crazy-max/ghaction-github-status@v2
-        with:
-          pages_threshold: major_outage
-      - uses: crazy-max/ghaction-github-pages@v2
-        if: success() && github.event_name != 'pull_request'
-        with:
-          target_branch: gh-pages
-          build_dir: gh-pages
-          keep_history: true
-          jekyll: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  # checks:
+  #   name: Checks
+  #   runs-on: ubuntu-latest
+  #   container:
+  #     image: ghcr.io/doitintl/docops/devcontainer:main
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - run: make check
+  #     - run: make telemetry
+  #     - uses: crazy-max/ghaction-github-status@v2
+  #       with:
+  #         pages_threshold: major_outage
+  #     - uses: crazy-max/ghaction-github-pages@v2
+  #       if: success() && github.event_name != 'pull_request'
+  #       with:
+  #         target_branch: gh-pages
+  #         build_dir: gh-pages
+  #         keep_history: true
+  #         jekyll: false
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   notification:
     name: Notification
     needs: checks
-    if: always() && github.event_name != 'pull_request'
+    if: always() # && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -40,12 +40,12 @@ jobs:
       - uses: ravsamhq/notify-slack-action@v1
         env:
           STATUS: '{workflow} workflow <{run_url}|{status_message}>'
-          COMMIT: for commit `<{commit_url}|{commit_sha}>`
-          BRANCH: on branch `{branch}`
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          BRANCH: for `${{ github.ref_name }}`
+          SHA: '`<{commit_url}|{commit_sha}>`'
+          SLACK_WEBHOOK_URL: ${{ secrets.TEST_SLACK_WEBHOOK_URL }}
         with:
           status: ${{ steps.check.outputs.status }}
           notification_title: ''
-          message_format: ${{ env.STATUS }} ${{ env.COMMIT }} ${{ env.BRANCH }}
+          message_format: ${{ env.STATUS }} for ${{ env.BRANCH }}@${{ env.SHA }}
           footer: <{repo_url}|{repo}>
           notify_when: success,warning,failure
