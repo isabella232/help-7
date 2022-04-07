@@ -40,12 +40,11 @@ jobs:
       - uses: ravsamhq/notify-slack-action@v1
         env:
           STATUS: '{workflow} workflow <{run_url}|{status_message}>'
-          BRANCH: for `${{ github.ref_name }}`
-          SHA: '`<{commit_url}|{commit_sha}>`'
+          PUSH: <${{ github.event.compare }}|{push}>
           SLACK_WEBHOOK_URL: ${{ secrets.TEST_SLACK_WEBHOOK_URL }}
         with:
           status: ${{ steps.check.outputs.status }}
           notification_title: ''
-          message_format: ${{ env.STATUS }} for ${{ env.BRANCH }}@${{ env.SHA }}
+          message_format: ${{ env.STATUS }} for ${{ env.PUSH }} to `{branch}`
           footer: <{repo_url}|{repo}>
           notify_when: success,warning,failure
