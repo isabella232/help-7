@@ -37,15 +37,16 @@ jobs:
       - uses: actions/checkout@v2
       - uses: martialonline/workflow-status@v2
         id: check
+       - run: echo "${{ toJson(github) }}"
       - uses: ravsamhq/notify-slack-action@v1
         env:
           STATUS: '{workflow} workflow <{run_url}|{status_message}>'
           BRANCH: '${{ github.ref_name }}'
-          SHA: <{commit_url}|{commit_sha}>
+          URL: '${{ github.event.compare }}'
           SLACK_WEBHOOK_URL: ${{ secrets.TEST_SLACK_WEBHOOK_URL }}
         with:
           status: ${{ steps.check.outputs.status }}
           notification_title: ''
-          message_format: ${{ env.STATUS }} for `${{ env.BRANCH }}`@`${{ env.SHA }}`
+          message_format: ${{ env.STATUS }} <${{ env.URL }}|push> ${{ env.BRANCH }}
           footer: <{repo_url}|{repo}>
           notify_when: success,warning,failure
