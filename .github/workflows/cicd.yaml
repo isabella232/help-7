@@ -40,7 +40,7 @@ jobs:
       - uses: ravsamhq/notify-slack-action@v1
         env:
           STATUS: '{workflow} workflow <{run_url}|{status_message}>'
-          BRANCH: `${{ github.ref_name }}`
+          BRANCH: '${{ github.ref_name }}'
           SHA: <{commit_url}|{commit_sha}>
           SLACK_WEBHOOK_URL: ${{ secrets.TEST_SLACK_WEBHOOK_URL }}
         with:
