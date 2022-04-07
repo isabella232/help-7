@@ -30,7 +30,7 @@ jobs:
   #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   notification:
     name: Notification
-    needs: checks
+    # needs: checks
     if: always() # && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
