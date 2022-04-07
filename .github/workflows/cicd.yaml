@@ -7,41 +7,42 @@ on:
       - main
 
 jobs:
-  checks:
-    name: Checks
-    runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/doitintl/docops/devcontainer:main
-    steps:
-      - uses: actions/checkout@v2
-      - run: make check
-      - run: make telemetry
-      - uses: crazy-max/ghaction-github-status@v2
-        with:
-          pages_threshold: major_outage
-      - uses: crazy-max/ghaction-github-pages@v2
-        if: success() && github.event_name != 'pull_request'
-        with:
-          target_branch: gh-pages
-          build_dir: gh-pages
-          keep_history: true
-          jekyll: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  # checks:
+  #   name: Checks
+  #   runs-on: ubuntu-latest
+  #   container:
+  #     image: ghcr.io/doitintl/docops/devcontainer:main
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - run: make check
+  #     - run: make telemetry
+  #     - uses: crazy-max/ghaction-github-status@v2
+  #       with:
+  #         pages_threshold: major_outage
+  #     - uses: crazy-max/ghaction-github-pages@v2
+  #       if: success() && github.event_name != 'pull_request'
+  #       with:
+  #         target_branch: gh-pages
+  #         build_dir: gh-pages
+  #         keep_history: true
+  #         jekyll: false
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   notification:
     name: Notification
-    needs: checks
+    # needs: checks
     if: always() # && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: martialonline/workflow-status@v2
         id: check
+      - run: echo "${{ toJson(github) }}"
       - uses: ravsamhq/notify-slack-action@v1
         env:
           STATUS: '{workflow} workflow <{run_url}|{status_message}>'
           COMMIT: for commit `<{commit_url}|{commit_sha}>` -
-          USER: ${{ github.event.head_commit.author.login }}
+          USER: ${{ github.event.head_commit.author.name }}
           MESSAGE: ${{ github.event.head_commit.message }}
           SLACK_WEBHOOK_URL: ${{ secrets.TEST_SLACK_WEBHOOK_URL }}
         with:
