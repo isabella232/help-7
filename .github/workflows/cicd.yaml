@@ -31,7 +31,7 @@ jobs:
   notification:
     name: Notification
     needs: checks
-    if: always() && github.event_name != 'pull_request'
+    if: always() # && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -40,12 +40,13 @@ jobs:
       - uses: ravsamhq/notify-slack-action@v1
         env:
           STATUS: '{workflow} workflow <{run_url}|{status_message}>'
-          COMMIT: for commit `<{commit_url}|{commit_sha}>`
-          BRANCH: on branch `{branch}`
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          COMMIT: for commit `<{commit_url}|{commit_sha}>` -
+          USER: ${{ github.event.head_commit.author.login }}
+          MESSAGE: ${{ github.event.head_commit.message }}
+          SLACK_WEBHOOK_URL: ${{ secrets.TEST_SLACK_WEBHOOK_URL }}
         with:
           status: ${{ steps.check.outputs.status }}
-          notification_title: ''
-          message_format: ${{ env.STATUS }} ${{ env.COMMIT }} ${{ env.BRANCH }}
+          notification_title: ${{ env.STATUS }} for push by ${{ env.USER }}
+          message_format: ${{ env.COMMIT }} - ${{ env.MESSAGE }}
           footer: <{repo_url}|{repo}>
           notify_when: success,warning,failure
