@@ -41,7 +41,7 @@ jobs:
         env:
           STATUS: '{workflow} workflow <{run_url}|{status_message}>'
           COMMIT: for commit `<{commit_url}|{commit_sha}>` -
-          ACTOR: ${{ github.actor }}
+          ACTOR: <http://github/${{ github.actor }}|${{ github.actor }}>
           MESSAGE: ${{ github.event.head_commit.message }}
           SLACK_WEBHOOK_URL: ${{ secrets.TEST_SLACK_WEBHOOK_URL }}
         with:
